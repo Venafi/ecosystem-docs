@@ -1,8 +1,6 @@
-# Welcome to MkLorum
+# Venafi Ecosystem Developer Design Patterns
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
+## Table of Contents
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
