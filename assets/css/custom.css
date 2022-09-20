@@ -1,0 +1,234 @@
+    .md-tabs,
+    .md-header {
+        background-color: var(--venafi-indigo);
+    }
+    
+    .vaas-img {
+        border: 1px solid var(--venafi-blue-gray);
+        border-radius: 4px;
+        text-align: center;
+    }
+    /*add light bottom border to tabbed content sections*/
+    
+    .md-typeset .tabbed-content {
+        border-bottom: 1px solid var(--md-default-fg-color--lightest);
+    }
+    
+    .md-typeset .tabbed-set a {
+        text-decoration: none;
+    }
+    
+    .md-typeset a {
+        color: var(--action-default-text);
+        /* border-bottom: 1px solid var(--action-default-text); */
+        text-decoration: underline;
+    }
+    
+    .md-typeset a:hover {
+        /* text-decoration: underline; */
+        color: var(--action-hover-text);
+    }
+    
+    .md-nav__link--active
+    /*highlights the currently-selected nav item*/
+    
+    {
+        border-left: 3px solid;
+        border-left-color: var(--venafi-orange);
+        background: var(--venafi-cloud-blue);
+        padding: 0 2px 2px 4px;
+        margin-left: -7px;
+        color: #000 !important;
+    }
+    
+    ol>li::marker {
+        font-weight: bold;
+        font-family: var(--md-text-font-family);
+        content: counter(list-item) " ";
+    }
+    
+    ol>li {
+        padding-left: 1em;
+    }
+    
+    ol>li>ol>li::marker {
+        content: counter(list-item, lower-alpha) " ";
+    }
+    
+    .md-tabs__link--active,
+    .md-tabs__link:hover {
+        font-weight: bold;
+    }
+    
+    .md-header-nav__button.md-logo img,
+    .md-header-nav__button.md-logo svg {
+        width: inherit;
+        height: inherit;
+        margin-top: .4em;
+    }
+    /*reduce font size for code samples*/
+    
+    .md-typeset pre>code {
+        font-size: .75em
+    }
+    /* div for the Vsat box on the OutagePREDICT home page */
+    
+    #vsatBox {
+        background-color: #fafafc;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        padding: 16px;
+        color: #000;
+    }
+    
+    #vsatBox:hover {
+        box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 0.75);
+    }
+    
+    #vsatBoxLink {
+        text-decoration: none;
+        text-decoration-line: none;
+    }
+    /*unset width and height for the logo image*/
+    
+    .md-header__button.md-logo img,
+    .md-header__button.md-logo svg,
+    .md-nav__title .md-nav__button.md-logo img,
+    .md-nav__title .md-nav__button.md-logo svg,
+    .md-header__button.md-logo :-webkit-any(img, svg) {
+        height: auto;
+        width: 8rem;
+        margin-left: -1rem;
+    }
+    /* add swagger logo to swagger links*/
+    
+    .swaggerLink {
+        background-image: url(../images/Icons/Cloud_API_Swagger.jpg);
+        background-repeat: no-repeat;
+        padding-left: 70px;
+        background-position: left center;
+    }
+    /*styles for prereq containers*/
+    
+    .prereqs {
+        background: var(--venafi-cloud-blue);
+        padding: .5rem .8rem 1.1rem .8rem;
+        border-radius: 4px;
+        margin: 1rem 0;
+        font-size: .7rem;
+    }
+    
+    .prereqs h2 {
+        margin-top: 0;
+    }
+    
+    .prereqs ul ul>li {
+        margin-bottom: 0;
+        list-style-type: circle;
+    }
+    /*style for paragraph between a heading and a step series*/
+    
+    .stepIntro {
+        font-style: italic;
+        border-bottom: 1px solid var(--venafi-blue-gray);
+        padding-bottom: .8rem;
+    }
+    /*style for role paragraph when specifying what role performs a task*/
+    
+    .role {
+        font-size: .6rem;
+        background-color: var(--venafi-cloud-blue);
+        padding: 5px;
+        border: 1px solid var(--venafi-periwinkle);
+        border-radius: 3px;
+        border-left: 4px solid var(--venafi-periwinkle);
+    }
+    /* landing page steps */
+    
+    .step-container {
+        counter-reset: step;
+        margin-top: 3rem;
+    }
+    
+    .step-container li {
+        border: 1px solid var(--venafi-blue-gray);
+        border-radius: 4px;
+        margin-bottom: 2rem !important;
+        padding-right: 1rem;
+    }
+    
+    .step-container li::marker {
+        content: none;
+    }
+    
+    .step-container li::before {
+        /* Set the --circle-size variable. Width, height, border-radius, font size, and border width are all relative to it. */
+        --circle-size: 4rem;
+        width: var(--circle-size);
+        height: var(--circle-size);
+        border-radius: calc(var(--circle-size) / 2);
+        font-size: calc(var(--circle-size) / 2.3);
+        /* Automatically increment the numbering */
+        counter-increment: step;
+        content: counter(step);
+        /* Set the colors */
+        background-color: var(--venafi-orange);
+        color: var(--venafi-white);
+        /* Position the circle and give it some white space between the border around the list item */
+        position: absolute;
+        margin-top: -25px;
+        margin-left: -45px;
+        border: calc(var(--circle-size) / 10) solid white;
+        /* Automatically center the number in the circle */
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .step-container p {
+        margin-left: 70px !important;
+    }
+    
+    .step-container p:nth-of-type(1) {
+        font-size: 1.03rem;
+    }
+    
+    .step-container p:nth-last-of-type(1) {
+        font-size: 1.03rem;
+        padding-top: 1rem;
+    }
+    /* /landing page steps */
+    /* keeps code samples in table cells from wrapping */
+    
+    .md-typeset td code {
+        white-space: nowrap;
+    }
+    /* footer styles */
+    
+    footer .md-copyright,
+    footer .md-footer-links {
+        margin: 0.6em;
+    }
+    
+    footer .md-footer-links p:nth-of-type(1) {
+        text-transform: uppercase;
+        color: var(--venafi-white);
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    footer .md-footer-links p {
+        line-height: unset;
+        margin: 0.25rem;
+        font-size: 0.7rem;
+    }
+    
+    footer .md-footer-links a {
+        text-decoration: none;
+    }
+    
+    footer .md-footer-links a:hover {
+        text-decoration: underline;
+    }

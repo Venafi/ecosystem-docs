@@ -1,0 +1,46 @@
+<!-- This template uses theme extension. Learn more at
+https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme
+https://squidfunk.github.io/mkdocs-material/reference/?h=meta#setting-the-page-template -->
+
+<!-- extend main.html -->
+{% extends "main.html" %}
+
+<!-- add a meta tag to try to keep google from indexing this page -->
+{% block site_meta %} {{ super() }}
+<meta name="robots" content="noindex"> {% endblock %}
+
+<!-- add a stylesheet -->
+{% block styles %} {{ super() }}
+<link rel="stylesheet" href="{{ 'assets/css/walkme.css' | url }}"> {% endblock %}
+
+<!-- replace header from base.html -->
+{% block header %}
+<div id="walkmeBanner">Quick Help</div>
+{% endblock %}
+
+<!-- disable tabs block -->
+{% block tabs %} {% endblock %}
+
+<!-- disable site_nav block -->
+{% block site_nav %} {% endblock %}
+
+<!-- disable cookie consent -->
+{% if config.extra.consent %}
+<div></div>
+{% endif %}
+
+<!-- replace footer from base.html -->
+{% block footer %}
+<footer id="walkmeFooter">
+    <p>Need more information?</p>
+    <p>
+        <a href="https://docs.venafi.cloud" target="_blank">Visit out our online help</a>
+    </p>
+    <p>
+        <a href="https://support.venafi.com/" target="_blank">Contact support</a>
+    </p>
+    <p>
+        <a href="https://www.venafi.com/community" target="_blank">Join the Venafi Warrior Community</a>
+    </p>
+</footer>
+{% endblock %}
