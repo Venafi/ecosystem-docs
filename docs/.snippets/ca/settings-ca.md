@@ -1,0 +1,1 @@
+In the menu bar, click **Settings** > **Certificate Authorities**.

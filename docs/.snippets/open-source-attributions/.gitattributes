@@ -1,0 +1,2 @@
+# The markdown files in this directory are large and generated using an application
+*.md filter=lfs diff=lfs merge=lfs -text

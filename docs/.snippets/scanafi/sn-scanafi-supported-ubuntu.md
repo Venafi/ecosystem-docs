@@ -1,0 +1,1 @@
+Ubuntu 18.04 (bionic) or later, and 16.04 (xenial) or later
