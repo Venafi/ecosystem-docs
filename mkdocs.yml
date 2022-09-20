@@ -1,6 +1,9 @@
-site_name: Ecosystem Docs Design Patterns (DEV)
-site_url: https://venafi-ecosystem.github.io/design-patterns-dev/
-nav:
-    - Home: index.md
-    - About: about.md
-    - Writing Adaptable Drivers: writing-adaptable-drivers.md
+# Inherit the settings from mkdocs-base.yml using Configuration Inheritance
+# https://www.mkdocs.org/user-guide/configuration/#configuration-inheritance
+
+INHERIT: mkdocs-base.yml
+
+# Theme
+theme:
+  icon:
+    repo: fontawesome/brands/bitbucket

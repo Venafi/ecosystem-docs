@@ -1,0 +1,1 @@
+300 MB free disk space (before Worker install)

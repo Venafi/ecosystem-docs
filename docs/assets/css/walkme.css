@@ -1,0 +1,39 @@
+/* this stylesheet is here just in case we need to make some style
+changes in the walkme context help window. It is included in 
+overrides/walkme.html. */
+
+#walkmeBanner {
+    height: 40px;
+    line-height: 40px;
+    color: var(--venafi-white);
+    background: var(--venafi-indigo);
+    background: linear-gradient(90deg, var(--venafi-indigo) 0%, var(--venafi-periwinkle) 100%);
+    font-size: 2.0em;
+    font-weight: 500;
+    padding-left: 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#walkmeFooter {
+    font-size: .7rem;
+    background: var(--venafi-cloud-blue);
+    padding: 1rem;
+}
+
+#walkmeFooter p:nth-of-type(1) {
+    font-weight: 700;
+    margin-bottom: 15px
+}
+
+#walkmeFooter p {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+
+/* don't display the cookie consent on walkme quick helps */
+
+.md-consent {
+    display: none;
+}
