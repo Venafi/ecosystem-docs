@@ -1,0 +1,36 @@
+# Use this file to define variables and their resolutions.
+#
+# This file is referenced from mkdocs.yml using the following syntax:
+### plugins:
+###  - macros:  
+###    include_yaml: [docs/_variables.yml]
+#
+# To use a variable in a markdown file, enclose the variable within
+# double curly braces in the markdown file:
+### {{ variable_name }}
+#
+# NOTE: Currently, variables in headers don't resolve correctly in the
+# navigation. Avoid using variables in headers
+
+extra:
+  adcs:       AD CS
+  adcsfull:   Microsoft Active Directory Certificate Services
+  ask:        Automated Secure Keypair
+  da:         DevOpsACCELERATE
+  dc:         DigiCert
+  ent:        Entrust
+  gs:         GlobalSign
+  hid:        HydrantID
+  ms:         Microsoft
+  op:         OutagePREDICT
+  rolesG:     Guest
+  rolesPKI:   PKI Administrator
+  rolesRO:    Resource Owner
+  rolesSA:    System Administrator
+  vcert:      VCert
+  ven:        Venafi
+  vs:         Venafi as a Service
+  vsat:       VSatellite
+  vsatw:      VSatellite Worker
+  vsl:        Venafi as a Service&#8482;
+  ztpki:      Venafi Zero Touch PKI

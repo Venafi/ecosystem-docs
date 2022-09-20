@@ -1,0 +1,48 @@
+/* set the h1 color back to the default */
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+    color: unset;
+}
+
+
+/* set the hyperlink color in the text body */
+
+[data-md-color-scheme="slate"] .md-typeset a {
+    color: var(--venafi-periwinkle);
+}
+
+
+/* set the hyperlink hover color for text body and navigation */
+
+[data-md-color-scheme="slate"] .md-typeset a:hover,
+[data-md-color-scheme="slate"] .md-nav__link:is(:focus, :hover) {
+    color: var(--venafi-gold);
+}
+
+
+/* set the background color and border of div.prereqs boxes */
+
+[data-md-color-scheme="slate"] .prereqs {
+    background: unset;
+    border: 1px solid var(--venafi-periwinkle);
+}
+
+
+/* remove the background color of p.role paragraphs */
+
+[data-md-color-scheme="slate"] .role {
+    background-color: unset;
+}
+
+
+/* set the values for the nav item currently selected */
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+    border-left-color: var(--venafi-periwinkle);
+    background: var(--venafi-indigo);
+    color: var(--venafi-white) !important;
+}
+
+[data-md-color-scheme="slate"] .step-container li::before {
+    border-color: var(--md-default-bg-color);
+}

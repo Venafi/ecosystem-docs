@@ -1,0 +1,90 @@
+.mini-card-container>p {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: .5rem;
+    align-items: center;
+}
+
+.mini-card-container object {
+    pointer-events: none;
+    height: 2rem;
+    width: auto;
+}
+
+.mini-card-container h2 {
+    grid-column: span 12;
+}
+
+.mini-card {
+    padding: .7rem 0.7rem 0.7rem 2.5rem;
+    border-radius: 4px;
+    color: var(--venafi-deep-grey) !important;
+    transition: all .2s ease-out;
+    border: 1px solid var(--venafi-blue-gray);
+    text-decoration: none !important;
+    background-repeat: no-repeat;
+    background-position: .3rem center;
+    background-size: 1.7rem;
+}
+
+.mini-card-2 {
+    grid-column: span 6;
+}
+
+.mini-card-3 {
+    grid-column: span 4;
+}
+
+.mini-card-4 {
+    grid-column: span 3;
+}
+
+@media screen and (max-width:44.9375em) {
+    .mini-card-2,
+    .mini-card-3,
+    .mini-card-4 {
+        grid-column: span 12;
+    }
+}
+
+.mini-card:hover {
+    -webkit-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.15);
+    -moz-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.15);
+    box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.15);
+    /* border: 1px solid var(--venafi-light-grey); */
+    text-decoration: none !important;
+    transition: all .3s ease-in-out;
+}
+
+#logo-venafi {
+    background-image: url(../images/logos/venafi.svg);
+}
+
+#logo-ztpki {
+    background-image: url(../images/logos/Venafi_ProductICON_ZTPKI_f.svg);
+}
+
+#logo-digicert {
+    background-image: url(../images/logos/DigiCert.svg);
+}
+
+#logo-entrust {
+    background-image: url(../images/logos/Entrust.svg);
+}
+
+#logo-globalsign {
+    background-image: url(../images/logos/GlobalSign.svg);
+}
+
+#logo-letsencrypt {
+    background-image: url(../images/logos/LetsEncrypt.svg);
+}
+
+#logo-microsoft {
+    background-image: url(../images/logos/microsoft.svg);
+}
+
+#logo-acme {
+    background-image: url(../images/logos/220px-ACME–protocol-icon.png);
+    background-size: 45px;
+}

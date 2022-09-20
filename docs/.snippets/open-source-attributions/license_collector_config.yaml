@@ -1,0 +1,76 @@
+# A project "root-dir" value is the path to the microservice (where the go mod files are located) in the parent repo
+
+repos:
+  - name: platform
+    repo-url: "https://bb.eng.venafi.com/rest/api/latest/projects/VSP/repos/platform/archive?format=zip"
+    projects:
+      - name: authentication-svc
+        root-dir: "vsat/authentication-svc"
+        md-name: "vsat-hub"
+      - name: certmanager-svc
+        root-dir: "vsat/certmanager-svc"
+        md-name: "vsat-hub"
+      - name: crypto-svc
+        root-dir: "vsat/crypto-svc"
+        md-name: "vsat-hub"
+      - name: inventory-svc
+        root-dir: "vsat/inventory-svc"
+        md-name: "vsat-hub"
+      - name: messaging-svc
+        root-dir: "vsat/messaging-svc"
+        md-name: "vsat-hub"
+        protos:
+          - ignore: true
+            package: "bb.eng.venafi.com/vsp/platform/messaging-svc/pkg/proto"
+            path: "vsat/messaging-svc/pkg/adapters/cloudmessageclient.go"
+      - name: plugin-svc
+        root-dir: "vsat/plugin-service"
+        md-name: "vsat-hub"
+      - name: status-svc
+        root-dir: "vsat/status-svc"
+        md-name: "vsat-hub"
+      - name: vsat-worker
+        root-dir: "vsat-worker/vsat-worker-ctl"
+        md-name: "vsat-worker"
+
+  - name: outage
+    repo-url: "https://bb.eng.venafi.com/rest/api/latest/projects/VSA/repos/outage/archive?format=zip"
+    projects:
+      - name: vsat-acme-svc
+        root-dir: "vsat-acme-svc/acme-svc"
+        md-name: "vsat-acme-svc"
+      - name: vsat-key-svc
+        root-dir: "vsat-key-svc/key-svc"
+        md-name: "vsat-key-svc"
+      - name: vsat-netdiscovery-svc
+        root-dir: "netdiscovery/scanafi-svc"
+        md-name: "vsat-netdiscovery-svc"
+      - name: vsat-msca-svc
+        root-dir: "vsat-msca-svc/msca-svc"
+        md-name: "vsat-msca-svc"
+        protos:
+         - ignore: true
+           package: "bb.eng.venafi.com/vsa/outage/vsat-msca-svc/msca-svc/pkg/msca_proto"
+           path: "vsat-msca-svc/msca-svc/pkg/handlers/msca.go"
+         - ignore: true
+           package: "bb.eng.venafi.com/vsa/outage/vsat-msca-svc/msca-svc/pkg/msca_proto"
+           path: "vsat-msca-svc/msca-svc/pkg/handlers/type_conversions.go"
+md-files:
+  - name: "vsat-hub"
+    project-title: "VSatellite Hub"
+    file-name: "vsat-hub.md"
+  - name: "vsat-worker"
+    project-title: "VSatellite Worker"
+    file-name: "vsat-worker.md"
+  - name: "vsat-acme-svc"
+    project-title: "ACMEv2 service"
+    file-name: "vsat-acme-svc.md"
+  - name: "vsat-key-svc"
+    project-title: "Automated Secure Keypair"
+    file-name: "vsat-key-svc.md"
+  - name: "vsat-netdiscovery-svc"
+    project-title: "Enhanced Discovery Service"
+    file-name: "vsat-netdiscovery-svc.md"
+  - name: "vsat-msca-svc"
+    project-title: "Microsoft CA Service"
+    file-name: "vsat-msca-svc.md"

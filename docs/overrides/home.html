@@ -1,0 +1,195 @@
+{% extends "main.html" %} {% block tabs %} {{ super() }}
+<style>
+    .tx-container {
+        margin-bottom: 2rem;
+    }
+    
+    .md-header {
+        position: initial
+    }
+    
+    .md-main__inner {
+        margin: 0
+    }
+    
+    .md-content {
+        display: none
+    }
+    
+    .md-typeset h1 {
+        margin-top: 1.3em;
+    }
+    
+    .md-typeset a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .md-typeset ul {
+        margin-left: 1.8em;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+    .tile {
+        background-color: #fafafc;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        padding: 1em;
+    }
+    /* set the properties for the tiles in dark mode */
+    
+    [data-md-color-scheme="slate"] .tile {
+        border: 1px solid var(--venafi-periwinkle);
+        background: var(--venafi-indigo);
+        color: var(--venafi-white) !important;
+    }
+    
+    .tile>h2 {
+        margin-top: 0;
+        display: flex;
+        background-repeat: no-repeat;
+        padding-left: 5rem;
+        background-position-y: center;
+        background-size: 18%;
+        /* line-height: 100px !important; */
+        margin-left: -1rem !important;
+        min-height: 3.7rem;
+        padding-top: 0.6rem
+    }
+    
+    .tile>p {
+        margin-left: 4rem;
+    }
+    
+    a.tile:hover {
+        text-decoration: none;
+        -webkit-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.35);
+        -moz-box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.35);
+        box-shadow: 1px 1px 9px 0px rgba(50, 50, 50, 0.35);
+        transition: all .2s ease-in-out;
+    }
+    
+    #one {
+        grid-column: 1;
+        grid-row: 1 / 4;
+    }
+    
+    #two {
+        grid-column: 2;
+        grid-row: 1;
+        display: block;
+        color: #000;
+    }
+    
+    #three {
+        grid-column: 2;
+        grid-row: 2;
+        display: block;
+        color: #000;
+    }
+    
+    #four {
+        grid-column: 2;
+        grid-row: 3;
+        display: block;
+        color: #000;
+    }
+    
+    #one>h2 {
+        background-image: url("assets/images/3d/Venafi_Diagrams_ShieldV_f.svg") !important;
+    }
+    
+    #two>h2 {
+        background-image: url("assets/images/3d/Venafi_Diagrams_Locked_f.svg") !important;
+    }
+    
+    #three>h2 {
+        background-image: url("assets/images/3d/Venafi_Diagrams_Windows_f.svg") !important;
+    }
+    
+    #four>h2 {
+        background-image: url("assets/images/3d/Venafi_Diagrams_API_02_f.svg") !important;
+    }
+    
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+    }
+    
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+    }
+    
+    @media screen and (max-width:76.25em) {
+        .wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        #one {
+            grid-row: 1;
+        }
+        #two {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        #three {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        #four {
+            grid-column: 1;
+            grid-row: 4;
+        }
+    }
+</style>
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+        <div class="tx-hero">
+            <div class="tx-hero__content">
+                <h1>Get Started</h1>
+                <div class="wrapper">
+                    <div id="one" class="tile">
+                        <h2>What do you want to do?</h2>
+                        <ul style="margin-left: 4rem;">
+                            <li><a href="vsatellite/c-VSatellite-Management-about/">Get started with VSatellite
+                                and Services</a></li>
+                            <li><a href="vaas/discovery/c-Cloud-discovery-service/">Discover all the certificates
+                                that affect my network</a></li>
+                            <li><a href="vaas/dashboard/t-cloud-predict-dashboard/">See the health of my
+                                network</a></li>
+                            <li><a href="vaas/dashboard/t-cloud-predict-dashboard/">Use the dashboard to find
+                                expiring certificates</a></li>
+                            <li><a href="vaas/certificates/renewing-a-certificate/">Renew a
+                                certificate</a></li>
+                            <li><a href="vaas/certificates/requesting-downloading-installing-certificates/">Request,
+                                download, and install a certificate (Premium feature)</a></li>
+                            <li><a href="vcs-platform/about-sso-integrations/">Set up Single Sign-on (Premium feature)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a id="two" class="tile" href="vaas/automated-secure-keypair/what-is-automated-secure-keypair/">
+                        <h2>Start using Automated Secure Keypair</h2>
+                        <p>Automated Secure Kepair makes requesting new certificates fast, secure, and easy.</p>
+                    </a>
+                    <a id="three" class="tile" href="vaas/certificates/ca/issuing-certificates-with-microsoft-adcs/">
+                        <h2>Learn more about Microsoft AD CS integration</h2>
+                        <p>Venafi as a Service now offers integration with your Microsoft AD CS.</p>
+                    </a>
+                    <a id="four" class="tile" href="api/vaas-rest-api/">
+                        <h2>How to use the Restful API</h2>
+                        <p>Learn how to configure and use our restful API in your automation scripts</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} {% block content %} {% endblock %}
