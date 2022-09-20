@@ -1,0 +1,50 @@
+# Inherit the settings from mkdocs-base.yml using Configuration Inheritance
+# https://www.mkdocs.org/user-guide/configuration/#configuration-inheritance
+
+INHERIT: mkdocs-base.yml
+
+# Add to or override settings from mkdocs-base.yml
+
+extra:
+#Google Analytics
+  analytics:
+    provider: google
+    property: G-Y14H8EWFHT
+    # feedback:
+    #   title: Was this page helpful?
+    #   ratings:
+    #     - icon: material/emoticon-happy-outline
+    #       name: This page was helpful
+    #       data: 1
+    #       note: >-
+    #         Thanks for your feedback!
+    #     - icon: material/emoticon-sad-outline
+    #       name: This page could be improved
+    #       data: 0
+    #       note: >- 
+    #         Thanks for your feedback!
+
+# Cookie Consent
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+# Plugins
+plugins:
+    minify:                     # https://github.com/byrnereese/mkdocs-minify-plugin
+      minify_html: true
+      htmlmin_opts:
+        remove_comments: true
+      minify_css: true
+      css_files:
+        - assets/css/colors.css
+        - assets/css/custom.css
+        - assets/css/dark-mode.css
+    # git-revision-date-localized: {} # https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
+    # The privacy plugin should always be called last
+    privacy:
+      externals: bundle

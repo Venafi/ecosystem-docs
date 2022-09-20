@@ -1,0 +1,26 @@
+:root {
+    --md-primary-fg-color: var(--venafi-indigo);
+    /* Venafi Primary */
+    --venafi-indigo: #3D3E62;
+    --venafi-orange: #FF6333;
+    --venafi-white: #FFFFFF;
+    /* Venafi Accent */
+    --venafi-cloud-blue: #F2F3F8;
+    --venafi-blue-gray: #CFD3E6;
+    --venafi-periwinkle: #8589E3;
+    --venafi-gold: #FBB615;
+    --venafi-red: #FF3333;
+    --venafi-neutral-black: #1F1F23;
+    /* action default text */
+    --action-default-text: #4D97FF;
+    --action-hover-text: #3972C0;
+    --action-active-text: #264B80;
+    --action-disabled-text: #9CA7B2
+}
+
+:root>* {
+    --md-footer-bg-color: var(--venafi-indigo);
+    --md-footer-fg-color: var(--venafi-white);
+    --md-footer-bg-color--dark: var(--venafi-neutral-black);
+    --md-code-hl-color: rgb(95 0 199 / 10%);
+}

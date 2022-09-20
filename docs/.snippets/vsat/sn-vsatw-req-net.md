@@ -1,0 +1,1 @@
+{{ms}} .NET Framework 4.7.0 or higher
