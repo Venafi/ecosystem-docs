@@ -3,3 +3,4 @@ site_url: https://venafi-ecosystem.github.io/design-patterns-dev/
 nav:
     - Home: index.md
     - About: about.md
+    - Writing Adaptable Drivers: writing-adaptable-drivers.md
