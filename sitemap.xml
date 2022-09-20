@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/</loc>
-         <lastmod>2022-09-16</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/about/</loc>
-         <lastmod>2022-09-16</lastmod>
+         <lastmod>2022-09-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi-ecosystem.github.io/design-patterns-dev/submitting-your-adaptable-driver/</loc>
+         <lastmod>2022-09-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi-ecosystem.github.io/design-patterns-dev/writing-adaptable-drivers/</loc>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
