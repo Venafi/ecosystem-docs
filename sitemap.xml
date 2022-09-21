@@ -2,752 +2,752 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/about/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/_FAQ-Troubleshooting/KnownIssues/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/_FAQ-Troubleshooting/Troubleshooting/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/adaptable/about-adaptable/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/adaptable/submitting-your-adaptable-driver/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/adaptable/writing-adaptable-drivers/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/about-api-search-fields/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/about-api-search-operators/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/api-setup/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/certificate-management-via-api/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/certificate-search-via-api/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/checking-certificate-status/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/components-of-api-search/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/creating-an-application-api/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/downloading-a-certificate/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/downloading-a-keystore/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/general-workflow-for-vaas-developers/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/get-a-certificate-using-csr/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/getting-certificate-issuing-rules-template/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/getting-certificate-request-policy-api/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/importing-certificate-via-api/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/listing-applications/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/listing-issuing-templates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/listing-server-type-keystore-information-api/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/obtaining-api-key/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/renewing-a-certificate-api/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/requesting-certificate-using-automated-secure-keypair/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/searching-for-ceritifates-by-name/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/searching-for-certificates-fingerprint/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/searching-for-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/searching-for-expiring-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/api/vaas-rest-api/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/cco-Integrations-Overview/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/t-integrations-project-details-viewing/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/kubernetes/c-Kubernetes-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/kubernetes/cco-Kubernetes-integration-about/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/kubernetes/t-Kubernetes-configuring/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/openstack/c-Openstack-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/red-hat/cco-RedHat-about/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/terraform/c-DevOps-Terraform-integration-about/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/vault-venafi-monitor-engine/cco-Vault-Monitor-Engine-about/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/vault-venafi-secrets-engine/c-Vault-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/vault-venafi-secrets-engine/cco_Vault-integration-about/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/vcert/c-vCert-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/vcert/t-Cloud-vcert-generate-csr/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/integrations/vcert/t-Cloud-vcert-request-cert/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/about-managing-vaas-account/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/about-vaas/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/account/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/c-validating-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/set-up-email-notifications/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/system-requirements/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/t-validating-certs-manually-using-ValidateNow/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/t-validating-certs-using-ValidateNow-to-discover-installations/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/t-validating-certs-viewing-status/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/third-party-integrations/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/application/assign-an-issuing-template-to-application/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/application/assign-or-reassign-certificate-to-application/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/application/creating-an-application/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/application/edit-or-delete-application/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/application/invite-users/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/automated-secure-keypair/using-automated-secure-keypair-to-request-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/automated-secure-keypair/what-is-automated-secure-keypair/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/about-certificate-installations/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/downloading-certificates-and-keystores/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/finding-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/managing-discovered-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/renewing-a-certificate/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/requesting-downloading-installing-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/requesting-viewing-certificate/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/retiring-recovering-certificate/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/saving-certificate-filters/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/using-filters-to-find-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/viewing-failed-pending-csrs/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adcs-introduction/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adding-a-certificate-authority/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adding-acme-ca/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adding-digicert-ca/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adding-entrust-ca/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adding-globalsign-ca/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adding-globalsign-mssl-ca/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adding-letsencrypt-ca/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/adding-ztpki-ca/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/issuing-certificates-with-microsoft-adcs/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/setting-up-adcs/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/working-with-built-in-ca-account/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/certificates/ca/working-with-trusted-ca-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/dashboard/t-cloud-predict-dashboard/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/c-Cloud-Discovering-Private-Internal-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/c-Cloud-about-Scanafi/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/c-Cloud-discovery-service/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/gs-Cloud-Discovery/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/t-Cloud-domain-external/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/t-Cloud_Scanafi_config_command_line/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/t-discovery-create-Basic-discovery/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/t-discovery-create-Enhanced-discovery/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/discovery/tr-Scanafi-troubleshooting/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/issuing-templates/c-templates-using-advanced-rules-regex/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/issuing-templates/certificate-issuing-templates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/issuing-templates/creating-a-certificate-issuing-template/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/issuing-templates/defining-recommended-settings-for-an-issuing-template/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/issuing-templates/t-Cloud-issuing-templates-edit-delete-OP/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/logging/c-about-activity-logging/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/logging/c-logging-export/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/logging/t-create-apply-activityLogging-filter/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/machines/create-a-new-machine/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/machines/provision-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vaas/user-management/about-user-roles/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/about-sso-integrations/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/about-vaas-teams/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/configuring-MS-ADFS-sso-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/configuring-auth0-sso-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/configuring-azure-ad-sso-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/configuring-okta-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/configuring-pingone-integration/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/configuring-vaas-with-sso/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/creating-new-teams/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vcs-platform/enabling-disabling-local-account-login/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/c-VSatellite-LastVSat-deleting-implications/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/c-VSatellite-Management-about/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/c-VSatellite-howItWorks/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/r-VSatellite-deployNew/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/renaming-a-vsatellite/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/t-VSatellite-delete/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/t-VSatellite-deployNew-SpecialConsiderations/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/t-VSatellite-deployNew/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/t-VSatellite-managing/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/t-VSatellite-monitoring/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/dek/backing-up-the-data-encryption-key/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/dek/c-VSatellite-BackupRestore-about/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/dek/restoring-the-data-encryption-key/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/vsatellite/dek/what-is-the-data-encryption-key-dek/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/dashboard/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/discovery-1-basicDisco/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/discovery-2-enhancedDisco/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/discovery-3-InternetDisco/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/discovery/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/inventory-certificate-installations/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/inventory-certificate-requests/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/inventory-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/inventory-trustedCA-certificates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/settings-certificate-authorities/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/settings-event-logs/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/settings-issuing-templates/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/settings-platform/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/settings-teams/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/settings-users/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://venafi-ecosystem.github.io/design-patterns-dev/walkme/settings-vsatellite/</loc>
-         <lastmod>2022-09-20</lastmod>
+         <lastmod>2022-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
