@@ -8,7 +8,7 @@
 site_name: Venafi Ecosystem - Developer Design Patterns
 site_author: Venafi
 site_description: Design patterns for developers using Venafi
-site_url: https://venafi-ecosystem.github.io/design-patterns-dev/
+site_url: https://venafi-ecosystem.github.io/design-patterns/
 
 #Copyright
 copyright: Copyright &copy; 2021-2022 Venafi

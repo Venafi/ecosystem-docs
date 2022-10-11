@@ -1,1 +1,6 @@
-# design-patterns-dev
+# design-patterns
+
+Run using:
+```
+mkdocs serve
+```
