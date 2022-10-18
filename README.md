@@ -7,5 +7,5 @@ mkdocs serve
 
 Promote to `gh-pages` branch using:
 ```
-mkdocs publish
+mkdocs gh-deploy
 ```
