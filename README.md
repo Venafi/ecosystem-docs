@@ -1,4 +1,4 @@
-# design-patterns
+# docs
 
 Run locally using:
 ```
