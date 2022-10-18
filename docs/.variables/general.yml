@@ -13,8 +13,7 @@
 # navigation. Avoid using variables in headers
 
 extra:
-  adcs:       AD CS
-  adcsfull:   Microsoft Active Directory Certificate Services
+  adcs:   Microsoft Active Directory Certificate Services
   ask:        Automated Secure Keypair
   da:         DevOpsACCELERATE
   dc:         DigiCert
@@ -29,8 +28,8 @@ extra:
   rolesSA:    System Administrator
   vcert:      VCert
   ven:        Venafi
-  vs:         Venafi as a Service
+  tlspc:      TLS Protect Cloud
+  tlspd:      TLS Protect Datacenter
   vsat:       VSatellite
   vsatw:      VSatellite Worker
-  vsl:        Venafi as a Service&#8482;
   ztpki:      Venafi Zero Touch PKI
