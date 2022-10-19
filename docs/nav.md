@@ -24,7 +24,6 @@ search:
     - [For Funded Developers](#)
 - Testing Ground
     - [Diagrams](testing-ground/testing-diagrams.md)
-    - [Embedding](testing-ground/testing-embeds.md)
-
-
-
+    - Embedding
+        - [Inline Embedding](testing-ground/testing-inline-embeds.md)
+        - [Full Page Embedding](testing-ground/testing-fullpage-embeds.md)
