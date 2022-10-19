@@ -41,7 +41,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/testing-ground/testing-embeds/</loc>
+         <loc>https://venafi-ecosystem.github.io/docs/testing-ground/testing-fullpage-embeds/</loc>
+         <lastmod>2022-10-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi-ecosystem.github.io/docs/testing-ground/testing-inline-embeds/</loc>
          <lastmod>2022-10-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
