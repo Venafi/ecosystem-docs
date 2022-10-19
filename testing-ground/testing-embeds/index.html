@@ -12,14 +12,14 @@
         <meta name="author" content="Venafi">
       
       
-        <link rel="canonical" href="https://venafi-ecosystem.github.io/docs/_FAQ-Troubleshooting/Troubleshooting/">
+        <link rel="canonical" href="https://venafi-ecosystem.github.io/docs/testing-ground/testing-embeds/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
-        <title>Troubleshooting - Ecosystem</title>
+        <title>Embedding - Ecosystem</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#troubleshooting" class="md-skip">
+        <a href="#embedding-things" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Troubleshooting
+              Embedding
             
           </span>
         </div>
@@ -274,13 +274,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../testing-ground/testing-diagrams/" class="md-tabs__link">
+      <a href="../testing-diagrams/" class="md-tabs__link md-tabs__link--active">
         Testing Ground
       </a>
     </li>
@@ -752,12 +754,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -780,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing-ground/testing-diagrams/" class="md-nav__link">
+      <a href="../testing-diagrams/" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -792,11 +796,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../testing-ground/testing-embeds/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Embedding
       </a>
+      
     </li>
   
 
@@ -830,21 +844,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#vsatellites" class="md-nav__link">
-    VSatellites
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -858,27 +857,13 @@
                   
 
 
-<h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
-<p>Need help solving a perplexing issue? We're listening to you and creating workarounds for troubleshooting the most common issues.</p>
-<p>Please check back here regularly for new content. If something's missing, please <a href="mailto:documentationfeedback@venafi.com">send us your feedback</a> and we'll get on it!</p>
-<h2 id="vsatellites">VSatellites<a class="headerlink" href="#vsatellites" title="Permanent link">&para;</a></h2>
-<h3 id="one-or-more-of-my-vsatellites-appear-to-have-lost-connection">One or more of my VSatellites appear to have lost connection.<a class="headerlink" href="#one-or-more-of-my-vsatellites-appear-to-have-lost-connection" title="Permanent link">&para;</a></h3>
-<p>Lost VSatellite connections occur most often because of a network failure between VSatellite and {{ vsl }}. </p>
-<p>Try the following methods to troubleshoot a potentially disconnected VSatellite:</p>
-<ol>
-<li>Verify that the machine that's hosting VSatellite is up and running.</li>
-<li>Verify that there's network connectivity between that VSatellite machine and {{ vs }}:<ul>
-<li>Make sure that port 443 isn't blocked on the VSatellite machine.</li>
-<li>Verify that the VSatellite is able to reach <a href="https://vsat-gw.venafi.cloud:9443">https://vsat-gw.venafi.cloud:9443</a></li>
-</ul>
-</li>
-<li>If at this point a VSatellite continues to lose connection, <a href="../vsatellite/t-VSatellite-delete.md">uninstall</a> and then <a href="../vsatellite/t-VSatellite-deployNew.md">reinstall</a> the VSatellite.</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Changing the IP address on the (physical or virtual) machine where you're hosting VSatellites can also cause the VSatellite to fail. For more information, see the related <a href="../KnownIssues/">known issue</a>.</p>
-</div>
-<p>If you continue to have issues, please contact <a href="https://support.venafi.com/hc/en-us">Venafi Technical Support</a>.</p>
+<h1 id="embedding-things">Embedding Things<a class="headerlink" href="#embedding-things" title="Permanent link">&para;</a></h1>
+<!-- Needs lots of formatting work to make it readable. Easier, for now, to use Paperform "popups". -->
+
+<!-- <div data-paperform-id="venafi-dev-onboarding"></div><script>(function() {var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js"; document.body.appendChild(script); })()</script> -->
+
+<p><a href data-paperform-id="venafi-dev-onboarding" data-popup-button="1" target="_top">Click me to show the form!</a></p>
+<script>(function() { var script = document.createElement('script'); script.src = "https://paperform.co/__embed.min.js";document.body.appendChild(script); })()</script>
 
 
 
@@ -894,6 +879,23 @@
       </main>
       
     <footer class="md-footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+         
+        <a href="../testing-diagrams/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Diagrams" rel="prev">
+            <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+                <div class="md-ellipsis">
+                    <span class="md-footer__direction">
+                  Previous
+                </span> Diagrams
+                </div>
+            </div>
+        </a>
+         
+    </nav>
     
     <div class="md-footer-meta md-typeset">
         <div class="md-footer-meta__inner md-grid">
