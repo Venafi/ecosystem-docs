@@ -22,6 +22,9 @@ search:
     - [Overview: Engagement](engagement/overview-engagement.md)
     - [For Solution Architects](#)
     - [For Funded Developers](#)
+- Testing Ground
+    - [Diagrams](testing-ground/testing-diagrams.md)
+    - [Embedding](testing-ground/testing-embeds.md)
 
 
 
