@@ -6,13 +6,14 @@ search:
 - [Home](index.md)
 - Developer Design Patterns
     - For Service Mesh
-        - [Overview: Service Mesh](design-patterns/for-service-mesh/overview-service-mesh.md)
-        - [Bar](#)
+        - [Overview](design-patterns/for-service-mesh/overview-service-mesh.md)
+        - [Considerations](design-patterns/for-service-mesh/considerations-service-mesh.md)
     - For Automation Tooling
-        - [Overview: Automation Tooling](#)
+        - [Overview](#)
 - Tools
     - For Developers
         - [VCert](tools/vcert/overview-vcert.md)
+        - [APIs](tools/api/overview-api.md)
         - [Adaptable Framework](tools/adaptable-framework/overview-adaptable-framework.md)
             - [Writing Adaptable Drivers](tools/adaptable-framework/writing-adaptable-drivers.md)
             - [Submitting/Updating Adaptable Drivers](tools/adaptable-framework/submitting-your-adaptable-driver.md)
