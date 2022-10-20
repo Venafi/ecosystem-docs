@@ -10,6 +10,10 @@ search:
         - [Considerations](design-patterns/for-service-mesh/considerations-service-mesh.md)
     - For Automation Tooling
         - [Overview](#)
+    - For Ingress
+        - [Overview](design-patterns/for-ingress/overview-ingress.md)
+    - For Hardware Security Module (HSM)
+        - [Overview](design-patterns/for-hsm/overview-hsm.md)
 - Tools
     - For Developers
         - [VCert](tools/vcert/overview-vcert.md)
