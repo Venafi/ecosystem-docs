@@ -85,7 +85,12 @@ markdown_extensions:
     pymdownx.details: {}        # Enables expandable sections https://facelessuser.github.io/pymdown-extensions/extensions/details/
     pymdownx.tabbed:         # Enables tabs https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
       alternate_style: true
-    pymdownx.superfences: {}    # Allows code samples to be nested in tabs https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
+    pymdownx.superfences: 
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        # Allows code samples to be nested in tabs https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
     pymdownx.magiclink: {}      # Automatically links websites and email addresses https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
     pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
