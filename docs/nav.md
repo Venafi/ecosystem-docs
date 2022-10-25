@@ -12,6 +12,11 @@ search:
         - [Overview](#)
     - For Ingress
         - [Overview](design-patterns/for-ingress/overview-ingress.md)
+    - For TLS Termination
+        - [Overview](design-patterns/for-tls-termination/overview-tls-termination.md)
+        - [Considerations](design-patterns/for-tls-termination/considerations-tls-termination.md)
+    - For TLS Inspection
+        - [Overview](design-patterns/for-tls-inspection/overview-tls-inspection.md)
     - For Hardware Security Module (HSM)
         - [Overview](design-patterns/for-hsm/overview-hsm.md)
 - Tools
