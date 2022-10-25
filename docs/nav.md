@@ -19,9 +19,17 @@ search:
     - For Business Leaders
         - [SOMETHING FOR BUSINESS LEADERS](#)
 - Engagement
-    - [Overview: Engagement](engagement/overview-engagement.md)
-    - [For Solution Architects](#)
-    - [For Funded Developers](#)
+    - [How to Engage](engagement/how-to-engage.md)
+        - [For Solution Architects](engagement/solution-architects.md)
+        - [For Funded Developers](engagement/funded-developers.md)
+        - [For Existing or Prospective Customers](engagement/customers.md)
+        - [Have an Interest to Partner and Develop](engagement/prospective-developers.md)
+            - [Development Fund Program](programs/devfund.md)
+            - [General Inquiry](engagement/general-inquiry.md)
+- Manifesto
+    - [Core Statement](manifesto/statements.md)
+    - [Operating Principles](manifesto/operating-principles.md)
+- [Marketplace](https://marketplace.venafi.com/)
 
 
 
