@@ -13,13 +13,15 @@
 # navigation. Avoid using variables in headers
 
 extra:
-  adcs:   Microsoft Active Directory Certificate Services
+  adcs:       Microsoft Active Directory Certificate Services
   ask:        Automated Secure Keypair
   da:         DevOpsACCELERATE
   dc:         DigiCert
   ent:        Entrust
   gs:         GlobalSign
   hid:        HydrantID
+  mids:       machine identities
+  mim:        Machine Identity Management
   ms:         Microsoft
   op:         OutagePREDICT
   rolesG:     Guest
