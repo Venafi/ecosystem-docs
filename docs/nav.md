@@ -6,13 +6,18 @@ search:
 - [Home](index.md)
 - Developer Design Patterns
     - For Service Mesh
-        - [Overview: Service Mesh](design-patterns/for-service-mesh/overview-service-mesh.md)
-        - [Bar](#)
+        - [Overview](design-patterns/for-service-mesh/overview-service-mesh.md)
+        - [Considerations](design-patterns/for-service-mesh/considerations-service-mesh.md)
     - For Automation Tooling
-        - [Overview: Automation Tooling](#)
+        - [Overview](#)
+    - For Ingress
+        - [Overview](design-patterns/for-ingress/overview-ingress.md)
+    - For Hardware Security Module (HSM)
+        - [Overview](design-patterns/for-hsm/overview-hsm.md)
 - Tools
     - For Developers
         - [VCert](tools/vcert/overview-vcert.md)
+        - [APIs](tools/api/overview-api.md)
         - [Adaptable Framework](tools/adaptable-framework/overview-adaptable-framework.md)
             - [Writing Adaptable Drivers](tools/adaptable-framework/writing-adaptable-drivers.md)
             - [Submitting/Updating Adaptable Drivers](tools/adaptable-framework/submitting-your-adaptable-driver.md)
@@ -30,6 +35,8 @@ search:
     - [Core Statement](manifesto/statements.md)
     - [Operating Principles](manifesto/operating-principles.md)
 - [Marketplace](https://marketplace.venafi.com/)
-
-
-
+- Testing Ground
+    - [Diagrams](testing-ground/testing-diagrams.md)
+    - Embedding
+        - [Inline Embedding](testing-ground/testing-inline-embeds.md)
+        - [Full Page Embedding](testing-ground/testing-fullpage-embeds.md)

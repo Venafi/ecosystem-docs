@@ -82,20 +82,19 @@ markdown_extensions:
       separator: "-"        # Replace any white space in generated IDs with a dash
       toc_depth: 2          # Two levels on the "On this page" menu
       title: On this page   # Sets the title of the topic toc
-    pymdownx.details: {}        # Enables expandable sections https://facelessuser.github.io/pymdown-extensions/extensions/details/
-    pymdownx.tabbed:         # Enables tabs https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
+    pymdownx.details: {}    # Enables expandable sections https://facelessuser.github.io/pymdown-extensions/extensions/details/
+    pymdownx.tabbed:        # Enables tabs https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
       alternate_style: true
-    pymdownx.superfences: 
+    pymdownx.superfences:     # Allows code samples to be nested in tabs https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
       custom_fences:
-        - name: mermaid
+        - name: mermaid     # Allows rendering of sequence diagrams https://squidfunk.github.io/mkdocs-material/reference/diagrams/
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-        # Allows code samples to be nested in tabs https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
     pymdownx.magiclink: {}      # Automatically links websites and email addresses https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
     pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-    md_in_html: {}              # Allows markdown to be within html elements https://github.com/Python-Markdown/markdown/blob/master/docs/extensions/md_in_html.md
+    md_in_html: {}          # Allows markdown to be within html elements https://github.com/Python-Markdown/markdown/blob/master/docs/extensions/md_in_html.md
 
 plugins:
     search: {}
@@ -155,3 +154,4 @@ plugins:
         CSH_third_party.md:                      vaas/third-party-integrations.md
         CSH_VSat_hosturls_proxyVars.md:          vsatellite/r-VSatellite-deployNew.md
         CSH_export_logging.md:                   vaas/logging/c-logging-export.md
+

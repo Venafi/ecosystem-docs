@@ -1,0 +1,3 @@
+# Overview: Venafi REST APIs
+
+The Venafi {{tlspc}} and {{tlspd}} REST APIs enable developers to seamlessly integrate {{mim}} into other products, platforms and services. Building your solution using Venafi APIs provides an excellent experience for the end user because they don't need to download or install any additional bits - typically they just have to follow a simple configuration process to establish connection between Venafi and the target platform. Once complete, users are able to perform all necessary functions involving machine identities directly from the interfaces and platforms they're already using every day.
