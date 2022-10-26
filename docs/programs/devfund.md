@@ -1,4 +1,4 @@
-Technology is advancing faster than ever before, software development is going faster, innovation is driven to go with a faster speed. To help with **fastsecure** with machine identity management, Venafi established a $12.5 million Development Fund to bring to life new integrated solutions for DevOps, cloud-native, microservices, IoT and beyond. <br>
+Technology is advancing faster than ever before, software development is going faster, innovation is driven to go with a faster speed. To help with **fastsecure** with machine identity management, Venafi established a $12.5 million Development Fund to bring to life new integrated solutions for DevOps, cloud native, microservices, IoT and beyond. <br>
 
 Under the management of Venafi Ecosystem, we seek for innovation that identifies and develops new design patterns, finds new ways of solving problems, and builds new business models.
 
@@ -6,28 +6,14 @@ In addition to traditional parnter Developers, we extend our offer to the follow
 
 
 ### Venafi IndieDevs
-Individual developers make a unique contribution to the open-source community and will provide Venafi customers with cutting edge solutions in the machine identity management space.
+Individual developers make a unique contribution to the open-source community and will provide Venafi customers with cutting edge solutions in the machine identity management space. An indieDev can belong to an organization with the exception of Venafi competitors, but the contract is between Venafi and the individual. 
 
 ### Venafi UniversityDevs
 Venafi has partnered with Oxford University and Carnegie Mellon University to investigate machine identity management innovations and create new open-source solutions.
 
 ## Process
-Replace this with an external graph
+<div id="BED58066764839EECE7278C0D8B6645F61F_69931"><div id="BED58066764839EECE7278C0D8B6645F61F_69931_robot"><a href="https://cloud.smartdraw.com/share.aspx/?pubDocShare=BED58066764839EECE7278C0D8B6645F61F" target="_blank"><img src="https://cloud.smartdraw.com/cloudstorage/BED58066764839EECE7278C0D8B6645F61F/preview2.png"></a></div></div><script src="https://cloud.smartdraw.com/plugins/html/js/sdjswidget_html.js" type="text/javascript"></script><script type="text/javascript">SDJS_Widget("BED58066764839EECE7278C0D8B6645F61F",69931,1,"");</script>
 
-A typical journey for a Developer joining the program is as follows:<br>
-```mermaid
-journey
-    title Funded Developer Journey
-    section Pre-development
-      Legal agreements: 5: Developer, Venafi
-    section Development
-      Deliver solution design: 5: Developer
-      Deliver PoC: 5: Developer
-      Product delivery: 5: Developer
-    section Post-development
-      List on Marketplace: 5: Developer, Venafi
-      GTM: 5: Developer, Venafi
-```
 ## Principles
 1. Venafi **does not dictate** the speed of your progress 
 2. We **do not impose on any timeline** for the completion of each milestone or the project 
