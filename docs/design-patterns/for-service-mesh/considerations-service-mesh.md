@@ -1,6 +1,6 @@
 # Considerations: Service Mesh
 
-.to-do
+<!-- .to-do - Please remove this line when this page is considered "ready" -->
 
 ##### Questions to guide us:
 
