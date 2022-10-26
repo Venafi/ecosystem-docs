@@ -3,9 +3,9 @@
 You can always review the details of the [Development Fund Program](devfund.md). 
 
 ## Milestones and Checkins
-Funded development follows a high level engagement process that allows 
+ A typical journey for a Developer joining the program is organized by a series of milestones and actions.
 
-<insert a picture> 
+<div id="9B655732E9F0B87CAE2F9687FDEDF6BCD81_39845"><div id="9B655732E9F0B87CAE2F9687FDEDF6BCD81_39845_robot"><a href="https://cloud.smartdraw.com/share.aspx/?pubDocShare=9B655732E9F0B87CAE2F9687FDEDF6BCD81" target="_blank"><img src="https://cloud.smartdraw.com/cloudstorage/9B655732E9F0B87CAE2F9687FDEDF6BCD81/preview2.png"></a></div></div><script src="https://cloud.smartdraw.com/plugins/html/js/sdjswidget_html.js" type="text/javascript"></script><script type="text/javascript">SDJS_Widget("9B655732E9F0B87CAE2F9687FDEDF6BCD81",39845,1,"");</script><br/>
 
 Milestone 2: <br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Take this action: [Submit solution design](https://solution-design-devfu.paperform.co)<br>
