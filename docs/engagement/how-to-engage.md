@@ -11,4 +11,3 @@ Venafi Ecosystem provides and maintains the infrastructure, tooling, support for
 * [Existing or Prospective Customers](customers.md)
 
 * [With an interest getting involved](prospective-developers.md)
-
