@@ -2,19 +2,19 @@ Technology is advancing faster than ever before, software development is going f
 
 Under the management of Venafi Ecosystem, we seek for innovation that identifies and develops new design patterns, finds new ways of solving problems, and builds new business models.
 
-In addition to traditional parnter Developers, we extend our offer to the following types of Developers.
+### Developers
+In addition to traditional **parnter Developers**, we extend our offer to the following types of Developers.
 
-
-### Venafi IndieDevs
+#### Venafi IndieDevs
 Individual developers make a unique contribution to the open-source community and will provide Venafi customers with cutting edge solutions in the machine identity management space. An indieDev can belong to an organization with the exception of Venafi competitors, but the contract is between Venafi and the individual. 
 
-### Venafi UniversityDevs
+#### Venafi UniversityDevs
 Venafi has partnered with Oxford University and Carnegie Mellon University to investigate machine identity management innovations and create new open-source solutions.
 
-## Process
+### Process
 <div id="BED58066764839EECE7278C0D8B6645F61F_69931"><div id="BED58066764839EECE7278C0D8B6645F61F_69931_robot"><a href="https://cloud.smartdraw.com/share.aspx/?pubDocShare=BED58066764839EECE7278C0D8B6645F61F" target="_blank"><img src="https://cloud.smartdraw.com/cloudstorage/BED58066764839EECE7278C0D8B6645F61F/preview2.png"></a></div></div><script src="https://cloud.smartdraw.com/plugins/html/js/sdjswidget_html.js" type="text/javascript"></script><script type="text/javascript">SDJS_Widget("BED58066764839EECE7278C0D8B6645F61F",69931,1,"");</script>
 
-## Principles
+### Principles
 1. Venafi **does not dictate** the speed of your progress 
 2. We **do not impose on any timeline** for the completion of each milestone or the project 
 3. We care about the results, the outcome, not your day-to-day process 
@@ -25,5 +25,5 @@ Venafi has partnered with Oxford University and Carnegie Mellon University to in
 8. We invoice if the deliverables meet the above stated standard AND the Venafi team explicitly approves the quality of the deliverables, per the SOE agreement
 <br>
 
-## Developed solutions
+### Developed solutions
 Venafi Ecosystem has successfully sponsored a diverse group of Developers who built innovations that are listed on [Venafi Marketplace](https://marketplace.venafi.com). 
