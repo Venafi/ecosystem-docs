@@ -12,3 +12,5 @@ To become a Developer of Venafi Ecosystem, please check out the following pages 
 ##### [Development Fund Program](devfund.md)
 ##### [General Inquiry](general-inquiry.md)
 
+<br>
+For any other issues, you can send us an [issue report](https://56rebdap.paperform.co). 
