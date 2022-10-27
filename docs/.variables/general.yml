@@ -15,7 +15,7 @@
 extra:
   adcs:       Microsoft Active Directory Certificate Services
   ask:        Automated Secure Keypair
-  ctrl-plane: Control Plane  
+  ctrlplane: Control Plane  
   da:         DevOpsACCELERATE
   dc:         DigiCert
   ent:        Entrust

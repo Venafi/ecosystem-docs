@@ -1,4 +1,4 @@
-Venafi Ecosystem is always welcoming new and past Developers to join and participate in building the future where all machine identties are protected. <br>
+Venafi Ecosystem is always welcoming new and past Developers to join and participate in building the future where all machine identities are protected. <br>
 
 Developers get access to: <br>
 
