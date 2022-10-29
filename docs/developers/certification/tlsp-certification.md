@@ -12,7 +12,7 @@ As a **TLS Protect Cloud Certified** integration, Venafi users have an extra lev
 
     Certification is the only way that an integration will be listed on the Venafi Marketplace as compatible with TLS Protect Cloud. 
 
-![Certify](assets/images/certification/certify-chart.png)
+![Certify](../../assets/images/certification/certify-chart.png)
 
 The TLS Protect Cloud Certification Program is still evolving and so some specifics about the following requirements are subject to change. Ample notice will be given to any developers of an existing certified integration, ensuring plenty of time to make any necessary updates to maintain certification.
 
@@ -30,7 +30,7 @@ The technical certification process is not to be confused with Venafi Partnershi
 
 The final step of the TLS Protect Cloud certification process will be ***Packaging*** - deciding how end users will deploy and interact with your integration. In order for end users to discover the integration and establish a strong user base, the packaging of the integration should be polished and easy to understand. Use of company logos, iconography, product names, marketing copy, etc. will all help users quickly identify your integration in the growing [Venafi Marketplace](https://marketplace.venafi.com). 
 
-![Package](assets/images/certification/package-chart.png)
+![Package](../../assets/images/certification/package-chart.png)
 
 #### **Marketing**
 
