@@ -30,12 +30,12 @@ We think you'll find the following references helpful when developing your solut
 
 #### Glossary
 
-The following terms will be used throughout this design pattern, so familiarizing yourself with how they're used in context may be helpful.
+The following terms will be used throughout this design pattern, so familiarizing yourself with how they're used in the context of this may be helpful.
 
 - **{{mid}}:** X.509 certificate
-- **{{mim}} {{ctrlplane}}:** The holistic platform/service, along with the cultivation & curation of the vast marketplace of solutions, tools & frameworks offered by Venafi and the ecosystem
-- **{{tlspc}}:** Venafi's SaaS offering (formerly known as Venafi as a Service)
-- **{{tlspd}}:** Venafi's Datacenter offering (formerly known as Trust Protection Platform)
+- {% include 'glossary/sn-gloss_control-plane.md' %}
+- {% include 'glossary/sn-gloss_tlspc.md' %}
+- {% include 'glossary/sn-gloss_tlspd.md' %}
 
 #### Relevant Reading
 

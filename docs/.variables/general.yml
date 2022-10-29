@@ -15,15 +15,17 @@
 extra:
   adcs:       Microsoft Active Directory Certificate Services
   ask:        Automated Secure Keypair
-  ctrlplane: Control Plane  
+  ctrlplane:  Control Plane  
   da:         DevOpsACCELERATE
   dc:         DigiCert
   ent:        Entrust
   gs:         GlobalSign
   hid:        HydrantID
   mid:        machine identity
+  midcp:      Machine Identity Management Control Plane
+  Mids:       Machine identities
   mids:       machine identities
-  mim:        Machine Identity Management
+  mim:        machine identity management
   ms:         Microsoft
   op:         OutagePREDICT
   rolesG:     Guest

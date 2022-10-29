@@ -4,21 +4,24 @@ search:
 ---
 
 - [Home](index.md)
-- Developer Design Patterns
-    - For Service Mesh
-        - [Overview](design-patterns/for-service-mesh/overview-service-mesh.md)
-        - [Considerations](design-patterns/for-service-mesh/considerations-service-mesh.md)
-    - For Automation Tooling
-        - [Overview](#)
-    - For Ingress
-        - [Overview](design-patterns/for-ingress/overview-ingress.md)
-    - For TLS Encryption
-        - [Overview](design-patterns/for-tls-encryption/overview-tls-encryption.md)
-        - [Considerations](design-patterns/for-tls-encryption/considerations-tls-encryption.md)
-    - For TLS Inspection
-        - [Overview](design-patterns/for-tls-inspection/overview-tls-inspection.md)
-    - For Hardware Security Module (HSM)
-        - [Overview](design-patterns/for-hsm/overview-hsm.md)
+- Developers
+    - [Welcome](developers/devs-welcome.md)
+    - Design Patterns
+        - For TLS Encryption
+            - [Overview](developers/design-patterns/for-tls-encryption/overview-tls-encryption.md)
+            - [Considerations](developers/design-patterns/for-tls-encryption/considerations-tls-encryption.md)
+        - For Service Mesh
+            - [Overview](developers/design-patterns/for-service-mesh/overview-service-mesh.md)
+            - [Considerations](developers/design-patterns/for-service-mesh/considerations-service-mesh.md)
+        - For Automation Tooling
+            - [Overview](#)
+        - For Ingress
+            - [Overview](developers/design-patterns/for-ingress/overview-ingress.md)
+        - For TLS Inspection
+            - [Overview](developers/design-patterns/for-tls-inspection/overview-tls-inspection.md)
+        - For Hardware Security Module (HSM)
+            - [Overview](developers/design-patterns/for-hsm/overview-hsm.md)
+    - [Solution Certification](developers/certification/tlsp-certification.md)
 - Tools
     - For Developers
         - [VCert](tools/vcert/overview-vcert.md)

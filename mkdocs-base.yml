@@ -25,6 +25,7 @@ theme:
     - search.highlight      # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-highlighting
     - search.suggest        # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
     - search.share          # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-sharing
+    - content.tooltips
   font:                     # Can use any google font.
     text: 'Mulish'
     code: 'Roboto Mono'
@@ -85,6 +86,9 @@ markdown_extensions:
     pymdownx.details: {}    # Enables expandable sections https://facelessuser.github.io/pymdown-extensions/extensions/details/
     pymdownx.tabbed:        # Enables tabs https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
       alternate_style: true
+    pymdownx.snippets:
+      auto_append:
+        - docs/.snippets/glossary.md
     pymdownx.superfences:     # Allows code samples to be nested in tabs https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
       custom_fences:
         - name: mermaid     # Allows rendering of sequence diagrams https://squidfunk.github.io/mkdocs-material/reference/diagrams/
