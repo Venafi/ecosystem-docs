@@ -1,0 +1,1 @@
+**{{mim}} {{ctrlplane}}:** The holistic platform/service, along with the cultivation & curation of the vast marketplace of solutions, tools & frameworks offered by Venafi and the ecosystem

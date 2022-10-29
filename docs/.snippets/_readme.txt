@@ -10,9 +10,9 @@ To include a snippet in a subfolder, use
 
 ---------------------------------
 
-The docs/_snippets folder is defined as an included directory in the
+The docs/.snippets folder is defined as an included directory in the
 mkdocs.yml file with the following:
 
 plugins:
   - macros:                   # https://mkdocs-macros-plugin.readthedocs.io/en/latest/
-      include_dir: docs/_snippets
+      include_dir: docs/.snippets
