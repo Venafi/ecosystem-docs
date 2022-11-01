@@ -1,4 +1,4 @@
-# Overview: VCert
+#  VCert
 
 vCert is a command line utility, SDK, and set of libraries designed to simplify key generation and enrollment of machine identities (also known as SSL/TLS certificates and keys) that comply with enterprise security policy by using Venafi.
 
