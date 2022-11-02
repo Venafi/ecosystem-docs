@@ -4,10 +4,12 @@ The most common use cases for a Venafi solution architect to engage with Ecosyst
 
 <div id="87AB4518CE8EF9E9050DA2F2D6D0FA6A658_18475"><div id="87AB4518CE8EF9E9050DA2F2D6D0FA6A658_18475_robot"><a href="https://cloud.smartdraw.com/share.aspx/?pubDocShare=87AB4518CE8EF9E9050DA2F2D6D0FA6A658" target="_blank"><img src="https://cloud.smartdraw.com/cloudstorage/87AB4518CE8EF9E9050DA2F2D6D0FA6A658/preview2.png"></a></div></div><script src="https://cloud.smartdraw.com/plugins/html/js/sdjswidget_html.js" type="text/javascript"></script><script type="text/javascript">SDJS_Widget("87AB4518CE8EF9E9050DA2F2D6D0FA6A658",18475,1,"");</script>
 
-**Use Case 2**: Your account asks for a solution with another technology provider] --> B[Go to marketplace.venafi.com and search for the technology in question.
+**Use Case 2**: Your account asks for a solution with another technology provider.
+
 <div id="7185B949950008F19DA4ACA90FE1B6ED1AC_82060"><div id="7185B949950008F19DA4ACA90FE1B6ED1AC_82060_robot"><a href="https://cloud.smartdraw.com/share.aspx/?pubDocShare=7185B949950008F19DA4ACA90FE1B6ED1AC" target="_blank"><img src="https://cloud.smartdraw.com/cloudstorage/7185B949950008F19DA4ACA90FE1B6ED1AC/preview2.png"></a></div></div><script src="https://cloud.smartdraw.com/plugins/html/js/sdjswidget_html.js" type="text/javascript"></script><script type="text/javascript">SDJS_Widget("7185B949950008F19DA4ACA90FE1B6ED1AC",82060,1,"");</script>
 
 **Use Case 3**: You have a suggestion and a nice idea for an integration with a technology.
+
 <div id="B26093C26798F7CDC8B77F0487DC4FF8814_55105"><div id="B26093C26798F7CDC8B77F0487DC4FF8814_55105_robot"><a href="https://cloud.smartdraw.com/share.aspx/?pubDocShare=B26093C26798F7CDC8B77F0487DC4FF8814" target="_blank"><img src="https://cloud.smartdraw.com/cloudstorage/B26093C26798F7CDC8B77F0487DC4FF8814/preview2.png"></a></div></div><script src="https://cloud.smartdraw.com/plugins/html/js/sdjswidget_html.js" type="text/javascript"></script><script type="text/javascript">SDJS_Widget("B26093C26798F7CDC8B77F0487DC4FF8814",55105,1,"");</script>
 
 For any other issues, you can send us an [issue report](https://56rebdap.paperform.co). 
