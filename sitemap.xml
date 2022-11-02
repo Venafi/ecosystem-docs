@@ -1,73 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/about/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/about/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2022-10-19</lastmod>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/_FAQ-Troubleshooting/KnownIssues/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/_FAQ-Troubleshooting/KnownIssues/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/_FAQ-Troubleshooting/Troubleshooting/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/_FAQ-Troubleshooting/Troubleshooting/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/design-patterns/for-service-mesh/overview-service-mesh/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/devs-welcome/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/engagement/overview-engagement/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/certification/tlsp-certification/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/testing-ground/testing-diagrams/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/design-patterns/general-guidelines/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/testing-ground/testing-fullpage-embeds/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/design-patterns/getting-started-ingress/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/testing-ground/testing-inline-embeds/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/design-patterns/for-hsm/overview-hsm/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/tools/adaptable-framework/overview-adaptable-framework/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/design-patterns/for-ingress/overview-ingress/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/tools/adaptable-framework/submitting-your-adaptable-driver/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/design-patterns/for-service-mesh/considerations-service-mesh/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/tools/adaptable-framework/writing-adaptable-drivers/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/design-patterns/for-service-mesh/overview-service-mesh/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://venafi-ecosystem.github.io/docs/tools/vcert/overview-vcert/</loc>
-         <lastmod>2022-10-19</lastmod>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/design-patterns/for-tls-encryption/getting-started-tls-encryption/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/developers/design-patterns/for-tls-encryption/overview-tls-encryption/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/engagement/customers/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/engagement/funded-developers/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/engagement/general-inquiry/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/engagement/how-to-engage/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/engagement/new-use-case/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/engagement/prospective-developers/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/engagement/solution-architects/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/manifesto/operating-principles/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/manifesto/statements/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/programs/devfund/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/testing-ground/testing-diagrams/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/testing-ground/testing-fullpage-embeds/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/testing-ground/testing-inline-embeds/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/tools/adaptable-framework/overview-adaptable-framework/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/tools/adaptable-framework/submitting-your-adaptable-driver/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/tools/adaptable-framework/writing-adaptable-drivers/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/tools/api/overview-api/</loc>
+         <lastmod>2022-11-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://venafi.github.io/ecosystem-docs/tools/vcert/overview-vcert/</loc>
+         <lastmod>2022-11-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
