@@ -3,4 +3,5 @@
 *[TLS Protect Cloud]: Venafi's SaaS offering (formerly known as Venafi as a Service)
 *[TLS Protect Datacenter]: Venafi's Datacenter offering (formerly known as Trust Protection Platform)
 *[workloads]: A process or any location where compute resources are consumed
-*[Ingress Controller]: specialized load balancers for Kubernetes and other containerized environments
+*[Ingress Controller]: Dpecialized load balancers for Kubernetes and other containerized environments
+*[Cloud WAF]: An as-a-service Web Application Firewall

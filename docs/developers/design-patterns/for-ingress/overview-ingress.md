@@ -39,7 +39,7 @@ So TLS is now a mandatory requirement and, henceforth, we all need to concern ou
 There is a strong argument to suggest that developers should keep [non-functional requirements](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples) such a data security outside their codebase.
 One of the benefits of placing a proxy, such as those under the control of an ingress controller, between your workload and the world beyond is that developers can isolate important aspects of software delivery and focus solely on business requirements.
 
-## Considerations
+## Requirements and Considerations
 
 TODO ...
 
@@ -56,16 +56,14 @@ TODO ...
     {% include 'best-solutions-common.md' %}
     - Renewal of a {{mid}} should not cause downtime -->
 
-### Primers
+## Primers
 We think you'll find the following references helpful when developing your solution. 
 *If you've found other articles or tools that you think should be included here, please let us know!**
 <!-- .to-do: insert a way for users to let us know. Maybe a simple mailto: link will work for now, or do we suggest they update the page themselves and make a pull request? -->
 
-#### Relevant Reading
-
 - [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
-### Success Stories
+## Success Stories
 
 Existing solutions that fit within this pattern:
 
