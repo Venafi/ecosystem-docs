@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://ecosystem.venafi.com/</loc>
+         <loc>http://ecosystem.venafi.com/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/about/</loc>
+         <loc>http://ecosystem.venafi.com/about/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -16,162 +16,162 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/_FAQ-Troubleshooting/KnownIssues/</loc>
+         <loc>http://ecosystem.venafi.com/_FAQ-Troubleshooting/KnownIssues/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/_FAQ-Troubleshooting/Troubleshooting/</loc>
+         <loc>http://ecosystem.venafi.com/_FAQ-Troubleshooting/Troubleshooting/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/devs-welcome/</loc>
+         <loc>http://ecosystem.venafi.com/developers/devs-welcome/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/certification/tlsp-certification/</loc>
+         <loc>http://ecosystem.venafi.com/developers/certification/tlsp-certification/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/general-guidelines/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/general-guidelines/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-cloud-waf/cloud-waf-getting-started/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-cloud-waf/cloud-waf-getting-started/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-cloud-waf/cloud-waf-overview/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-cloud-waf/cloud-waf-overview/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-hsm/overview-hsm/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-hsm/overview-hsm/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-ingress/getting-started-ingress/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-ingress/getting-started-ingress/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-ingress/overview-ingress/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-ingress/overview-ingress/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-service-mesh/getting-started-service-mesh/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-service-mesh/getting-started-service-mesh/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-service-mesh/overview-service-mesh/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-service-mesh/overview-service-mesh/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-tls-encryption/getting-started-tls-encryption/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-tls-encryption/getting-started-tls-encryption/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/developers/design-patterns/for-tls-encryption/overview-tls-encryption/</loc>
+         <loc>http://ecosystem.venafi.com/developers/design-patterns/for-tls-encryption/overview-tls-encryption/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/engagement/customers/</loc>
+         <loc>http://ecosystem.venafi.com/engagement/customers/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/engagement/funded-developers/</loc>
+         <loc>http://ecosystem.venafi.com/engagement/funded-developers/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/engagement/general-inquiry/</loc>
+         <loc>http://ecosystem.venafi.com/engagement/general-inquiry/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/engagement/how-to-engage/</loc>
+         <loc>http://ecosystem.venafi.com/engagement/how-to-engage/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/engagement/new-use-case/</loc>
+         <loc>http://ecosystem.venafi.com/engagement/new-use-case/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/engagement/prospective-developers/</loc>
+         <loc>http://ecosystem.venafi.com/engagement/prospective-developers/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/engagement/solution-architects/</loc>
+         <loc>http://ecosystem.venafi.com/engagement/solution-architects/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/manifesto/operating-principles/</loc>
+         <loc>http://ecosystem.venafi.com/manifesto/operating-principles/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/manifesto/statements/</loc>
+         <loc>http://ecosystem.venafi.com/manifesto/statements/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/programs/devfund/</loc>
+         <loc>http://ecosystem.venafi.com/programs/devfund/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/testing-ground/testing-diagrams/</loc>
+         <loc>http://ecosystem.venafi.com/testing-ground/testing-diagrams/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/testing-ground/testing-fullpage-embeds/</loc>
+         <loc>http://ecosystem.venafi.com/testing-ground/testing-fullpage-embeds/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/testing-ground/testing-inline-embeds/</loc>
+         <loc>http://ecosystem.venafi.com/testing-ground/testing-inline-embeds/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/tools/adaptable-framework/overview-adaptable-framework/</loc>
+         <loc>http://ecosystem.venafi.com/tools/adaptable-framework/overview-adaptable-framework/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/tools/adaptable-framework/submitting-your-adaptable-driver/</loc>
+         <loc>http://ecosystem.venafi.com/tools/adaptable-framework/submitting-your-adaptable-driver/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/tools/adaptable-framework/writing-adaptable-drivers/</loc>
+         <loc>http://ecosystem.venafi.com/tools/adaptable-framework/writing-adaptable-drivers/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/tools/api/overview-api/</loc>
+         <loc>http://ecosystem.venafi.com/tools/api/overview-api/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ecosystem.venafi.com/tools/vcert/overview-vcert/</loc>
+         <loc>http://ecosystem.venafi.com/tools/vcert/overview-vcert/</loc>
          <lastmod>2022-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
