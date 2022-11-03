@@ -7,14 +7,17 @@ search:
 - Developers
     - [Welcome](developers/devs-welcome.md)
     - Design Patterns
-        - For Ingress
-            - [Overview](developers/design-patterns/for-ingress/overview-ingress.md)
-            - [Getting Started](developers/design-patterns/getting-started-ingress.md)
-        - For Service Mesh
-            - [Overview](developers/design-patterns/for-service-mesh/overview-service-mesh.md)
-            - [Considerations](developers/design-patterns/for-service-mesh/considerations-service-mesh.md)
         - For Automation Tooling
             - [Overview](#)
+        - For Cloud WAF
+            - [Overview](developers/design-patterns/for-cloud-waf/cloud-waf-overview.md)
+            - [Getting Started](developers/design-patterns/for-cloud-waf/cloud-waf-getting-started.md)
+        - For Ingress
+            - [Overview](developers/design-patterns/for-ingress/overview-ingress.md)
+            - [Getting Started](developers/design-patterns/for-ingress/getting-started-ingress.md)
+        - For Service Mesh
+            - [Overview](developers/design-patterns/for-service-mesh/overview-service-mesh.md)
+            - [Getting Started](developers/design-patterns/for-service-mesh/getting-started-service-mesh.md)
         - For TLS Inspection
             - [Overview](developers/design-patterns/for-tls-inspection/overview-tls-inspection.md)
         - For Hardware Security Module (HSM)
