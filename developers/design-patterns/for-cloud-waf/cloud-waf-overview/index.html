@@ -12,7 +12,7 @@
         <meta name="author" content="Venafi">
       
       
-        <link rel="canonical" href="https://ecosystem.venafi.com/developers/design-patterns/for-service-mesh/overview-service-mesh/">
+        <link rel="canonical" href="https://ecosystem.venafi.com/developers/design-patterns/for-cloud-waf/cloud-waf-overview/">
       
       <link rel="icon" href="../../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#service-mesh" class="md-skip">
+        <a href="#cloud-waf" class="md-skip">
           Skip to content
         </a>
       
@@ -479,12 +479,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" type="checkbox" id="__nav_2_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" type="checkbox" id="__nav_2_2_2" checked>
       
       
       
@@ -505,11 +507,75 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../for-cloud-waf/cloud-waf-overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Overview
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-considerations" class="md-nav__link">
+    Requirements and Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primers" class="md-nav__link">
+    Primers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-stories" class="md-nav__link">
+    Success Stories
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -521,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../for-cloud-waf/cloud-waf-getting-started/" class="md-nav__link">
+      <a href="../cloud-waf-getting-started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -601,14 +667,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_4" type="checkbox" id="__nav_2_2_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_4" type="checkbox" id="__nav_2_2_4" >
       
       
       
@@ -629,21 +693,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../for-service-mesh/overview-service-mesh/" class="md-nav__link">
         Overview
       </a>
-      
     </li>
   
 
@@ -655,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started-service-mesh/" class="md-nav__link">
+      <a href="../../for-service-mesh/getting-started-service-mesh/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -1390,6 +1444,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-considerations" class="md-nav__link">
+    Requirements and Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primers" class="md-nav__link">
+    Primers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-stories" class="md-nav__link">
+    Success Stories
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1403,14 +1493,75 @@
                   
 
 
-<h1 id="service-mesh">Service Mesh<a class="headerlink" href="#service-mesh" title="Permanent link">&para;</a></h1>
-<!-- .to-do - Please remove this line when this page is considered "ready" -->
+<h1 id="cloud-waf">Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr><a class="headerlink" href="#cloud-waf" title="Permanent link">&para;</a></h1>
+<p><strong>Web Application Firewalls (WAFs) help protect web applications by monitoring and filtering traffic between the app and the internet.</strong></p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Organizations use machine identities to secure traffic to and from their <abbr title="A process or any location where compute resources are consumed">workloads</abbr> using Transport Layer Security (TLS) with HTTPS being the most common use case.</p>
+<p>Sometimes those machine identities are installed at the application endpoint, itself (i.e. source code). 
+Other times, they may be installed on a load balancer, proxy or, in this case, a Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.</p>
+<p>Before you begin, it's important to understand the "whats" and "whys" of <em>Cloud WAFs</em>. </p>
+<h3 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">&para;</a></h3>
+<p>A <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> is a type of reverse proxy which protects the application itself from vulnerabilities caused by malicious activity.
+WAFs use machine identities in one of two ways:</p>
+<ul>
+<li>Securing traffic to the admin interface of the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> itself</li>
+<li>Securing traffic to the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></li>
+</ul>
+<p>Regardless of the purpose, proper management of those machine identities are critical to the availability and security of the workload.
+When active machine identities expire or become unavailable, outages happen.</p>
+<details class="danger">
+<summary>Outages</summary>
+<p>Workloads can become unavailable for many reasons and any such event can be described as an <strong>outage</strong>.</p>
+<p>When you choose to secure your <abbr title="A process or any location where compute resources are consumed">workloads</abbr>, you introduce an additional failure point, specifically the <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> itself.
+This is because machine identities expire and it is your responsibility to handle these scenarios.
+A likely outcome of failing to mitigate against outages is negative impact to brand reputation and lost revenue.</p>
+<p>Automation using the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> is a key defense against outages. </p>
+</details>
+<h4 id="securing-traffic-to-the-admin-interface-of-the-waf-itself">Securing traffic to the admin interface of the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> itself<a class="headerlink" href="#securing-traffic-to-the-admin-interface-of-the-waf-itself" title="Permanent link">&para;</a></h4>
+<p>While WAFs don't typically protect the traffic to their own administration interfaces in the same way they do for managed applications, ensuring that administrator traffic is encrypted with an enterprise-trusted <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is just as important.
+If that traffic is not secured, admin credentials are at risk of leaking.
+If operations involving the <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> are not automated, admins can experience outages when logging in to make changes.
+This could potentially present a cascading effect if they are investigating an ongoing threat or mitigating an issue.</p>
+<h4 id="securing-traffic-to-the-applications-being-managed-by-the-waf">Securing traffic to the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr><a class="headerlink" href="#securing-traffic-to-the-applications-being-managed-by-the-waf" title="Permanent link">&para;</a></h4>
+<p>This design pattern focuses on the use case of orchestrating the delivery of machine identities to the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>, as well as automating any configuration necessary to <em>activate</em> or <em>associate</em> those machine identities to target applications being secured by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.</p>
+<p><strong>The best solutions will require as little, if any at all, human interaction as possible after initial configuration.</strong></p>
+<h3 id="why-is-machine-identity-automation-necessary">Why is <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation necessary?<a class="headerlink" href="#why-is-machine-identity-automation-necessary" title="Permanent link">&para;</a></h3>
+<h2 id="requirements-and-considerations">Requirements and Considerations<a class="headerlink" href="#requirements-and-considerations" title="Permanent link">&para;</a></h2>
+<!-- ##### Questions to guide us:
+
+- What are the absolute **required capabilities**? (MVP)
+    1. Ability to use a machine identity, an X.509 Certificate in this case, to secure traffic
+    1. Ability to install/deploy/upload a machine identity to a 
+    1. Ability to **validate** that a specific machine identity is where we think it is (data either proactively requested by Venafi or periodically reported on by the target consumer of the machine identity)
+
+- What sets the best solutions apart?
+    - A focus on user experience, getting started quickly and with minimal effort
+
+    - Testing
+    - Test 2
+    - Renewal of a machine identity should not cause downtime -->
+
+<h2 id="primers">Primers<a class="headerlink" href="#primers" title="Permanent link">&para;</a></h2>
+<p>We think you'll find the following references helpful when developing your solution. 
+<em>If you've found other articles or tools that you think should be included here, please let us know!</em>*</p>
+<!-- .to-do: insert a way for users to let us know. Maybe a simple mailto: link will work for now, or do we suggest they update the page themselves and make a pull request? -->
 
 <ul>
-<li>What is a Service Mesh and how are machine identities used in this context?</li>
-<li>Why is <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> management important to the security of the mesh?</li>
-<li>How does Venafi help? (why should developers choose to use our tools to address that security)</li>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress/">Ingress</a></li>
 </ul>
+<h2 id="success-stories">Success Stories<a class="headerlink" href="#success-stories" title="Permanent link">&para;</a></h2>
+<p>Existing solutions that fit within this pattern:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Venafi Marketplace</label><label for="__tabbed_1_2">Elsewhere</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><a href="https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/6294f5507550f2ee553cf25d">NGINX Ingress</a></li>
+<li><a href="https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/628cf590220a43b0c9a48842">Pomerium Ingress</a></li>
+</ul>
+</div>
+<div class="tabbed-block"></div>
+</div>
+</div>
 
 
 
@@ -1429,7 +1580,7 @@
     
     <nav class="md-footer__inner md-grid" aria-label="Footer">
          
-        <a href="../../for-ingress/getting-started-ingress/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started" rel="prev">
+        <a href="../../../devs-welcome/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome" rel="prev">
             <div class="md-footer__button md-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1437,12 +1588,12 @@
                 <div class="md-ellipsis">
                     <span class="md-footer__direction">
                   Previous
-                </span> Getting Started
+                </span> Welcome
                 </div>
             </div>
         </a>
           
-        <a href="../getting-started-service-mesh/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started" rel="next">
+        <a href="../cloud-waf-getting-started/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started" rel="next">
             <div class="md-footer__title">
                 <div class="md-ellipsis">
                     <span class="md-footer__direction">
