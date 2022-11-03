@@ -4,4 +4,4 @@
 *[TLS Protect Datacenter]: Venafi's Datacenter offering (formerly known as Trust Protection Platform)
 *[workloads]: A process or any location where compute resources are consumed
 *[Ingress Controller]: Dpecialized load balancers for Kubernetes and other containerized environments
-*[Cloud WAF]: An as-a-service Web Application Firewall
+*[WAF]: Web Application Firewall: used to protect web apps from malicious traffic
