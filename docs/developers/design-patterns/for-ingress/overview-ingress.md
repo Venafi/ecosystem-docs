@@ -9,12 +9,12 @@ TODO bring in local updates from ~/src/zzz-20221102-venafi-ecosystem
 
 ## Introduction
 
-Before you begin, it's important to understand the "whats" and "whys" of *Ingress* and *Ingress Controllers*. 
-
 Kubernetes is is considered to be a [platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB).
 As such, it has a reduced set of opinions about how business demands can be met.
 This creates voids which the Kuberenetes community rushes in to fill.
 One such area is ingress controllers, for which the community has provided [many options](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/).
+
+Before you begin, it's important to understand the "whats" and "whys" of *Ingress* and *Ingress Controllers*. 
 
 ### What is it?
 
