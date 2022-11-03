@@ -1,7 +1,5 @@
 #  Ingress
 
-TODO bring in local updates from ~/src/zzz-20221102-venafi-ecosystem
-
 <!-- We can justify the inclusion of "ingress" because ingress is a known entity in JSS. -->
 
 **A Kubernetes object that manages external access to the services in a cluster.**
