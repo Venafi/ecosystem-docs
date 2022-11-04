@@ -1499,6 +1499,10 @@
 <p>Organizations use machine identities to secure traffic to and from their <abbr title="A process or any location where compute resources are consumed">workloads</abbr> using Transport Layer Security (TLS) with HTTPS being the most common use case.</p>
 <p>Sometimes those machine identities are installed at the application endpoint, itself (i.e. source code). 
 Other times, they may be installed on a load balancer, proxy or, in this case, a Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Design Pattern: Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></p>
+<p>This design pattern focuses on the use case of orchestrating the delivery of machine identities to the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>, as well as automating any configuration necessary to <em>activate</em> or <em>associate</em> those machine identities to target applications being secured by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.</p>
+</div>
 <p>Before you begin, it's important to understand the "whats" and "whys" of <em>Cloud WAFs</em>. </p>
 <h3 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">&para;</a></h3>
 <p>A <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> is a type of reverse proxy which protects the application itself from vulnerabilities caused by malicious activity.
@@ -1507,40 +1511,65 @@ WAFs use machine identities in one of two ways:</p>
 <li>Securing traffic to the admin interface of the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> itself</li>
 <li>Securing traffic to the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></li>
 </ul>
-<p>Regardless of the purpose, proper management of those machine identities are critical to the availability and security of the workload.
+<h4 id="securing-traffic-to-the-admin-interface-of-the-waf-itself">Securing traffic to the admin interface of the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> itself<a class="headerlink" href="#securing-traffic-to-the-admin-interface-of-the-waf-itself" title="Permanent link">&para;</a></h4>
+<p>While WAFs don't typically protect the traffic to their own administration interfaces in the same way they do for managed applications, ensuring that administrator traffic is encrypted with an enterprise-trusted <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is just as important.
+If that traffic is not secured, admin credentials are at risk of leaking.
+If operations involving the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> are not automated, admins can experience outages when logging in to make changes.
+This could potentially present a cascading effect if they are investigating an ongoing threat or mitigating an issue.</p>
+<h4 id="securing-traffic-to-the-applications-being-managed-by-the-waf">Securing traffic to the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr><a class="headerlink" href="#securing-traffic-to-the-applications-being-managed-by-the-waf" title="Permanent link">&para;</a></h4>
+<p>Securing traffic to applications is slightly more complex since there can be multiple applications being managed by a <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>, and each application needs its own <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr>.
+There are typically two options for <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation targeting application traffic.
+Which option you choose will depend on the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> product or service your solution is being built for.</p>
+<h5 id="the-waf-has-a-built-in-certificate-authority-ca">The <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> has a built-in Certificate Authority (CA)<a class="headerlink" href="#the-waf-has-a-built-in-certificate-authority-ca" title="Permanent link">&para;</a></h5>
+<p>In this scenario, the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> terminates the original TLS connection, and uses its built-in CA to issue new machine identities for traffic between the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> and the application.
+Some next-gen WAFs can generate machine identities at <a href="https://www.ssh.com/academy/iam/just-in-time-access" target="_blank">just-in-time</a> speed.
+It's critical that every <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is trusted by the organization, and every issuance is known and traceable by the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr>. </p>
+<h5 id="the-waf-stores-a-copy-of-the-machine-identity-including-the-private-key-for-each-application">The <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> stores a copy of the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> (including the private key) for each application<a class="headerlink" href="#the-waf-stores-a-copy-of-the-machine-identity-including-the-private-key-for-each-application" title="Permanent link">&para;</a></h5>
+<p>In this scenario, the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> maintains a copy of the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> for each application under management.
+When a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is renewed, both the application and the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> will need the new version.</p>
+<h3 id="why-is-machine-identity-automation-necessary">Why is <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation necessary?<a class="headerlink" href="#why-is-machine-identity-automation-necessary" title="Permanent link">&para;</a></h3>
+<p>Proper management of these machine identities is critical to the availability and security of the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.
 When active machine identities expire or become unavailable, outages happen.</p>
 <details class="danger">
 <summary>Outages</summary>
 <p>Workloads can become unavailable for many reasons and any such event can be described as an <strong>outage</strong>.</p>
-<p>When you choose to secure your <abbr title="A process or any location where compute resources are consumed">workloads</abbr>, you introduce an additional failure point, specifically the <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> itself.
+<p>When you choose to secure your <abbr title="A process or any location where compute resources are consumed">workloads</abbr>, you introduce an additional failure point, specifically the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> itself.
 This is because machine identities expire and it is your responsibility to handle these scenarios.
 A likely outcome of failing to mitigate against outages is negative impact to brand reputation and lost revenue.</p>
 <p>Automation using the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> is a key defense against outages. </p>
 </details>
-<h4 id="securing-traffic-to-the-admin-interface-of-the-waf-itself">Securing traffic to the admin interface of the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> itself<a class="headerlink" href="#securing-traffic-to-the-admin-interface-of-the-waf-itself" title="Permanent link">&para;</a></h4>
-<p>While WAFs don't typically protect the traffic to their own administration interfaces in the same way they do for managed applications, ensuring that administrator traffic is encrypted with an enterprise-trusted <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is just as important.
-If that traffic is not secured, admin credentials are at risk of leaking.
-If operations involving the <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> are not automated, admins can experience outages when logging in to make changes.
-This could potentially present a cascading effect if they are investigating an ongoing threat or mitigating an issue.</p>
-<h4 id="securing-traffic-to-the-applications-being-managed-by-the-waf">Securing traffic to the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr><a class="headerlink" href="#securing-traffic-to-the-applications-being-managed-by-the-waf" title="Permanent link">&para;</a></h4>
-<p>This design pattern focuses on the use case of orchestrating the delivery of machine identities to the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>, as well as automating any configuration necessary to <em>activate</em> or <em>associate</em> those machine identities to target applications being secured by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.</p>
-<p><strong>The best solutions will require as little, if any at all, human interaction as possible after initial configuration.</strong></p>
-<h3 id="why-is-machine-identity-automation-necessary">Why is <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation necessary?<a class="headerlink" href="#why-is-machine-identity-automation-necessary" title="Permanent link">&para;</a></h3>
+<p>These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general <strong>lack of automation</strong>.</p>
+<p>In addition to machine identities for each application, the solution must be capable of storing and using any additional configuration information and metadata required by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> to use the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> once it is provisioned.
+This introduces another failure point, and another potential <span class="outage"><strong>outage</strong></span>.</p>
 <h2 id="requirements-and-considerations">Requirements and Considerations<a class="headerlink" href="#requirements-and-considerations" title="Permanent link">&para;</a></h2>
-<!-- ##### Questions to guide us:
-
-- What are the absolute **required capabilities**? (MVP)
-    1. Ability to use a machine identity, an X.509 Certificate in this case, to secure traffic
-    1. Ability to install/deploy/upload a machine identity to a 
-    1. Ability to **validate** that a specific machine identity is where we think it is (data either proactively requested by Venafi or periodically reported on by the target consumer of the machine identity)
-
-- What sets the best solutions apart?
-    - A focus on user experience, getting started quickly and with minimal effort
-
-    - Testing
-    - Test 2
-    - Renewal of a machine identity should not cause downtime -->
-
+<p>When developing solutions for the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr>, you should always build with the goal of certification in mind.</p>
+<div class="admonition tip">
+<p class="admonition-title"><abbr title="Venafi's SaaS offering (formerly known as Venafi as a Service)">TLS Protect Cloud</abbr> Certification</p>
+<p>Certified integrations see increased adoption from users. <a href="../../developers/certification/tlsp-certification.md">Find out more!</a></p>
+</div>
+<p>That said, there are some minimum requirements that must be met when developing a solution from this design pattern:</p>
+<ol>
+<li>The solution must automate the delivery of <em>any</em> necessary certificate(s) required for the security of applications managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></li>
+<li>The solution must perform any necessary updates to any bindings/configurations/associations attached to the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr></li>
+<li>The solution must report all installed location(s) of the machine identities involved in the automation</li>
+<li>The <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> must be able to continuously validate any <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is installed at any previously known location(s)</li>
+</ol>
+<p>The following additional requirements enhance the user experience, and should be implemented if possible:</p>
+<ul>
+<li>
+<p>If the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> allows, renewal of any existing machine identities in use would not cause any <abbr title="A period of time where the workload is **unintentionally** inaccessible">downtime</abbr></p>
+</li>
+<li>
+<p>What sets the best solutions apart?</p>
+<ul>
+<li>Renewal of a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> should not cause <abbr title="A period of time where the workload is **unintentionally** inaccessible">downtime</abbr></li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Focus on UX</p>
+<p><strong>The best solutions will require as little, if any, human interaction as possible after initial configuration.</strong></p>
+</div>
 <h2 id="primers">Primers<a class="headerlink" href="#primers" title="Permanent link">&para;</a></h2>
 <p>We think you'll find the following references helpful when developing your solution. 
 <em>If you've found other articles or tools that you think should be included here, please let us know!</em>*</p>
@@ -1555,13 +1584,13 @@ This could potentially present a cascading effect if they are investigating an o
 <div class="tabbed-content">
 <div class="tabbed-block">
 <ul>
-<li><a href="https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/6294f5507550f2ee553cf25d">NGINX Ingress</a></li>
-<li><a href="https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/628cf590220a43b0c9a48842">Pomerium Ingress</a></li>
+<li><a href="https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/62a34b3e7550f2ee553cf2d1">Imperva</a></li>
 </ul>
 </div>
 <div class="tabbed-block"></div>
 </div>
 </div>
+<!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 
 
 

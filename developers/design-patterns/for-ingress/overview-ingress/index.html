@@ -1508,12 +1508,12 @@ One such area is ingress controllers, for which the community has provided <a hr
 <p>Organizations use machine identities to secure traffic to and from their <abbr title="A process or any location where compute resources are consumed">workloads</abbr> using Transport Layer Security (TLS), with HTTPS being the most common use case.</p>
 <p>Sometimes those machine identities are installed at the application endpoint itself (i.e. the container image). 
 Other times, they may be installed on a load balancer or proxy.
-Regardless of the location, proper management of that <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is critical to the availability and security of the workload.
+Regardless of the location, proper management of that <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is critical to the availability and security of the workload.
 When active machine identities expire or become unavailable, <strong>outages</strong> happen.</p>
 <details class="danger">
 <summary>Outages</summary>
 <p>Workloads can become unavailable for many reasons and any such event can be described as an <strong>outage</strong>.</p>
-<p>When you choose to secure your <abbr title="A process or any location where compute resources are consumed">workloads</abbr>, you introduce an additional failure point, specifically the <abbr title="Machine identities are X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> itself.
+<p>When you choose to secure your <abbr title="A process or any location where compute resources are consumed">workloads</abbr>, you introduce an additional failure point, specifically the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> itself.
 This is because machine identities expire and it is your responsibility to handle these scenarios.
 A likely outcome of failing to mitigate against outages is negative impact to brand reputation and lost revenue.</p>
 <p>Automation using the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> is a key defense against outages. </p>
@@ -1569,6 +1569,7 @@ One of the benefits of placing a proxy, such as those under the control of an in
 </div>
 </div>
 </div>
+<!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 
 
 
