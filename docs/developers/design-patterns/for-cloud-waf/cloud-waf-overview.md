@@ -9,6 +9,10 @@ Organizations use {{mids}} to secure traffic to and from their workloads using T
 Sometimes those {{mids}} are installed at the application endpoint, itself (i.e. source code). 
 Other times, they may be installed on a load balancer, proxy or, in this case, a Cloud WAF.
 
+!!! abstract "Design Pattern: Cloud WAF"
+
+    This design pattern focuses on the use case of orchestrating the delivery of {{mids}} to the WAF, as well as automating any configuration necessary to *activate* or *associate* those {{mids}} to target applications being secured by the WAF.
+
 Before you begin, it's important to understand the "whats" and "whys" of *Cloud WAFs*. 
 
 ### What is it?
@@ -19,11 +23,6 @@ WAFs use {{mids}} in one of two ways:
 - Securing traffic to the admin interface of the WAF itself
 - Securing traffic to the applications being managed by the WAF
 
-Regardless of the purpose, proper management of those {{mids}} are critical to the availability and security of the workload.
-When active {{mids}} expire or become unavailable, outages happen.
-
-{% include '.admonitions/outages-admonition.md' %}
-
 #### Securing traffic to the admin interface of the WAF itself
 
 While WAFs don't typically protect the traffic to their own administration interfaces in the same way they do for managed applications, ensuring that administrator traffic is encrypted with an enterprise-trusted {{mid}} is just as important.
@@ -33,32 +32,56 @@ This could potentially present a cascading effect if they are investigating an o
 
 #### Securing traffic to the applications being managed by the WAF
 
+Securing traffic to applications is slightly more complex since there can be multiple applications being managed by a WAF, and each application needs its own {{mid}}.
+There are typically two options for {{mid}} automation targeting application traffic.
+Which option you choose will depend on the WAF product or service your solution is being built for.
 
+##### The WAF has a built-in Certificate Authority (CA)
 
-This design pattern focuses on the use case of orchestrating the delivery of {{mids}} to the WAF, as well as automating any configuration necessary to *activate* or *associate* those {{mids}} to target applications being secured by the WAF.
+In this scenario, the WAF terminates the original TLS connection, and uses its built-in CA to issue new {{mids}} for traffic between the WAF and the application.
+Some next-gen WAFs can generate {{mids}} at [just-in-time](https://www.ssh.com/academy/iam/just-in-time-access){: target="_blank" } speed.
+It's critical that every {{mid}} is trusted by the organization, and every issuance is known and traceable by the {{midcp}}. 
 
-**The best solutions will require as little, if any at all, human interaction as possible after initial configuration.**
+##### The WAF stores a copy of the {{mid}} (including the private key) for each application
 
+In this scenario, the WAF maintains a copy of the {{mid}} for each application under management.
+When a {{mid}} is renewed, both the application and the WAF will need the new version.
 
 ### Why is {{mid}} automation necessary?
 
+Proper management of these {{mids}} is critical to the availability and security of the applications being managed by the WAF.
+When active {{mids}} expire or become unavailable, outages happen.
+
+{% include '.admonitions/outages-admonition.md' %}
+
+These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general **lack of automation**.
+
+In addition to {{mids}} for each application, the solution must be capable of storing and using any additional configuration information and metadata required by the WAF to use the {{mid}} once it is provisioned.
+This introduces another failure point, and another potential <span class="outage">**outage**</span>.
 
 ## Requirements and Considerations
 
+When developing solutions for the {{midcp}}, you should always build with the goal of certification in mind.
 
+{% include '.admonitions/tlspc_certification-admonition.md' %}
 
-<!-- ##### Questions to guide us:
+That said, there are some minimum requirements that must be met when developing a solution from this design pattern:
 
-- What are the absolute **required capabilities**? (MVP)
-    1. Ability to use a {{mid}}, an X.509 Certificate in this case, to secure traffic
-    1. Ability to install/deploy/upload a {{mid}} to a 
-    1. Ability to **validate** that a specific {{mid}} is where we think it is (data either proactively requested by Venafi or periodically reported on by the target consumer of the {{mid}})
+1. The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the WAF
+2. The solution must perform any necessary updates to any bindings/configurations/associations attached to the {{mid}}
+3. The solution must report all installed location(s) of the {{mids}} involved in the automation
+4. The {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s)
+
+The following additional requirements enhance the user experience, and should be implemented if possible:
+
+- If the WAF allows, renewal of any existing {{mids}} in use would not cause any downtime
 
 - What sets the best solutions apart?
-    {% include 'best-solutions-common.md' %}
-    - Renewal of a {{mid}} should not cause downtime -->
+    - Renewal of a {{mid}} should not cause downtime
 
+!!! tip "Focus on UX"
 
+    **The best solutions will require as little, if any, human interaction as possible after initial configuration.**
 
 ## Primers
 We think you'll find the following references helpful when developing your solution. 
@@ -72,7 +95,6 @@ We think you'll find the following references helpful when developing your solut
 Existing solutions that fit within this pattern:
 
 === "Venafi Marketplace"
-    - [NGINX Ingress](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/6294f5507550f2ee553cf25d)
-    - [Pomerium Ingress](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/628cf590220a43b0c9a48842)
+    - [Imperva](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/62a34b3e7550f2ee553cf2d1)
 
 === "Elsewhere"

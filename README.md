@@ -35,3 +35,8 @@ To use a snippet in a topic, create the snippet in 'docs/.snippets' or a subfold
 ##### Searching
 
 A search for `.to-do` in the repo should surface all the existing pages that are currently in-progress and not quite ready to be published.
+
+##### External Links
+
+Include the following immediately after the (link in parenthesis):
+`{: target="_blank" }`

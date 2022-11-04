@@ -232,3 +232,11 @@
     footer .md-footer-links a:hover {
         text-decoration: underline;
     }
+
+    a.outage:any-link {
+        color: red;
+    }
+
+    .outage {
+        color: red;
+    }
