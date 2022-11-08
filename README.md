@@ -1,11 +1,5 @@
 # docs
 
-#### Dependencies
-- [md-condition](https://github.com/cssho/md-condition)
-```
-pip3 install md-condition
-```
-
 #### Quick Reference
 
 Run locally using:
