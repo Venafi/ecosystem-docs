@@ -6,7 +6,7 @@
 
 # Project Information
 site_name: Get involved with the Ecosystem
-site_author: Venafi
+site_author: Venafi Ecosystem
 site_description: Building solutions to protect more machine identities
 site_url: https://ecosystem.venafi.com
 
@@ -112,50 +112,9 @@ plugins:
     literate-nav:           # https://github.com/oprypin/mkdocs-literate-nav
       nav_file: nav.md
     exclude-search:         # https://github.com/chrieke/mkdocs-exclude-search
-      exclude:
-        - vaas/third-party-integrations.md#vsatellite
-        - vaas/third-party-integrations.md#automated-secure-keypair
-        - vaas/third-party-integrations.md#microsoft-ca-service
-        - vaas/third-party-integrations.md#enhanced-discovery-service
-        - vaas/third-party-integrations.md#acmev2-service
-        - vaas/third-party-integrations.md#vsatellite-worker
-        - walkme/*
+      exclude: 
     redirects:              # https://github.com/datarobot/mkdocs-redirects
       redirect_maps:
       #DO NOT CHANGE ANY ENTRIES IN THE FIRST COLUMN!!!
-        CSH_RedHat_Learn_more.md:                integrations/red-hat/cco-RedHat-about.md
-        CSH_Kubernetes_Learn_more.md:            integrations/kubernetes/c-Kubernetes-integration.md
-        CSH_OpenStack_Learn_more.md:             integrations/openstack/c-Openstack-integration.md
-        CSH_Terraform_Learn_more.md:             integrations/terraform/c-DevOps-Terraform-integration-about.md
-        CSH_VenSecEng_Learn_more.md:             integrations/vault-venafi-secrets-engine/c-Vault-integration.md
-        CSH_VaultVenMonitor_Learn_more.md:       integrations/vault-venafi-monitor-engine/cco-Vault-Monitor-Engine-about.md
-        CSH_vCert_Learn_more.md:                 integrations/vcert/c-vCert-integration.md
-        CSH_vCert_Generating.md:                 integrations/vcert/t-Cloud-vcert-generate-csr.md
-        CSH_Install_Scanafi.md:                  vaas/discovery/c-Cloud-about-Scanafi.md
-        CSH_Define_Template_Settings.md:         vaas/issuing-templates/defining-recommended-settings-for-an-issuing-template.md
-        CSH_Issuing_Templates.md:                vaas/issuing-templates/certificate-issuing-templates.md
-        CSH_Add_CA_OP.md:                        vaas/certificates/ca/adding-a-certificate-authority.md
-        CSH_Discovery_External_LearnMore.md:     vaas/discovery/t-Cloud-domain-external.md
-        CSH_invite_users.md:                     vaas/application/invite-users.md
-        # CSH_Rotation.md:                       vsatellite/dek/.rotating-the-data-encryption-key.md
-        CSH_backup_dek.md:                       vsatellite/dek/backing-up-the-data-encryption-key.md
-        CSH_Delete_VSat.md:                      vsatellite/t-VSatellite-delete.md
-        CSH_Delete_VSat_Linux.md:                https://docs.venafi.cloud/vsatellite/t-VSatellite-delete/#remove-linux
-        CSH_Delete_VSat_Reassign.md:             https://docs.venafi.cloud/vsatellite/t-VSatellite-delete/#reassign
-        CSH_DeleteLast_VSat.md:                  vsatellite/c-VSatellite-LastVSat-deleting-implications.md
-        CSH_configure_adcs.md:                   vaas/certificates/ca/issuing-certificates-with-microsoft-adcs.md
-        CSH_built_in_ca.md:                      vaas/certificates/ca/working-with-built-in-ca-account.md
-        CSH_digicert.md:                         vaas/certificates/ca/adding-digicert-ca.md
-        CSH_entrust.md:                          vaas/certificates/ca/adding-entrust-ca.md
-        CSH_globalsign.md:                       vaas/certificates/ca/adding-globalsign-ca.md
-        CSH_globalsign_mssl.md:                  vaas/certificates/ca/adding-globalsign-mssl-ca.md
-        CSH_acme_lets_encrypt.md:                vaas/certificates/ca/adding-letsencrypt-ca.md
-        CSH_acme_ztpki_native.md:                vaas/certificates/ca/adding-ztpki-ca.md
-        CSH_acme_custom.md:                      vaas/certificates/ca/adding-acme-ca.md
-        CSH_about_teams.md:                      vcs-platform/about-vaas-teams.md
-        CSH_troubleshoot_vsat_connections.md:    _FAQ-Troubleshooting/Troubleshooting.md
-        CSH_regex.md:                            vaas/issuing-templates/c-templates-using-advanced-rules-regex.md
-        CSH_third_party.md:                      vaas/third-party-integrations.md
-        CSH_VSat_hosturls_proxyVars.md:          vsatellite/r-VSatellite-deployNew.md
-        CSH_export_logging.md:                   vaas/logging/c-logging-export.md
+
 

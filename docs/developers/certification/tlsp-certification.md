@@ -1,4 +1,4 @@
-## **Introduction**
+# Solution Certification
 
 This page is meant to be your home base throughout the certification process, so please feel free to jump around, read ahead, bookmark and come back to it as needed. 
 
@@ -6,13 +6,15 @@ This page is meant to be your home base throughout the certification process, so
 
     If you've already completed your integration and are ready to submit a request for Certification, you can [start here.](#certification-process)
 
+## Introduction
+
 As a **TLS Protect Cloud Certified** integration, Venafi users have an extra level of confidence that your solution was designed with their best interests at the forefront. For that reason, certified integrations see more adoption from our mutual customer base. When building an integration to TLS Protect Cloud, one desired outcome should be official certification. Official certification is the first step to listing the integration on the [Venafi Marketplace](https://marketplace.venafi.com), which is the #1 way end users discover and deploy integrations.  
 
 !!! success ""
 
     Certification is the only way that an integration will be listed on the Venafi Marketplace as compatible with TLS Protect Cloud. 
 
-![Certify](../../assets/images/certification/certify-chart.png)
+![Certify](../../assets/images/Certification/certify-chart.png)
 
 The TLS Protect Cloud Certification Program is still evolving and so some specifics about the following requirements are subject to change. Ample notice will be given to any developers of an existing certified integration, ensuring plenty of time to make any necessary updates to maintain certification.
 
@@ -20,7 +22,7 @@ The following requirements are applicable to every TLS Protect Cloud integration
 
 !!! note "We're all in this together"
 
-    In cases where the Venafi team requests additional requirements be met, we will work with you to determine what success looks like and do our best to provide any tools/guidance necessary to reach certification.
+    In cases where the Venafi team requests additional requirements be met, we will work with you to determine what success looks like and do our best to provide any Tools/guidance necessary to reach certification.
 
 ### **Technical Certification vs. Partner Program**
 
@@ -30,7 +32,7 @@ The technical certification process is not to be confused with Venafi Partnershi
 
 The final step of the TLS Protect Cloud certification process will be ***Packaging*** - deciding how end users will deploy and interact with your integration. In order for end users to discover the integration and establish a strong user base, the packaging of the integration should be polished and easy to understand. Use of company logos, iconography, product names, marketing copy, etc. will all help users quickly identify your integration in the growing [Venafi Marketplace](https://marketplace.venafi.com). 
 
-![Package](../../assets/images/certification/package-chart.png)
+![Package](../../assets/images/Certification/package-chart.png)
 
 #### **Marketing**
 

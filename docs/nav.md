@@ -4,8 +4,8 @@ search:
 ---
 
 - [Home](index.md)
-- [Getting Started](getting-started/)
-- [Developers](developers/)
-- [Tools](tools/)
-- [Manifesto](manifesto/)
+- [Getting Started](Getting-Started/)
+- [Developers](Developers/)
+- [Tools](Tools/)
+- [Manifesto](Manifesto/)
 - [Marketplace](https://marketplace.venafi.com/)
