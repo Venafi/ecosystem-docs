@@ -15,7 +15,7 @@ Other times, they may be installed on a load balancer or proxy.
 Regardless of the location, proper management of that {{mid}} is critical to the availability and security of the workload.
 When active {{mids}} expire or become unavailable, outages happen.
 
-{% include '.admonitions/outages-admonition.md:3' %}
+{% include '.admonitions/outages-admonition.md' %}
 
 This design pattern focuses on the use case of orchestrating the delivery of {{mids}} to location(s) where they'll be used, as well as automating any configuration necessary to *activate* or *associate* them with target applications.
 **The best solutions will require as little, if any at all, human interaction as possible after initial configuration.**

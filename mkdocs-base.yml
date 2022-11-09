@@ -5,7 +5,7 @@
 # https://www.mkdocs.org/user-guide/configuration/#configuration-inheritance
 
 # Project Information
-site_name: Venafi Ecosystem
+site_name: Get involved with the Ecosystem
 site_author: Venafi
 site_description: Building solutions to protect more machine identities
 site_url: https://ecosystem.venafi.com
@@ -18,7 +18,7 @@ theme:
   name: material
   custom_dir: docs/overrides  #https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme
   logo: assets/images/logos/Venafi_LOGO_OrangeWhite_rgb_f.svg
-  favicon: assets/images/favicon.ico
+  favicon: assets/images/Venafi_Favicon_Orange.png
   features:
     - navigation.instant    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
     - navigation.tabs       # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
