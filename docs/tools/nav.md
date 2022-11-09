@@ -1,0 +1,11 @@
+- For Developers
+    - [VCert](vcert/overview-vcert.md)
+    - [APIs](api/overview-api.md)
+    - [Adaptable Framework](adaptable-framework/overview-adaptable-framework.md)
+        - [Writing Adaptable Drivers](adaptable-framework/writing-adaptable-drivers.md)
+        - [Submitting/Updating Adaptable Drivers](adaptable-framework/submitting-your-adaptable-driver.md)
+- For Technology Partnerships
+    - [Go to Market](#)
+    - [Marketplace Listing](#)
+    - [Venafi Brand Assets](#)
+    - [Looking for Channel?](#)

@@ -4,42 +4,9 @@ search:
 ---
 
 - [Home](index.md)
-- Developers
-    - [Welcome](developers/devs-welcome.md)
-    - Design Patterns
-        - For Automation Tooling
-            - [Overview](#)
-        - For Cloud WAF
-            - [Overview](developers/design-patterns/for-cloud-waf/cloud-waf-overview.md)
-            - [Getting Started](developers/design-patterns/for-cloud-waf/cloud-waf-getting-started.md)
-        - For Ingress
-            - [Overview](developers/design-patterns/for-ingress/overview-ingress.md)
-            - [Getting Started](developers/design-patterns/for-ingress/getting-started-ingress.md)
-        - For Service Mesh
-            - [Overview](developers/design-patterns/for-service-mesh/overview-service-mesh.md)
-            - [Getting Started](developers/design-patterns/for-service-mesh/getting-started-service-mesh.md)
-        - For TLS Inspection
-            - [Overview](developers/design-patterns/for-tls-inspection/overview-tls-inspection.md)
-        - For Hardware Security Module (HSM)
-            - [Overview](developers/design-patterns/for-hsm/overview-hsm.md)
-    - [Solution Certification](developers/certification/tlsp-certification.md)
-- Tools
-    - For Developers
-        - [VCert](tools/vcert/overview-vcert.md)
-        - [APIs](tools/api/overview-api.md)
-        - [Adaptable Framework](tools/adaptable-framework/overview-adaptable-framework.md)
-            - [Writing Adaptable Drivers](tools/adaptable-framework/writing-adaptable-drivers.md)
-            - [Submitting/Updating Adaptable Drivers](tools/adaptable-framework/submitting-your-adaptable-driver.md)
-    - For Business Leaders
-        - [SOMETHING FOR BUSINESS LEADERS](#)
-- Engagement
-    - [How to Engage](engagement/how-to-engage.md)
-        - [For Solution Architects](engagement/solution-architects.md)
-        - [For Funded Developers](engagement/funded-developers.md)
-        - [For Existing or Prospective Customers](engagement/customers.md)
-        - [Have an Interest to Partner and Develop](engagement/prospective-developers.md)
-            - [Development Fund Program](programs/devfund.md)
-            - [General Inquiry](engagement/general-inquiry.md)
+- [Getting Started](getting-started/)
+- [Developers](developers/)
+- [Tools](tools/)
 - Manifesto
     - [Core Statement](manifesto/statements.md)
     - [Operating Principles](manifesto/operating-principles.md)
