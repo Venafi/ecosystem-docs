@@ -1,3 +1,3 @@
 - [Welcome](devs-welcome.md)
-- [Design Patterns](design-patterns/)
-- [Solution Certification](certification/tlsp-certification.md)
+- [Design Patterns](Design-Patterns/)
+- [Solution Certification](Certification/tlsp-certification.md)
