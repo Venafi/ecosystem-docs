@@ -21,6 +21,7 @@ extra:
   ent:        Entrust
   gs:         GlobalSign
   hid:        HydrantID
+  mia:        machine identity automation
   mid:        machine identity
   midcp:      Machine Identity Management Control Plane
   Mids:       Machine identities

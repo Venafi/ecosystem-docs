@@ -1,0 +1,3 @@
+- [Welcome](devs-welcome.md)
+- [Design Patterns](design-patterns/)
+- [Solution Certification](certification/tlsp-certification.md)
