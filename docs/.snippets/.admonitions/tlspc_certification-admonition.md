@@ -1,3 +1,3 @@
 !!! tip "TLS Protect Cloud Certification"
 
-    Certified integrations see increased adoption from users. [Find out more!](../../Developers/Certification/tlsp-certification.md)
+    Certified solutions see increased adoption from users. [Find out more!](/Developers/Certification/TLS-Protect-Cloud/1-tlsp-certification-intro/)

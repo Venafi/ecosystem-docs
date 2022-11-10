@@ -7,4 +7,4 @@ vCert is a command line utility, SDK, and set of libraries designed to simplify 
 - [Java](https://github.com/Venafi/vcert-java)
 - [Ruby](https://github.com/Venafi/vcert-ruby)
 
-Since vCert enables interoperability between both Venafi {{ tlspd }} and {{ tlspc }}, we ask that you test and document for each target.
+Since VCert enables interoperability between both Venafi {{ tlspd }} and {{ tlspc }}, we ask that you test and document for each target.

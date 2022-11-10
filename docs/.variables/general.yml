@@ -15,6 +15,7 @@
 extra:
   adcs:       Microsoft Active Directory Certificate Services
   ask:        Automated Secure Keypair
+  com:        Warrior Community
   ctrlplane:  Control Plane  
   da:         DevOpsACCELERATE
   dc:         DigiCert
@@ -40,3 +41,4 @@ extra:
   vsat:       VSatellite
   vsatw:      VSatellite Worker
   ztpki:      Venafi Zero Touch PKI
+  ecosite:    https://ecosystem.venafi.com
