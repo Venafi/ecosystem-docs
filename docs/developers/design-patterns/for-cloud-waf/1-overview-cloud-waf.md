@@ -65,28 +65,29 @@ When developing solutions for the {{midcp}}, you should always build with the go
 
 {% include '.admonitions/tlspc_certification-admonition.md' %}
 
-That said, there are some minimum requirements that must be met when developing a solution from this design pattern:
+### Minimum Requirements 
 
-1. The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the WAF
-2. The solution must perform any necessary updates to any bindings/configurations/associations attached to the {{mid}}
-3. The solution must report all installed location(s) of the {{mids}} involved in the automation
-4. The {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s)
-
-The following additional requirements enhance the user experience, and should be implemented if possible:
-
-- If the WAF allows, renewal of any existing {{mids}} in use would not cause any downtime
-
-- What sets the best solutions apart?
-    - Renewal of a {{mid}} should not cause downtime
+- The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the WAF
+- The solution must perform any necessary updates to any bindings/configurations/associations attached to the {{mid}}
+- The solution must report all installed location(s) of the {{mids}} involved in the automation
+- The {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s)
 
 !!! tip "Focus on UX"
 
     **The best solutions will require as little, if any, human interaction as possible after initial configuration.**
+    
+### Better User Experience
+
+We understand that every target product is different and some functionality may not be supported.
+The following additional requirements **greatly** enhance the user experience, provide additional value to teams and organizations and should be implemented if at all possible. 
+
+- Renewal of any existing {{mids}} in use would not cause any downtime
 
 ## Primers
-We think you'll find the following references helpful when developing your solution. 
-*If you've found other articles or tools that you think should be included here, please let us know!**
-<!-- .to-do: insert a way for users to let us know. Maybe a simple mailto: link will work for now, or do we suggest they update the page themselves and make a pull request? -->
+We think you'll find the following references helpful when developing your solution.
+
+If you've found other articles or tools that you think should be included here, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com Feedback - Cloud WAF: Overview)!
+
 
 - [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 

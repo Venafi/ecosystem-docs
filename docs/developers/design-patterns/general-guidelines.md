@@ -1,6 +1,6 @@
 # General Guidelines & Best Practices
 
-The following guidelines apply generically to all integrations to Venafi, regardless of integration type, and should be referenced as the integration is developed & tested, and as new features or enhancements are added.
+The following guidelines apply generically to all solutions to Venafi, regardless of solution type, and should be referenced as the solution is developed & tested, and as new features or enhancements are added.
 
 ## Naming Conventions
 

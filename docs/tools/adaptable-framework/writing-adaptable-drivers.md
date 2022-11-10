@@ -1,6 +1,6 @@
 # Writing Adaptable Drivers
 
-Venafi Adaptable Drivers provide a way quick, easy framework to build integrations, primarily with target **CAs** (certificate authorities) and **application platforms** (web servers, network devices, application firewalls, etc.), but also to support flexible workflow and logging needs for unique environments.
+Venafi Adaptable Drivers provide a way quick, easy framework to build solutions, primarily with target **CAs** (certificate authorities) and **application platforms** (web servers, network devices, application firewalls, etc.), but also to support flexible workflow and logging needs for unique environments.
 
 Venafi Adaptable Drivers support Venafi TLS Protect Datacenter only. Venafi PM team is working on a similar framework for TLS Protect Cloud use cases. 
 
@@ -97,6 +97,6 @@ The $DEBUG_FILE variable gets set automatically to a suggested file path on the 
 
 ### Adaptable Types
 
-- [Adaptable CA Driver](): Choose this if you are building an integration between Venafi and a Machine Identity ***Producer***, like a Certificate Authority or Managed PKI.
-- [Adaptable Application Driver](): Choose this if you are building an integration between Venafi and a Machine Identity ***Consumer***, like an application server, network device, WAF, etc.
+- [Adaptable CA Driver](): Choose this if you are building an solution between Venafi and a Machine Identity ***Producer***, like a Certificate Authority or Managed PKI.
+- [Adaptable Application Driver](): Choose this if you are building an solution between Venafi and a Machine Identity ***Consumer***, like an application server, network device, WAF, etc.
 - [Adaptable Log Driver](): Choose this if you are building a solution that will be used to perform virtually any programmatic task in response to the logging of a Venafi event. 
