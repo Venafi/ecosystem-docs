@@ -23,14 +23,14 @@ WAFs use {{mids}} in one of two ways:
 - Securing traffic to the admin interface of the WAF itself
 - Securing traffic to the applications being managed by the WAF
 
-#### Securing traffic to the admin interface of the WAF itself
+#### USE CASE 1: Securing traffic to the admin interface of the WAF itself
 
 While WAFs don't typically protect the traffic to their own administration interfaces in the same way they do for managed applications, ensuring that administrator traffic is encrypted with an enterprise-trusted {{mid}} is just as important.
 If that traffic is not secured, admin credentials are at risk of leaking.
 If operations involving the {{mid}} are not automated, admins can experience outages when logging in to make changes.
 This could potentially present a cascading effect if they are investigating an ongoing threat or mitigating an issue.
 
-#### Securing traffic to the applications being managed by the WAF
+#### USE CASE 2: Securing traffic to the applications being managed by the WAF
 
 Securing traffic to applications is slightly more complex since there can be multiple applications being managed by a WAF, and each application needs its own {{mid}}.
 There are typically two options for {{mid}} automation targeting application traffic.
@@ -42,7 +42,7 @@ In this scenario, the WAF terminates the original TLS connection, and uses its b
 Some next-gen WAFs can generate {{mids}} at [just-in-time](https://www.ssh.com/academy/iam/just-in-time-access){: target="_blank" } speed.
 It's critical that every {{mid}} is trusted by the organization, and every issuance is known and traceable by the {{midcp}}. 
 
-##### The WAF stores a copy of the {{mid}} (including the private key) for each application
+##### The WAF stores a copy of the {{mid}} (including the private key) for each app
 
 In this scenario, the WAF maintains a copy of the {{mid}} for each application under management.
 When a {{mid}} is renewed, both the application and the WAF will need the new version.
@@ -67,35 +67,41 @@ When developing solutions for the {{midcp}}, you should always build with the go
 
 ### Minimum Requirements 
 
-- The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the WAF
-- The solution must perform any necessary updates to any bindings/configurations/associations attached to the {{mid}}
-- The solution must report all installed location(s) of the {{mids}} involved in the automation
-- The {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s)
+- The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the WAF.
+- The solution must perform any necessary updates to any bindings/configurations/associations attached to the {{mid}}.
+- The solution must report all installed location(s) of the {{mids}} involved in the automation.
+- The {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s).
 
 !!! tip "Focus on UX"
 
     **The best solutions will require as little, if any, human interaction as possible after initial configuration.**
+
+### Security Considerations
+
+
     
-### Better User Experience
+### Building a Better User Experience
 
 We understand that every target product is different and some functionality may not be supported.
 The following additional requirements **greatly** enhance the user experience, provide additional value to teams and organizations and should be implemented if at all possible. 
 
-- Renewal of any existing {{mids}} in use would not cause any downtime
+- Renewal of any existing {{mids}} in use would not cause any downtime.
+- Provide the ability to import existing {{mids}} in use by the WAF to Venafi for comprehensive visibility and rapid onboarding.
 
 ## Primers
 We think you'll find the following references helpful when developing your solution.
 
 If you've found other articles or tools that you think should be included here, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com Feedback - Cloud WAF: Overview)!
 
-
-- [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+- [WAF](https://en.wikipedia.org/wiki/Web_application_firewall) - Wikipedia
+- [What is WAF](https://www.youtube.com/watch?v=p8CQcF_9280) - YouTube
 
 ## Success Stories
 
-Existing solutions that fit within this pattern:
+Existing solutions that fit this use case:
 
 === "Venafi Marketplace"
     - [Imperva](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/62a34b3e7550f2ee553cf2d1)
 
 === "Elsewhere"
+    - [Radware](https://www.radware.com/products/cloud-waf-service/)
