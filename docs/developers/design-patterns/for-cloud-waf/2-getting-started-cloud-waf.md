@@ -12,7 +12,5 @@ If you've made it here, you should already have a general understanding about [C
 
 ## Getting Help
 
-We've tried our best to keep everything you'll need consolidated here. Most information lives on this site, but there are scenarios where you'll follow links offsite. In those cases, the link will go directly to the topic at hand. 
-
-If you aren't able to find what you're looking for, or have a specific question related to your use case, please [post a question](https://community.venafi.com/ask-the-community-23) to the Developer Forum section of Venafi's {{com}} or [email](mailto:support@venafi.com?subject=Developer Question: Cloud WAF) Venafi Customer Support. 
+If you aren't able to find what you're looking for, or have a specific question related to your use case, please [post a question](https://community.venafi.com/ask-the-community-23){: target="_blank" } to the Developer Forum section of Venafi's {{com}} or [email](mailto:support@venafi.com?subject=Developer Question: Cloud WAF) Venafi Customer Support. 
 
