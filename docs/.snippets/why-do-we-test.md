@@ -1,0 +1,8 @@
+- To find bugs before the customer does!
+- To perform continuous testing and fixing so that TPP is "shippable" at shorter intervals, following "quality at speed" best practices. Specifically,
+    - Automating customer-like test data and test environment provisioning.
+    - Running all test levels in all branches at more frequent intervals in the pipeline to find bugs faster.
+    - Providing immediate feedback loops on test issues in developer tools.
+    - Quickly responding to failures and quickly fixing them.
+    - Maintaining a stable mainline as seen through test pass/fail trends.
+- Decoupling the release and release trains so that TPP is "shippable" at shorter intervals, following continuous testing and delivery best practices. Specifically, to eliminate the 2-week regression cycle at the end of every TPP release.
