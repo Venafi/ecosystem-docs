@@ -9,7 +9,7 @@ extra:
 #Google Analytics
   analytics:
     provider: google
-    property: G-Y14H8EWFHT
+    property: 
     # feedback:
     #   title: Was this page helpful?
     #   ratings:
