@@ -14,10 +14,12 @@ If you've got suggestions and/or functional tests that helped during your develo
 ??? tip "Reduce Confirmation Bias"
 
     It can be extremely helpful, especially when writing documentation that accompanies your solution, to involve others on your team who haven't been involved in the development process.
-    While you might be able to perform all functionality without even referencing the docs, it's possible that a fresh set of eyes will uncover typos or minor omissions.
+    While you might be able to perform all functionality without even referencing the docs, it's possible that a fresh set of eyes will uncover typos or minor omissions that someone directly involved in development might miss.
 
 ## Base Functionality Tests
 
-
+1. 
 
 ## Advanced Functionality Tests (if applicable)
+
+1. Performing a renewal operation on an application actively being managed by the WAF is transparent to end users of said application and there is **zero downtime**
