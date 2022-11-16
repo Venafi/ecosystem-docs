@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-**Link to page w/ error:**
+### Link to page w/ error:
 PLEASE ADD A LINK TO THE SECTION OR PAGE HERE
 
-**Comments:**
+### Comments:
 PLEASE INSERT FEEDBACK HERE
