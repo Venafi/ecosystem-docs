@@ -8,38 +8,57 @@
 ## Introduction
 
 Kubernetes is is considered to be a [platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB).
-As such, it has a reduced set of opinions about how business demands can be met.
-This creates voids which the Kuberenetes community rushes in to fill.
-One such area is ingress controllers, for which the community has provided [many options](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/).
+As such, it has a reduced set of opinions about how business demands are fulfilled.
+This creates technological voids into which the Kuberenetes community rushes in to fill.
+One such area is Ingress Controllers, for which the community has provided [many options](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/).
+
+!!! abstract "Design Pattern: Ingress"
+
+    This design pattern focuses on the use case of leveraging {{mids}} via ingress controllers.
+    It highlights the need for automation to ensure that once your solution is deployed it stays there, pro-actively securing workloads long into the future.
+
+    <!-- The CRD for "Ingress" has a well defined specification, so each and every controller implementation is duty-bound to present a familiar face to the world. -->
 
 Before you begin, it's important to understand the "whats" and "whys" of *Ingress* and *Ingress Controllers*. 
 
-### What is it?
+## What is it?
 
-Organizations use {{mids}} to secure traffic to and from their workloads using Transport Layer Security (TLS), with HTTPS being the most common use case.
+Ingress is a Kubernetes resource which represents a line, or lines, of communication from outside a cluster (which could mean the internet) to workloads running inside it.
+Without Ingress resources Kubernetes would be limited to running non-interactive workloads such as batch jobs.
 
-Sometimes those {{mids}} are installed at the application endpoint itself (i.e. the container image). 
-Other times, they may be installed on a load balancer or proxy.
-Regardless of the location, proper management of that {{mid}} is critical to the availability and security of the workload.
+Ingress resources are native to Kubernetes but Ingress Controllers **are not**.
+An Ingress resource without an Ingress Controller remains dormant, like a car without a driver.
+Bringing an Ingress Controller to Kubernetes is a choice it intends for you to make.
+
+## Why is it necessary?
+
+The internet was originally envisioned as a medium for sharing information, however the modern world demands that information should be much better protected.
+To meet these demands we have seen the steady rise of HTTPS to the point where modern browsers baulk at the use of [plain old HTTP](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html).
+So Transport Layer Security (TLS), which powers HTTPS, is now a mandatory requirement.
+Henceforth we **all** need to concern ourselves with the need for security of data in transit.
+
+Organizations use {{mids}} to provide end-to-end security of data sent between workloads over the internet with the TLS cryptographic protocol.
+The use of X.509 certificates and HTTPS are the most common manifestation of this.
+
+To secure workloads, those {{mids}} are sometimes installed at the application endpoint - literally inside the container image.
+Other times {{mids}} are installed on a load balancer or proxy.
+
+Loading {{mids}} into delivery artifacts brings its own special flavor of dependency management dilemma - how to handle the inevitable **expiration** of those {{mids}}.
 When active {{mids}} expire or become unavailable, **outages** happen.
 
 {% include '.admonitions/outages-admonition.md' %}
 
-This design pattern focuses on the use case of orchestrating the delivery of {{mids}} to location(s) where they'll be used, as well as automating any configuration necessary to *activate* or *associate* them with target applications.
-**The best solutions will require as little, if any at all, human interaction as possible after initial configuration.**
+In general, externalizing [non-functional requirements](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples) is considered good development practice.
+Thankfully the Ingress specification provides explicit support for TLS protection on its lines of communication.
 
-### Why is it necessary?
+<!-- ## Requirements and Considerations
 
-The internet was originally envisioned as a medium for sharing information, however the modern world demands that access to information should be much better protected.
-To meet these demands we have seen the steady rise of HTTPS to the point where [modern browsers baulk at the use of plain old HTTP](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html).
-So TLS is now a mandatory requirement and, henceforth, we all need to concern ourselves with the need for security of data in transit.
+TODO ... -->
 
-There is a strong argument to suggest that developers should keep [non-functional requirements](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples) such a data security outside their codebase.
-One of the benefits of placing a proxy, such as those under the control of an ingress controller, between your workload and the world beyond is that developers can isolate important aspects of software delivery and focus solely on business requirements.
+<!-- Thankfully the Ingress specification provides for TLS protection on its lines of communication. but it remains the responsibility of your chosen Ingress Controller to honor that requirement. -->
 
-## Requirements and Considerations
-
-TODO ...
+<!-- Furthermore, as time passes, there is a fundamental requirement to ensure these {{mids}} are renewed to avoid expiration.
+That responsibility belongs outside your Ingress Controller -->
 
 <!-- TODO: the cross-cutting concern of TLS, where should my certificates go? -->
 
@@ -55,8 +74,9 @@ TODO ...
     - Renewal of a {{mid}} should not cause downtime -->
 
 ## Primers
+
 We think you'll find the following references helpful when developing your solution. 
-*If you've found other articles or tools that you think should be included here, please let us know!**
+**If you've found other articles or tools that you think should be included here, please let us know!**
 <!-- .to-do: insert a way for users to let us know. Maybe a simple mailto: link will work for now, or do we suggest they update the page themselves and make a pull request? -->
 
 - [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
