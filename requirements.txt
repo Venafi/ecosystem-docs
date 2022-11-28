@@ -28,3 +28,6 @@ six==1.16.0
 termcolor==2.0.1
 urllib3==1.26.12
 watchdog==2.1.9
+pyembed-markdown==1.1.0
+
+

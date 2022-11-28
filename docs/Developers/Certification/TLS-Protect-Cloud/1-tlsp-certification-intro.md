@@ -9,7 +9,7 @@ This page is meant to be your home base throughout the certification process, so
 ## Introduction
 
 As a **TLS Protect Cloud Certified** solution, Venafi users have an extra level of confidence that your solution was designed with their best interests at the forefront.
-For that reason, certified solutions see more adoption from our mutual customer base.
+For that reason, certified solutions see more adoption from our mutual users.
 When building an solution to TLS Protect Cloud, one desired outcome should be official certification.
 Official certification is the first step to listing the solution on the [Venafi Marketplace](https://marketplace.venafi.com), which is the #1 way end users discover and deploy solutions.  
 

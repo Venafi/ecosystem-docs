@@ -8,4 +8,4 @@ search:
 - [Developers](Developers/)
 - [Tools](Tools/)
 - [Manifesto](Manifesto/)
-- [Marketplace](https://marketplace.venafi.com/)
+- [Marketplace](https://marketplace.venafi.com)

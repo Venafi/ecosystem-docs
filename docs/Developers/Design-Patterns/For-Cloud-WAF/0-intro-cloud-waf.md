@@ -2,6 +2,8 @@
 
 **Web Application Firewalls (WAFs) help protect web applications by monitoring and filtering traffic between the app and the internet.**
 
+---
+
 ## Introduction
 
 Organizations use {{mids}} to secure traffic to and from their workloads using Transport Layer Security (TLS) with HTTPS being the most common use case.

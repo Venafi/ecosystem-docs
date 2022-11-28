@@ -99,7 +99,8 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
     md_in_html: {}          # Allows markdown to be within html elements https://github.com/Python-Markdown/markdown/blob/master/docs/extensions/md_in_html.md
-
+    pyembed.markdown: {}
+    
 plugins:
     search: {}
     autolinks: {}
