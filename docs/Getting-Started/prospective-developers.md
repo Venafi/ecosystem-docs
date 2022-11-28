@@ -2,8 +2,10 @@ Venafi Ecosystem is always welcoming new and past Developers to join and partici
 
 Developers get access to: <br>
 
+* Common [design patterns and guides](general-guidelines.md)
 * Kits with simulators for amazingly fast dev and test
 * Pre-configured cloud instances for immediate, on-demand development
+* Free and extensible trial for [Venafi cloud](https://ui.venafi.cloud)
 * Full support from Venafi engineers
 * Go-to-market leadership ready to educate and drive demand
 

@@ -9,7 +9,7 @@ In addition to traditional **parnter Developers**, we extend our offer to the fo
 Individual developers make a unique contribution to the open-source community and will provide Venafi customers with cutting edge solutions in the machine identity management space. An indieDev can belong to an organization with the exception of Venafi competitors, but the contract is between Venafi and the individual. 
 
 #### Venafi UniversityDevs
-Venafi has partnered with Oxford University and Carnegie Mellon University to investigate machine identity management innovations and create new open-source solutions.
+Venafi is expanding the network of innovation to top universities in the world. Oxford University and Carnegie Mellon University are now investigating machine identity management innovations and creating new open-source solutions.
 
 ### Process
 <div id="BED58066764839EECE7278C0D8B6645F61F_69931"><div id="BED58066764839EECE7278C0D8B6645F61F_69931_robot"><a href="https://cloud.smartdraw.com/share.aspx/?pubDocShare=BED58066764839EECE7278C0D8B6645F61F" target="_blank"><img src="https://cloud.smartdraw.com/cloudstorage/BED58066764839EECE7278C0D8B6645F61F/preview2.png"></a></div></div><script src="https://cloud.smartdraw.com/plugins/html/js/sdjswidget_html.js" type="text/javascript"></script><script type="text/javascript">SDJS_Widget("BED58066764839EECE7278C0D8B6645F61F",69931,1,"");</script>
@@ -25,5 +25,5 @@ Venafi has partnered with Oxford University and Carnegie Mellon University to in
 8. We invoice if the deliverables meet the above stated standard AND the Venafi team explicitly approves the quality of the deliverables, per the SOE agreement
 <br>
 
-### Developed solutions
+### Innovative solutions
 Venafi Ecosystem has successfully sponsored a diverse group of Developers who built innovations that are listed on [Venafi Marketplace](https://marketplace.venafi.com). 
