@@ -4,11 +4,6 @@ Venafi Ecosystem is the hub of innovation. It involves and relies on the partici
 
 Venafi Ecosystem provides and maintains the infrastructure, tooling, support for the diverse set of players. Below are the different ways to engage with the Ecosystem depending on the role you play:
 
-<<<<<<< Updated upstream
-=======
-<!-- * [Venafi Solution Architects](solution-architects.md) -->
-
->>>>>>> Stashed changes
 * [Funded Developers](funded-developers.md)
 
 * [Existing or Prospective Customers](customers.md)
