@@ -17,14 +17,25 @@ When developing solutions for the {{midcp}}, you should always build with the go
 
 ## Security Considerations
 
-.TODO
+- The solution should be developed with standard security best practices in mind.
+- The solution should make no attempts to harvest user data.
+- Effective data validation should be implemented to catch errors.
+    - Values should be checked before being passed to functions in code.
+    - Values should be checked before being passed to Venafi or target product/platform/service.
+
+
+## Considerations Regarding Automation Tooling
+
+(Ansible, Terraform, Chef, Puppet, etc.)
+
+If automation tooling is involved, the tool itself is typically the entity initiating any process and Venafi is responsible for responding to requests and sometimes performing further operations as requested by the workflow. In these cases it's important to consider the needs of every team involved, from the application owners to the security administrators.
     
 ## Building a Better User Experience
 
 We understand that every target product is different and some functionality may not be supported.
 The following additional requirements **greatly** enhance the user experience, provide additional value to teams and organizations and should be implemented if at all possible. 
 
-- Renewal of any existing {{mids}} in use would not cause any downtime.
+- Renewal of any existing {{mids}} in use would be transparent to end users and not cause any downtime.
 - Provide the ability to import existing {{mids}} in use by the WAF to Venafi for comprehensive visibility and rapid onboarding.
 
 ## Primers
