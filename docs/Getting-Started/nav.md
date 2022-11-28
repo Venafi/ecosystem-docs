@@ -1,6 +1,6 @@
 - [How to Engage](1-how-to-engage.md)
     - [For Funded Developers](funded-developers.md)
     - [For Existing or Prospective Customers](customers.md)
-    - [Have an Interest to Partner and Develop](prospective-developers.md)
+    - [Want to build with Venafi](prospective-developers.md)
         - [Development Fund Program](../Programs/devfund.md)
         - [General Inquiry](general-inquiry.md)
