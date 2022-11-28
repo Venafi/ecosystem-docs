@@ -276,7 +276,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="https://marketplace.venafi.com/" class="md-tabs__link">
+    <a href="https://marketplace.venafi.com" class="md-tabs__link">
       Marketplace
     </a>
   </li>
@@ -433,7 +433,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../../Getting-Started/prospective-developers/">Have an Interest to Partner and Develop</a>
+          <a href="../../../../Getting-Started/prospective-developers/">Want to build with Venafi</a>
           
             <label for="__nav_2_1_3">
               <span class="md-nav__icon md-icon"></span>
@@ -441,10 +441,10 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Have an Interest to Partner and Develop" data-md-level="3">
+      <nav class="md-nav" aria-label="Want to build with Venafi" data-md-level="3">
         <label class="md-nav__title" for="__nav_2_1_3">
           <span class="md-nav__icon md-icon"></span>
-          Have an Interest to Partner and Develop
+          Want to build with Venafi
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -664,6 +664,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#considerations-regarding-automation-tooling" class="md-nav__link">
+    Considerations Regarding Automation Tooling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#building-a-better-user-experience" class="md-nav__link">
     Building a Better User Experience
   </a>
@@ -733,49 +740,10 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_2" type="checkbox" id="__nav_3_2_2" >
-      
-      
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../For-Ingress/1-overview-ingress/">For Ingress</a>
-          
-            <label for="__nav_3_2_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="For Ingress" data-md-level="3">
-        <label class="md-nav__title" for="__nav_3_2_2">
-          <span class="md-nav__icon md-icon"></span>
-          For Ingress
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../../For-Ingress/2-getting-started-ingress/" class="md-nav__link">
-        Getting Started: Ingress
+      <a href="../../For-Ingress/0-intro-ingress/" class="md-nav__link">
+        For Ingress
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1229,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://marketplace.venafi.com/" class="md-nav__link">
+      <a href="https://marketplace.venafi.com" class="md-nav__link">
         Marketplace
       </a>
     </li>
@@ -1274,6 +1242,13 @@
         <li class="md-nav__item">
   <a href="#security-considerations" class="md-nav__link">
     Security Considerations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#considerations-regarding-automation-tooling" class="md-nav__link">
+    Considerations Regarding Automation Tooling
   </a>
   
 </li>
@@ -1332,12 +1307,23 @@
 <p><strong>The best solutions will require as little, if any, human interaction as possible after initial configuration.</strong></p>
 </div>
 <h2 id="security-considerations">Security Considerations<a class="headerlink" href="#security-considerations" title="Permanent link">&para;</a></h2>
-<p>.TODO</p>
+<ul>
+<li>The solution should be developed with standard security best practices in mind.</li>
+<li>The solution should make no attempts to harvest user data.</li>
+<li>Effective data validation should be implemented to catch errors.<ul>
+<li>Values should be checked before being passed to functions in code.</li>
+<li>Values should be checked before being passed to Venafi or target product/platform/service.</li>
+</ul>
+</li>
+</ul>
+<h2 id="considerations-regarding-automation-tooling">Considerations Regarding Automation Tooling<a class="headerlink" href="#considerations-regarding-automation-tooling" title="Permanent link">&para;</a></h2>
+<p>(Ansible, Terraform, Chef, Puppet, etc.)</p>
+<p>If automation tooling is involved, the tool itself is typically the entity initiating any process and Venafi is responsible for responding to requests and sometimes performing further operations as requested by the workflow. In these cases it's important to consider the needs of every team involved, from the application owners to the security administrators.</p>
 <h2 id="building-a-better-user-experience">Building a Better User Experience<a class="headerlink" href="#building-a-better-user-experience" title="Permanent link">&para;</a></h2>
 <p>We understand that every target product is different and some functionality may not be supported.
 The following additional requirements <strong>greatly</strong> enhance the user experience, provide additional value to teams and organizations and should be implemented if at all possible. </p>
 <ul>
-<li>Renewal of any existing machine identities in use would not cause any <abbr title="A period of time where the workload is **unintentionally** inaccessible">downtime</abbr>.</li>
+<li>Renewal of any existing machine identities in use would be transparent to end users and not cause any <abbr title="A period of time where the workload is **unintentionally** inaccessible">downtime</abbr>.</li>
 <li>Provide the ability to import existing machine identities in use by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> to Venafi for comprehensive visibility and rapid onboarding.</li>
 </ul>
 <h2 id="primers">Primers<a class="headerlink" href="#primers" title="Permanent link">&para;</a></h2>
@@ -1364,6 +1350,8 @@ The following additional requirements <strong>greatly</strong> enhance the user 
 </div>
 </div>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
+
+<!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 
 
 
@@ -1426,7 +1414,8 @@ The following additional requirements <strong>greatly</strong> enhance the user 
   
 </div> 
             <div class="md-footer-links md-quick-links">
-    <p>Quick Links</p>
+    <p>Ecosystem</p>
+    <p><a href="https://github.com/Venafi/ecosystem-docs/issues/new?template=documentation-feedback.md&labels=documentation&title=Doc+Feedback+for+INSERT+PAGE+TITLE" target="_blank">Found a typo?</a></p>
     <p><a href="https://marketplace.venafi.com" target="_blank">Venafi Marketplace</a></p>
     <p><a href="https://venafi-devfund-app.paperform.co/" target="_blank">Development Fund Application</a></p>
 </div>
