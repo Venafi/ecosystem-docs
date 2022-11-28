@@ -11,6 +11,7 @@ This journey is managed through our Ecosystem Management Platform. If you do not
 
 This process should be followed by most Developers who are funded through Venafi's [Development Fund Program](devfund.md). In rare cases, exceptions have to be made. In which case, you will have milestones that are not part of the five outlined above. These milestone actions will be reflected in the above-mentioned platform. 
 
+
 <!--
 #### Out-of-band Milestone
  * Take this action: [Request for additional product evaluation](https://ntueqjwd.paperform.co)
