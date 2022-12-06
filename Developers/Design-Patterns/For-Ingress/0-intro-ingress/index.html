@@ -662,79 +662,49 @@
     
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          For Ingress
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        For Ingress
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#what-is-it" class="md-nav__link">
-    What is it?
-  </a>
-  
-</li>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_2" type="checkbox" id="__nav_3_2_2" checked>
       
-        <li class="md-nav__item">
-  <a href="#why-is-it-necessary" class="md-nav__link">
-    Why is it necessary?
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#primers" class="md-nav__link">
-    Primers
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#success-stories" class="md-nav__link">
-    Success Stories
-  </a>
-  
-</li>
       
-    </ul>
-  
-</nav>
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">For Ingress</a>
+          
+            <label for="__nav_3_2_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
+      <nav class="md-nav" aria-label="For Ingress" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          For Ingress
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-requirements-ingress/" class="md-nav__link">
+        Requirements and Considerations
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1245,6 +1215,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-helps" class="md-nav__link">
+    How it helps?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#primers" class="md-nav__link">
     Primers
   </a>
@@ -1281,32 +1258,34 @@
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Kubernetes is is considered to be a <a href="https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB">platform for building platforms</a>.
 As such, it has a reduced set of opinions about how business demands are fulfilled.
-This creates technological voids into which the Kuberenetes community rushes in to fill.
+This creates technological voids which the Kuberenetes community strives to fill.
 One such area is <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr>, for which the community has provided <a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/">many options</a>.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Design Pattern: Ingress</p>
 <p>This design pattern focuses on the use case of leveraging machine identities via ingress controllers.
-It highlights the need for automation to ensure that once your solution is deployed it stays there, pro-actively securing <abbr title="A process or any location where compute resources are consumed">workloads</abbr> long into the future.</p>
+It highlights the need for automation to ensure that once your solution is deployed it stays there, proactively securing <abbr title="A process or any location where compute resources are consumed">workloads</abbr> long into the future.</p>
 <!-- The CRD for "Ingress" has a well defined specification, so each and every controller implementation is duty-bound to present a familiar face to the world. -->
 </div>
-<p>Before you begin, it's important to understand the "whats" and "whys" of <em>Ingress</em> and <em><abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr></em>. </p>
+<p>Before you begin, it's important to understand the "what", "why" and "how" of <em>Ingress</em>. </p>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">&para;</a></h2>
-<p>Ingress is a Kubernetes resource which represents a line, or lines, of communication from outside a cluster (which could mean the internet) to <abbr title="A process or any location where compute resources are consumed">workloads</abbr> running inside it.
-Without Ingress resources Kubernetes would be limited to running non-interactive <abbr title="A process or any location where compute resources are consumed">workloads</abbr> such as batch jobs.</p>
-<p>Ingress resources are native to Kubernetes but <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr> <strong>are not</strong>.
-An Ingress resource without an <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> remains dormant, like a car without a driver.
-Bringing an <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> to Kubernetes is a choice it intends for you to make.</p>
+<p>Ingress is a Kubernetes resource which represent lines of communication from <strong>outside</strong> a cluster (which could mean the internet) to <abbr title="A process or any location where compute resources are consumed">workloads</abbr> running <strong>inside</strong> this cluster.
+Ingress resources bring network intelligence to load balancers in the form of rules-based routing.
+Without the ability to span this divide Kubernetes would be isolated from the outside world and limited to running non-interactive <abbr title="A process or any location where compute resources are consumed">workloads</abbr> such as batch jobs.</p>
+<p>Ingress resources are native to Kubernetes but <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr> are not.
+An Ingress resource can exist, but without a associated controller to respond, it will remain dormant - somewhat like a car without a driver.
+Selecting a suitable <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> is a choice each cluster intends for you to make.</p>
 <h2 id="why-is-it-necessary">Why is it necessary?<a class="headerlink" href="#why-is-it-necessary" title="Permanent link">&para;</a></h2>
+<p>In addition to rules-based routing <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr> also provide enhanced security which, given the importance of machine identities, should be your primary concern.</p>
 <p>The internet was originally envisioned as a medium for sharing information, however the modern world demands that information should be much better protected.
 To meet these demands we have seen the steady rise of HTTPS to the point where modern browsers baulk at the use of <a href="https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html">plain old HTTP</a>.
 So Transport Layer Security (TLS), which powers HTTPS, is now a mandatory requirement.
-Henceforth we <strong>all</strong> need to concern ourselves with the need for security of data in transit.</p>
-<p>Organizations use machine identities to provide end-to-end security of data sent between <abbr title="A process or any location where compute resources are consumed">workloads</abbr> over the internet with the TLS cryptographic protocol.
+Henceforth you need to consider the need for <strong>security of data in transit</strong>.</p>
+<p>Organizations use machine identities to provide end-to-end security of data sent between running processes with the TLS cryptographic protocol.
 The use of X.509 certificates and HTTPS are the most common manifestation of this.</p>
-<p>To secure <abbr title="A process or any location where compute resources are consumed">workloads</abbr>, those machine identities are sometimes installed at the application endpoint - literally inside the container image.
-Other times machine identities are installed on a load balancer or proxy.</p>
-<p>Loading machine identities into delivery artifacts brings its own special flavor of dependency management dilemma - how to handle the inevitable <strong>expiration</strong> of those machine identities.
-When active machine identities expire or become unavailable, <strong>outages</strong> happen.</p>
+<p>Those machine identities are sometimes installed at the application endpoint - as a layer of configuration inside your container images.
+Cloud native principles such as <a href="https://12factor.net/dependencies">12 factor dependencies</a> may convince you this is the right choice.
+It's certainly convenient but this approach has a major flaw in that machine identities eventually expire so they must <em>not</em> be treated as <strong>static</strong> dependencies of your <abbr title="A process or any location where compute resources are consumed">workloads</abbr>.</p>
+<p>This matters because when active machine identities expire or become unavailable, <strong>outages</strong> happen.</p>
 <details class="danger">
 <summary>Outages</summary>
 <p>Workloads can become unavailable for many reasons and any such event can be described as an <strong>outage</strong>.</p>
@@ -1316,19 +1295,16 @@ When machine identities expire they stop working and the <abbr title="A process 
 A likely outcome of failing to mitigate against outages is negative impact to brand reputation and lost revenue.</p>
 <p>Automation using the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> is a key defense against outages. </p>
 </details>
-<p>In general, externalizing <a href="https://en.wikipedia.org/wiki/Non-functional_requirement#Examples">non-functional requirements</a> is considered good development practice.
-Thankfully the Ingress specification provides explicit support for TLS protection on its lines of communication.</p>
-<!-- ## Requirements and Considerations
-
-TODO ... -->
-
-<!-- Thankfully the Ingress specification provides for TLS protection on its lines of communication. but it remains the responsibility of your chosen Ingress Controller to honor that requirement. -->
-
-<!-- Furthermore, as time passes, there is a fundamental requirement to ensure these machine identities are renewed to avoid expiration.
-That responsibility belongs outside your Ingress Controller -->
-
-<!-- TODO: the cross-cutting concern of TLS, where should my certificates go? -->
-
+<h2 id="how-it-helps">How it helps?<a class="headerlink" href="#how-it-helps" title="Permanent link">&para;</a></h2>
+<p>You can avoid outages caused by expiring machine identities with the use of an <strong>proxy</strong> placed in front of your workload.
+This proxy should be configured to enforce TLS and act as the point of TLS termination.
+This means that traffic touching the internet can be HTTPS whilst traffic touching the workload can remain as plain old HTTP.
+The configuration of this proxy is determined by how your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> interprets your Ingress resources.
+Your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> should be able to inject your <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> into this proxy at the point of creation.
+Perhaps more importantly, since machine identities are a <strong>dynamic</strong> dependency of your workload which will eventually expire, your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> should also be able to re-inject machine identities, whenever they are renewed.
+This approach can permanently eliminate <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> expiry as a outage risk. </p>
+<p>Thankfully the <a href="https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/">Ingress specification</a> accomodates TLS protection as an explicit attribute.
+This is a clear indication that <strong>all</strong> <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> implementations are expected to provide reactive TLS support, relieving your <abbr title="A process or any location where compute resources are consumed">workloads</abbr> of that responsibility.</p>
 <!-- ##### Questions to guide us:
 
 - What are the absolute **required capabilities**? (MVP)
@@ -1402,12 +1378,12 @@ That responsibility belongs outside your Ingress Controller -->
             </div>
         </a>
           
-        <a href="../../../Certification/TLS-Protect-Cloud/1-tlsp-certification-intro/" class="md-footer__link md-footer__link--next" aria-label="Next: TLS Protect Cloud" rel="next">
+        <a href="../1-requirements-ingress/" class="md-footer__link md-footer__link--next" aria-label="Next: Requirements and Considerations" rel="next">
             <div class="md-footer__title">
                 <div class="md-ellipsis">
                     <span class="md-footer__direction">
                   Next
-                </span> TLS Protect Cloud
+                </span> Requirements and Considerations
                 </div>
             </div>
             <div class="md-footer__button md-icon">
