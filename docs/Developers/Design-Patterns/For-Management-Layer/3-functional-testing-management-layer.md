@@ -1,7 +1,7 @@
 # Functional Testing: Management Layer
 
 During development of your solution, you should keep the following functional tests in mind for this design pattern.
-The test cases listed below are directly related to the [requirements and considerations](../1-overview-management-layer/#requirements-and-considerations) outlined for the management layer use case.
+The test cases listed below are directly related to the [requirements and considerations](../1-overview-management-layer/#requirements-and-considerations) outlined for this use case.
 
 {% include '.admonitions/what-is-functional-testing-admonition.md' %}
 
@@ -9,7 +9,7 @@ The functional tests documented below are provided as examples.
 Depending on the supported functionality of the target platform/service you're building for and/or the complexity of your solution, some tests listed below may not be necessary.
 Similarly, it's possible that you've got such a new or unique solution, that we haven't identified recommended functional tests yet.
 
-If you've got suggestions and/or functional tests that helped during your development, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com Feedback)!
+If you've got suggestions and/or functional tests that helped during your development, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Management Layer Functional Testing)!
 
 ??? tip "Reduce Confirmation Bias"
 
@@ -18,13 +18,9 @@ If you've got suggestions and/or functional tests that helped during your develo
 
 ## Base Functionality Tests
 
-- Provision a certificate to a target.
-    - Provision the same certificate (has NOT been renewed) to the same target.
-    - Provision a renewed certificate to the same target.
+{% include 'testing/ft-requestors-basic.md' %}
+| Certificate (mulitple targets) | Provision a certificate to the target for use in multiple downstream locations | Certificate is installed in multiple locations and ALL locations are reported back to Venafi |
 
-## Advanced Functionality Tests (if applicable)
+## Advanced Functionality Tests
 
-- Activation/Association/Binding
-    - Provision a certificate to the target and **create a new** associated configuration object to utilize the certificate (e.g. Security "Profile")
-    - Provision a certificate to the target and **update an existing** associated configuration object to utilize the certificate
-    - Provision a *renewed* certificate to the target and **update an existing** associated configuration object to utilize the certificate
+{% include 'testing/ft-consumers-advanced.md' %}

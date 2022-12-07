@@ -9,7 +9,7 @@
 Organizations use {{mids}} to secure traffic to and from their workloads using Transport Layer Security (TLS) with HTTPS being the most common use case.
 
 Sometimes those {{mids}} are installed at the application endpoint, itself (i.e. source code). 
-Other times, they may be installed on a load balancer, [cloud WAF](../For-Cloud-WAF/0-intro-cloud-waf.md) or, in this case, a management layer. 
+Other times, they may be installed on a load balancer, [cloud WAF](../For-Cloud-WAF/0-intro-cloud-waf.md) or, in this case, used by the management layer. 
 
 !!! abstract "Design Pattern: Management Layer"
 
@@ -20,7 +20,9 @@ Before you begin, it's important to understand the "whats," "whys" and "hows" of
 
 ## What is it?
 
-For our purposes, the management layer should be considered the source of truth for ALL configuration information, including, but not limited to {{mids}}, used by the objects (devices/applications/services) under its management.
+The term "management layer" is somewhat generic, and can also be referred to by a few other terms such as "orchestration layer," "management/control plane," "central manager," etc.
+Different software products may have their own "productized" name as well.
+Generally speaking, the primary use case for this component is to provide a higher-level, more centralized view of all the devices, workloads, configurations, policies, etc. of the lower-level devices in the infrastructure.
 
 !!! example "EXAMPLE"
 
@@ -32,6 +34,7 @@ For our purposes, the management layer should be considered the source of truth 
 
 Because security is just one piece of the configuration the management layer is responsible for, it makes sense that any configuration updates are initiated there.
 Multiple sources of truth can lead to collisions and synchronization issues since one source may not be aware of recent changes made by the other.
+For our purposes, the management layer should be considered the source of truth for ALL configuration information, including, but not limited to {{mids}}, used by the objects (devices/applications/services) under its management.
 
 ## Why is {{mid}} automation necessary?
 
@@ -41,7 +44,8 @@ When active {{mids}} expire or become unavailable, outages happen.
 {% include '.admonitions/outages-admonition.md' %}
 
 These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general **lack of automation**.
-The management layer *must* be aware of any and all information associated with a given {{mid}} and any workloads consuming it, so that it can proactively renew and re-provision on a schedule or ad-hoc, at the time of need. 
+The management layer *must* be aware of any and all information associated with a given {{mid}} and any workloads consuming it, so that it can proactively renew and re-provision on a schedule or ad-hoc, at the time of need.
+Additionally, the management layer is responsible for providing relevant information back to the {{midcp}} in order for the InfoSec or PKI team to maintain complete visibility into all {{mids}} in use throughout the organization.
 
 {% include 'value-drivers/vd-intro.md' %}
 

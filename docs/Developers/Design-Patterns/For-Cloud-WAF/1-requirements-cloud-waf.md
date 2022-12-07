@@ -9,7 +9,7 @@ When developing solutions for the {{midcp}}, you should always build with the go
 - The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the WAF.
 - The solution must perform any necessary updates to any bindings/configurations/associations attached to the {{mid}}.
 - The solution must report back to the {{midcp}} all installed location(s) of the {{mids}} involved in the automation.
-- If possible, the {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s).
+- If possible, the {{midcp}} must be able to continuously validate any {{mid}} is installed at any known location(s).
 
 !!! tip "Focus on UX"
 
@@ -34,7 +34,7 @@ The following additional requirements **greatly** enhance the user experience, p
 ## Primers
 We think you'll find the following references helpful when developing your solution.
 
-If you've found other articles or tools that you think should be included here, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com Feedback - Cloud WAF: Overview)!
+If you've found other articles or tools that you think should be included here, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Cloud WAF Overview)!
 
 - [WAF](https://en.wikipedia.org/wiki/Web_application_firewall) - Wikipedia
 - [What is WAF](https://www.youtube.com/watch?v=p8CQcF_9280) - YouTube
