@@ -59,7 +59,7 @@ When active {{mids}} expire or become unavailable, outages happen.
 These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general **lack of automation**.
 
 In addition to {{mids}} for each application, the solution must be capable of storing and using any additional configuration information and metadata required by the WAF to use the {{mid}} once it is provisioned.
-This introduces another failure point, and another potential <span class="outage">**outage**</span>.
+This introduces another failure point, and another potential <span class="outage">**outage**</span> to be aware of.
 
 {% include 'value-drivers/vd-intro.md' %}
 

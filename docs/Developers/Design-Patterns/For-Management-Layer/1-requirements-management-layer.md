@@ -6,10 +6,10 @@ When developing solutions for the {{midcp}}, you should always build with the go
 
 ## Minimum Requirements 
 
-- The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the WAF.
+- The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the management layer.
 - The solution must perform any necessary updates to any bindings/configurations/associations attached to the {{mid}}.
-- The solution must report all installed location(s) of the {{mids}} involved in the automation.
-- The {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s).
+- The solution must report back to the {{midcp}} all installed location(s) of the {{mids}} involved in the automation.
+- If possible, the {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s).
 
 !!! tip "Focus on UX"
 
@@ -22,13 +22,6 @@ When developing solutions for the {{midcp}}, you should always build with the go
 - Effective data validation should be implemented to catch errors.
     - Values should be checked before being passed to functions in code.
     - Values should be checked before being passed to Venafi or target product/platform/service.
-
-
-## Considerations Regarding Automation Tooling
-
-(Ansible, Terraform, Chef, Puppet, etc.)
-
-If automation tooling is involved, the tool itself is typically the entity initiating any process and Venafi is responsible for responding to requests and sometimes performing further operations as requested by the workflow. In these cases it's important to consider the needs of every team involved, from the application owners to the security administrators.
     
 ## Building a Better User Experience
 
@@ -43,15 +36,19 @@ We think you'll find the following references helpful when developing your solut
 
 If you've found other articles or tools that you think should be included here, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com Feedback - Cloud WAF: Overview)!
 
-- [WAF](https://en.wikipedia.org/wiki/Web_application_firewall) - Wikipedia
-- [What is WAF](https://www.youtube.com/watch?v=p8CQcF_9280) - YouTube
+**TO-DO**
 
 ## Success Stories
 
 Existing solutions that fit this use case:
 
 === "Venafi Marketplace"
-    - [Imperva](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/62a34b3e7550f2ee553cf2d1)
+    - [F5 BIG-IQ](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/620d4f3fd419fb06a5c5bd48)
+    - [Citrix ADM](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/6297c40d7550f2ee553cf27e)
+    - [Device Authority KeyScaler](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/629430e57550f2ee553cf23a)
+    - [IBM Guardium](https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/629961657550f2ee553cf28c)
 
 === "Elsewhere"
-    - [Radware](https://www.radware.com/products/cloud-waf-service/)
+    - [Fortinet FortiManager](https://www.fortinet.com/products/management/fortimanager)
+    - [Palo Alto Panorama](https://www.paloaltonetworks.com/network-security/panorama)
+    - [Juniper MCM](https://www.juniper.net/documentation/us/en/software/jatp/jatp-quickstart/topics/concept/jatp-manager-of-central-managers-mcm.html)

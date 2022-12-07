@@ -1,7 +1,7 @@
-# Functional Testing: Cloud WAF
+# Functional Testing: Management Layer
 
 During development of your solution, you should keep the following functional tests in mind for this design pattern.
-The test cases listed below are directly related to the [requirements and considerations](../1-overview-cloud-waf/#requirements-and-considerations) outlined for the Cloud WAF use case.
+The test cases listed below are directly related to the [requirements and considerations](../1-overview-management-layer/#requirements-and-considerations) outlined for the management layer use case.
 
 {% include '.admonitions/what-is-functional-testing-admonition.md' %}
 
