@@ -6,9 +6,7 @@ We are using the [Material theme](https://squidfunk.github.io/mkdocs-material/) 
 
 ## Development Requirements
 
-In order to serve the site locally (useful for editing purposes), you'll need to install some dependencies:
-
-- TODO
+In order to serve the site locally (useful for editing purposes), you'll need to install the dependencies included in [requirements.txt](/requirements.txt).
 
 ## Quick Reference
 
@@ -44,7 +42,8 @@ Please use the dash `-` character vs. a "space" `␣` when naming pages and dire
 
 ### Variables
 
-Variables are used to make future branding updates or name changes easier. Variable definitions are found in `docs/.variables/general.yml` and can be added to and updated at any point.
+Variables are used to make future branding updates or name changes easier.
+Variable definitions are found in `docs/.variables/general.yml` and can be added to and updated at any point.
 
 > NOTE: To use a variable on any page, simply include it in two curly braces `{{VARIABLE}}`. 
 
@@ -54,7 +53,8 @@ Variables are used to make future branding updates or name changes easier. Varia
 
 ### Snippets
 
-To use a snippet in a topic, create the snippet in 'docs/.snippets' or a subfolder in that directory as a .md file. Then, in the topics where you want to include the snippet, **you can reference it with the following:**
+To use a snippet in a topic, create the snippet in 'docs/.snippets' or a subfolder in that directory as a .md file.
+Then, in the topics where you want to include the snippet, **you can reference it with the following:**
 
 {% include 'snippet-name<span></span>.md' %}
 
@@ -66,3 +66,14 @@ To use a snippet in a topic, create the snippet in 'docs/.snippets' or a subfold
 
 Include the following immediately after the (link in parenthesis):
 `{: target="_blank" }`
+
+### Layout & Formatting Options
+
+#### Images
+
+All images will automatically get the "lightbox" effect applied to them.
+If you'd like to disable this, simply add `{ .off-glb }` immediately after the image:
+
+| Lightbox *enabled* | Lightbox *disabled* |
+| --- | --- |
+| [image](path-to-image.png) | [image](path-to-image.png){ .off-glb } |
