@@ -612,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../For-Cloud-WAF/1-overview-cloud-waf/" class="md-nav__link">
+      <a href="../../For-Cloud-WAF/1-requirements-cloud-waf/" class="md-nav__link">
         Requirements and Considerations
       </a>
     </li>
@@ -751,10 +751,133 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#primers" class="md-nav__link">
+    Primers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-stories" class="md-nav__link">
+    Success Stories
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-getting-started-ingress/" class="md-nav__link">
+        Getting Started: Ingress
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-functional-testing-ingress/" class="md-nav__link">
+        Functional Testing: Ingress
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" type="checkbox" id="__nav_3_2_3" >
+      
+      
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../For-Management-Layer/0-intro-management-layer/">For Management Layer</a>
+          
+            <label for="__nav_3_2_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="For Management Layer" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          For Management Layer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../For-Management-Layer/1-requirements-management-layer/" class="md-nav__link">
+        Requirements and Considerations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../For-Management-Layer/2-getting-started-management-layer/" class="md-nav__link">
+        Getting Started: Management Layer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../For-Management-Layer/3-functional-testing-management-layer/" class="md-nav__link">
+        Functional Testing: Management Layer
+      </a>
     </li>
   
 
@@ -1271,6 +1394,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#primers" class="md-nav__link">
+    Primers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-stories" class="md-nav__link">
+    Success Stories
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1318,6 +1455,31 @@ That's great for flexibility but, in light of the <abbr title="The holistic plat
 <p>TODO</p>
 <!-- Key to a good user experience -->
 
+<h2 id="primers">Primers<a class="headerlink" href="#primers" title="Permanent link">&para;</a></h2>
+<p>We think you'll find the following references helpful when developing your solution. 
+<strong>If you've found other articles or tools that you think should be included here, please let us know!</strong></p>
+<!-- .to-do: insert a way for users to let us know. Maybe a simple mailto: link will work for now, or do we suggest they update the page themselves and make a pull request? -->
+
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress/">Ingress</a></li>
+</ul>
+<h2 id="success-stories">Success Stories<a class="headerlink" href="#success-stories" title="Permanent link">&para;</a></h2>
+<p>Existing solutions that fit within this pattern:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Venafi Marketplace</label><label for="__tabbed_1_2">Elsewhere</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><a href="https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/6294f5507550f2ee553cf25d">NGINX Ingress</a></li>
+<li><a href="https://marketplace.venafi.com/ui/xchange-marketplace-app/620d2d6ed419fb06a5c5bd36/solution/628cf590220a43b0c9a48842">Pomerium Ingress</a></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/">Kubernetes community</a></li>
+</ul>
+</div>
+</div>
+</div>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
@@ -1352,12 +1514,12 @@ That's great for flexibility but, in light of the <abbr title="The holistic plat
             </div>
         </a>
           
-        <a href="../../../Certification/TLS-Protect-Cloud/1-tlsp-certification-intro/" class="md-footer__link md-footer__link--next" aria-label="Next: TLS Protect Cloud" rel="next">
+        <a href="../2-getting-started-ingress/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started: Ingress" rel="next">
             <div class="md-footer__title">
                 <div class="md-ellipsis">
                     <span class="md-footer__direction">
                   Next
-                </span> TLS Protect Cloud
+                </span> Getting Started: Ingress
                 </div>
             </div>
             <div class="md-footer__button md-icon">

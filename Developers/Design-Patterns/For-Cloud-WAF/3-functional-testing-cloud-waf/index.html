@@ -614,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1-overview-cloud-waf/" class="md-nav__link">
+      <a href="../1-requirements-cloud-waf/" class="md-nav__link">
         Requirements and Considerations
       </a>
     </li>
@@ -651,9 +651,49 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Functional Testing: Cloud WAF
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Functional Testing: Cloud WAF
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base-functionality-tests" class="md-nav__link">
+    Base Functionality Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-functionality-tests" class="md-nav__link">
+    Advanced Functionality Tests
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -707,6 +747,115 @@
     <li class="md-nav__item">
       <a href="../../For-Ingress/1-requirements-ingress/" class="md-nav__link">
         Requirements and Considerations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../For-Ingress/2-getting-started-ingress/" class="md-nav__link">
+        Getting Started: Ingress
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../For-Ingress/3-functional-testing-ingress/" class="md-nav__link">
+        Functional Testing: Ingress
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" type="checkbox" id="__nav_3_2_3" >
+      
+      
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../For-Management-Layer/0-intro-management-layer/">For Management Layer</a>
+          
+            <label for="__nav_3_2_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="For Management Layer" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          For Management Layer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../For-Management-Layer/1-requirements-management-layer/" class="md-nav__link">
+        Requirements and Considerations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../For-Management-Layer/2-getting-started-management-layer/" class="md-nav__link">
+        Getting Started: Management Layer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../For-Management-Layer/3-functional-testing-management-layer/" class="md-nav__link">
+        Functional Testing: Management Layer
       </a>
     </li>
   
@@ -1197,6 +1346,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#base-functionality-tests" class="md-nav__link">
+    Base Functionality Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-functionality-tests" class="md-nav__link">
+    Advanced Functionality Tests
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1212,7 +1383,7 @@
 
 <h1 id="functional-testing-cloud-waf">Functional Testing: Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr><a class="headerlink" href="#functional-testing-cloud-waf" title="Permanent link">&para;</a></h1>
 <p>During development of your solution, you should keep the following functional tests in mind for this design pattern.
-The test cases listed below are directly related to the <a href="../1-overview-cloud-waf/#requirements-and-considerations">requirements and considerations</a> outlined for the Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> use case.</p>
+The test cases listed below are directly related to the <a href="../1-overview-cloud-waf/#requirements-and-considerations">requirements and considerations</a> outlined for this use case.</p>
 <details class="question">
 <summary>What is functional testing?</summary>
 <p><strong>To summarize <a href="https://en.wikipedia.org/wiki/Functional_testing" target="_blank">Wikipedia</a>:</strong></p>
@@ -1222,23 +1393,68 @@ It's a great way to uncover bugs, unexpected behaviors and documentation errors.
 <p>The functional tests documented below are provided as examples.
 Depending on the supported functionality of the target platform/service you're building for and/or the complexity of your solution, some tests listed below may not be necessary.
 Similarly, it's possible that you've got such a new or unique solution, that we haven't identified recommended functional tests yet.</p>
-<p>If you've got suggestions and/or functional tests that helped during your development, <a href="mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com Feedback">please let us know</a>!</p>
+<p>If you've got suggestions and/or functional tests that helped during your development, <a href="mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Cloud WAF Functional Testing">please let us know</a>!</p>
 <details class="tip">
 <summary>Reduce Confirmation Bias</summary>
 <p>It can be extremely helpful, especially when writing documentation that accompanies your solution, to involve others on your team who haven't been involved in the development process.
 While you might be able to perform all functionality without even referencing the docs, it's possible that a fresh set of eyes will uncover typos or minor omissions that someone directly involved in development might miss.</p>
 </details>
-<!-- 
-## Base Functionality Tests
-
-1. 
-
-## Advanced Functionality Tests (if applicable)
-
-1. Performing a renewal operation on an application actively being managed by the WAF is transparent to end users of said application and there is **zero downtime**
-
--->
-
+<h2 id="base-functionality-tests">Base Functionality Tests<a class="headerlink" href="#base-functionality-tests" title="Permanent link">&para;</a></h2>
+<p>The following functionality tests should be applicable to every solution targeting this use case.</p>
+<table>
+<thead>
+<tr>
+<th><h3><strong>Test Case</strong></h3></th>
+<th><h3><strong>Description</strong></h3></th>
+<th><h3><strong>Desired Outcome</strong></h3></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Error Handling</td>
+<td>Perform an operation which you expect to fail (unsupported key size, missing/incomplete data, etc.)</td>
+<td>The error will be encountered and a meaningful error message will be presented to the end user and, if applicable, back to Venafi</td>
+</tr>
+<tr>
+<td>New Certificate</td>
+<td>Provision a <em>new</em> certificate to the target</td>
+<td>Certificate is provisioned with location(s) reported back to Venafi</td>
+</tr>
+<tr>
+<td>Existing Certificate (non-renewed)</td>
+<td>Provision <em>the same</em> certificate to the target (without renewing the cert)</td>
+<td>Certificate is provisioned with location(s) reported back to Venafi</td>
+</tr>
+<tr>
+<td>Existing Certificate (renewed)</td>
+<td>Provision a <em>renewed</em> certificate to the target</td>
+<td>Certificate is provisioned with location(s) reported back to Venafi</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advanced-functionality-tests">Advanced Functionality Tests<a class="headerlink" href="#advanced-functionality-tests" title="Permanent link">&para;</a></h2>
+<p>Depending on the exact functionality of the target solution, the following tests may or may not be applicable.</p>
+<table>
+<thead>
+<tr>
+<th><h3><strong>Test Case</strong></h3></th>
+<th><h3><strong>Description</strong></h3></th>
+<th><h3><strong>Desired Outcome</strong></h3></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New Certificate <em>Association</em></td>
+<td>Provision a <em>new</em> certificate to the target and <strong>create a new</strong> associated configuration object to utilize the certificate (e.g. Security "Profile")</td>
+<td>Certificate is provisioned with location(s) reported back to Venafi and configuration object is created automatically at the target</td>
+</tr>
+<tr>
+<td>Existing Certificate <em>Association</em></td>
+<td>Provision a <em>renewed</em> certificate to the target and <strong>update an existing</strong> associated configuration object</td>
+<td>Certificate is provisioned with location(s) reported back to Venafi and existing configuration object is validated (and updated if required)</td>
+</tr>
+</tbody>
+</table>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
