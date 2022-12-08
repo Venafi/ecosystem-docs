@@ -16,11 +16,11 @@ If you've got suggestions and/or functional tests that helped during your develo
     It can be extremely helpful, especially when writing documentation that accompanies your solution, to involve others on your team who haven't been involved in the development process.
     While you might be able to perform all functionality without even referencing the docs, it's possible that a fresh set of eyes will uncover typos or minor omissions that someone directly involved in development might miss.
 
-## Base Functionality Tests
+## Basic Functionality Tests
 
 {% include 'testing/ft-requestors-basic.md' %}
-| Certificate (mulitple targets) | Provision a certificate to the target for use in multiple downstream locations | Certificate is installed in multiple locations and ALL locations are reported back to Venafi |
+| Certificate (mulitple targets) | Request a certificate from Venafi for use in multiple downstream locations | Certificate is installed in multiple locations and ALL locations are reported back to Venafi |
 
 ## Advanced Functionality Tests
 
-{% include 'testing/ft-consumers-advanced.md' %}
+{% include 'testing/ft-requestors-advanced.md' %}
