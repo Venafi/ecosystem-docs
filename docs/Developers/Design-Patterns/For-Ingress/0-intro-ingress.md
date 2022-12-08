@@ -1,5 +1,3 @@
-TODO fix up for venafi orange css class
-
 #  Ingress
 
 <!-- We can justify the inclusion of "ingress" because ingress is a known entity in JSS. -->
