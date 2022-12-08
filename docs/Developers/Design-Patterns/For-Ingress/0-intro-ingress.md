@@ -7,15 +7,15 @@
 
 ## Introduction
 
-Kubernetes is considered to be a [platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB).
-As such, it has a reduced set of opinions about how business demands are fulfilled.
+Kubernetes is a [platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB) which helps companies **modernize with speed and agility**.
+It has a reduced set of opinions about how business demands are fulfilled.
 This creates technological voids which the Kuberenetes community strives to fill.
 One such area is Ingress Controllers, for which the community has provided [many options](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/).
 
 !!! abstract "Design Pattern: Ingress"
 
     This design pattern focuses on the use case of leveraging {{mids}} via ingress controllers.
-    It highlights the need for automation to ensure that once your solution is deployed it stays there, proactively securing workloads long into the future.
+    It highlights the need for automation to ensure that once your solution is deployed it stays there, **proactively** securing workloads long into the future.
 
     <!-- The CRD for "Ingress" has a well defined specification, so each and every controller implementation is duty-bound to present a familiar face to the world. -->
 
@@ -28,7 +28,7 @@ Ingress resources bring network intelligence to load balancers in the form of ru
 Without the ability to span this divide Kubernetes would be isolated from the outside world and limited to running non-interactive workloads such as batch jobs.
 
 Ingress resources are native to Kubernetes but Ingress Controllers are not.
-An Ingress resource can exist, but without a associated controller to respond, it will remain dormant - somewhat like a car without a driver.
+An Ingress resource can exist, but without an associated controller to respond, it will remain dormant - somewhat like a car without a driver.
 Selecting a suitable Ingress Controller is a choice each cluster intends for you to make.
 
 ## Why is it necessary?
@@ -36,9 +36,9 @@ Selecting a suitable Ingress Controller is a choice each cluster intends for you
 In addition to rules-based routing Ingress Controllers also provide enhanced security which, given the importance of {{mids}}, should be your primary concern.
 
 The internet was originally envisioned as a medium for sharing information, however the modern world demands that information should be much better protected.
-To meet these demands we have seen the steady rise of HTTPS to the point where modern browsers baulk at the use of [plain old HTTP](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html).
-So Transport Layer Security (TLS), which powers HTTPS, is now a mandatory requirement.
-Henceforth you need to consider the need for **security of data in transit**.
+To meet these demands we have seen the steady rise of HTTPS to the point where modern browsers baulk at the use of [plain old HTTP](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html) so Transport Layer Security (TLS), which powers HTTPS, is now a mandatory requirement.
+Henceforth you need to enforce the **security of your data in transit**.
+Doing so with an Ingress Controller moves TLS termination closer to your workloads thereby helping to **prevent misuse and compromise**.
 
 Organizations use {{mids}} to provide end-to-end security of data sent between running processes with the TLS cryptographic protocol.
 The use of X.509 certificates and HTTPS are the most common manifestation of this.
@@ -63,16 +63,16 @@ Arguably, the total number of {{mids}} in any given cluster should equal the tot
 
 ## How it helps?
 
-You can avoid outages caused by expiring {{mids}} with the use of an **proxy** placed in front of your workload.
+You can **stop unnecessary outages** caused by expiring {{mids}} with the use of an **proxy** placed in front of your workload.
 This proxy should be configured to enforce TLS and act as the point of TLS termination.
 This means that traffic touching the internet can be HTTPS whilst traffic touching the workload can remain as plain old HTTP.
 The configuration of this proxy is determined by how your Ingress Controller interprets your Ingress resources.
-Your Ingress Controller should be able to inject your {{mid}} into this proxy at the point of creation.
-Perhaps more importantly, since {{mids}} are a **dynamic** dependency of your workload which will eventually expire, your Ingress Controller should also be able to re-inject {{mids}}, whenever they are renewed.
-This approach can permanently eliminate {{mid}} expiry as a outage risk.
+Your Ingress Controller should be able to **inject** your {{mid}} into this proxy at the point of creation.
+Perhaps more importantly, since {{mids}} are a **dynamic** dependency of your workload, your Ingress Controller should also be able to re-inject {{mids}}, whenever they are renewed.
+This approach adheres to the principle of **automating everywhere** and can permanently eliminate {{mid}} expiry as a outage risk.
 
 Thankfully the [Ingress specification](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/) accomodates TLS protection as an explicit attribute.
-This is a clear indication that **all** Ingress Controller implementations are expected to provide reactive TLS support, relieving your workloads of that responsibility.
+This is a clear indication that **all** Ingress Controller implementations are expected to provide proactive TLS support, relieving your workloads of that responsibility.
 
 <!-- ##### Questions to guide us:
 
