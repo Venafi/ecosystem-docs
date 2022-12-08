@@ -76,4 +76,4 @@ If you'd like to disable this, simply add `{ .off-glb }` immediately after the i
 
 | Lightbox *enabled* | Lightbox *disabled* |
 | --- | --- |
-| [image](path-to-image.png) | [image](path-to-image.png){ .off-glb } |
+| `[image](path-to-image.png)` | `[image](path-to-image.png){ .off-glb }` |
