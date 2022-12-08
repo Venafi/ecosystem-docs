@@ -1353,8 +1353,8 @@ In this design pattern, <strong>the management layer is responsible for automati
 <p>Before you begin, it's important to understand the "whats," "whys" and "hows" of various <em>management layer</em> solutions. </p>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">&para;</a></h2>
 <p>The term "management layer" is somewhat generic, and can also be referred to by a few other terms such as "orchestration layer," "management/control plane," "central manager," etc.
-Different software products may have their own "productized" name as well.
-Generally speaking, the primary use case for this component is to provide a higher-level, more centralized view of all the devices, <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>, configurations, policies, etc. of the lower-level devices in the infrastructure.</p>
+Different software products may have their own "productized" name as well.</p>
+<p>Generally speaking, the primary use case for this "management layer" component is to provide a higher-level, more centralized view of all the devices, <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>, configurations, policies, etc. of the lower-level components in the infrastructure.</p>
 <div class="admonition example">
 <p class="admonition-title">EXAMPLE</p>
 <p>Consider <a href="https://www.citrix.com/products/citrix-application-delivery-management/">Citrix Application Delivery Management (ADM)</a>.
@@ -1364,8 +1364,8 @@ This can help improve efficiency and reduce the time and effort needed to manage
 ADM also provides additional features for monitoring and managing the performance and availability of ADC devices.</p>
 </div>
 <p>Because security is just one piece of the configuration the management layer is responsible for, it makes sense that any configuration updates are initiated there.
-Multiple sources of truth can lead to collisions and synchronization issues since one source may not be aware of recent changes made by the other.
-For our purposes, the management layer should be considered the source of truth for ALL configuration information, including, but not limited to machine identities, used by the objects (devices/applications/services) under its management.</p>
+Multiple sources of truth can lead to collisions and synchronization issues since one source may not be aware of recent changes made by the other.</p>
+<p>For our purposes, the management layer should be considered the source of truth for ALL configuration information, including, but not limited to machine identities, used by the objects (devices/applications/services) under its management.</p>
 <h2 id="why-is-machine-identity-automation-necessary">Why is <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation necessary?<a class="headerlink" href="#why-is-machine-identity-automation-necessary" title="Permanent link">&para;</a></h2>
 <p>Proper management of these machine identities is critical to the availability and security of the applications/devices/services under the purview of the management layer.
 When active machine identities expire or become unavailable, outages happen.</p>
@@ -1378,16 +1378,21 @@ When machine identities expire they stop working and the <abbr title="A process 
 A likely outcome of failing to mitigate against outages is negative impact to brand reputation and lost revenue.</p>
 <p>Automation using the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> is a key defense against outages. </p>
 </details>
-<p>These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general <strong>lack of automation</strong>.
-The management layer <em>must</em> be aware of any and all information associated with a given <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> and any <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> consuming it, so that it can proactively renew and re-provision on a schedule or ad-hoc, at the time of need.
+<p>These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general <strong>lack of automation</strong>.</p>
+<p>The management layer <em>must</em> be aware of any and all information associated with a given <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> and any <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> consuming it, so that it can proactively renew and re-provision on a schedule or ad-hoc, at the time of need.</p>
+<div class="admonition example">
+<p class="admonition-title">EXAMPLE</p>
+<p>A good example is the expiry date of a certificate.
+The management layer should recognize the expiry date is upcoming and, if desired by the user, proactively renew the certificate.
 Additionally, the management layer is responsible for providing relevant information back to the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> in order for the InfoSec or PKI team to maintain complete visibility into all machine identities in use throughout the organization.</p>
+</div>
 <p>Users of the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> benefit from key outcomes solving common problems.</p>
 <p>They are <strong>automating everywhere</strong></p>
 <ul>
 <li>by removing manual steps from the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> management process, enabling teams to scale quickly, while still maintaining compliance and control.</li>
 <li>by enabling teams to use whatever tools they know and prefer, and not forcing them to wait for unnecessary approval step bottlenecks.</li>
 </ul>
-<p>They are <strong>stopping unnecessary outages</strong></p>
+<p>They are <span class="value-drivers">stopping unnecessary outages</span></p>
 <ul>
 <li>by identifying, understanding and correcting situations and processes that could lead to an outage.</li>
 <li>by understanding that proper <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> management is a shared responsibility between multiple teams, and working together increases the security posture of the organization. Developers like you help enable those teams to work together seamlessly.</li>

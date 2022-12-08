@@ -1431,14 +1431,16 @@
 </div>
 <h2 id="minimum-requirements">Minimum Requirements<a class="headerlink" href="#minimum-requirements" title="Permanent link">&para;</a></h2>
 <ul>
+<li>The solution must be able to request certificates from Venafi.</li>
 <li>The solution must automate the delivery of <em>any</em> necessary certificate(s) required for the security of applications managed by the management layer.</li>
 <li>The solution must perform any necessary updates to any bindings/configurations/associations attached to the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr>.</li>
-<li>The solution must report back to the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> all installed location(s) of the machine identities involved in the automation.</li>
+<li>The solution must report back to the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> all installed location(s) of the any certificates obtained through Venafi.</li>
+<li>If possible, the solution should store relevant, associated metadata of the certificate (like expiry date) which can be utilized for automated operations.</li>
 <li>If possible, the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> must be able to continuously validate any <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is installed at any known location(s).</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Focus on UX</p>
-<p><strong>The best solutions will require as little, if any, human interaction as possible after initial configuration.</strong></p>
+<p>The best solutions will require as little, if any, human interaction as possible after initial configuration.</p>
 </div>
 <h2 id="security-considerations">Security Considerations<a class="headerlink" href="#security-considerations" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1455,12 +1457,12 @@
 The following additional requirements <strong>greatly</strong> enhance the user experience, provide additional value to teams and organizations and should be implemented if at all possible. </p>
 <ul>
 <li>Renewal of any existing machine identities in use would be transparent to end users and not cause any <abbr title="A period of time where the workload is **unintentionally** inaccessible">downtime</abbr>.</li>
-<li>Provide the ability to import existing machine identities in use by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> to Venafi for comprehensive visibility and rapid onboarding.</li>
+<li>Provide the ability to import existing machine identities in use by the management layer and any lower-level components to Venafi for comprehensive visibility and rapid onboarding.</li>
 </ul>
 <h2 id="primers">Primers<a class="headerlink" href="#primers" title="Permanent link">&para;</a></h2>
 <p>We think you'll find the following references helpful when developing your solution.</p>
-<p>If you've found other articles or tools that you think should be included here, <a href="mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Management Layer Overview">please let us know</a>!</p>
 <p><strong>TO-DO</strong></p>
+<p>If you've found other articles or tools that you think should be included here, <a href="mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Management Layer Overview">please let us know</a>!</p>
 <h2 id="success-stories">Success Stories<a class="headerlink" href="#success-stories" title="Permanent link">&para;</a></h2>
 <p>Existing solutions that fit this use case:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Venafi Marketplace</label><label for="__tabbed_1_2">Elsewhere</label></div>

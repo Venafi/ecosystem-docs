@@ -840,8 +840,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#base-functionality-tests" class="md-nav__link">
-    Base Functionality Tests
+  <a href="#basic-functionality-tests" class="md-nav__link">
+    Basic Functionality Tests
   </a>
   
 </li>
@@ -1353,8 +1353,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#base-functionality-tests" class="md-nav__link">
-    Base Functionality Tests
+  <a href="#basic-functionality-tests" class="md-nav__link">
+    Basic Functionality Tests
   </a>
   
 </li>
@@ -1399,7 +1399,7 @@ Similarly, it's possible that you've got such a new or unique solution, that we 
 <p>It can be extremely helpful, especially when writing documentation that accompanies your solution, to involve others on your team who haven't been involved in the development process.
 While you might be able to perform all functionality without even referencing the docs, it's possible that a fresh set of eyes will uncover typos or minor omissions that someone directly involved in development might miss.</p>
 </details>
-<h2 id="base-functionality-tests">Base Functionality Tests<a class="headerlink" href="#base-functionality-tests" title="Permanent link">&para;</a></h2>
+<h2 id="basic-functionality-tests">Basic Functionality Tests<a class="headerlink" href="#basic-functionality-tests" title="Permanent link">&para;</a></h2>
 <p>The following functionality tests should be applicable to every solution targeting this use case.</p>
 <table>
 <thead>
@@ -1427,12 +1427,12 @@ While you might be able to perform all functionality without even referencing th
 </tr>
 <tr>
 <td>Existing Certificate (renewed)</td>
-<td>Provision a <em>renewed</em> certificate to the target</td>
+<td>Make a <em>manual</em> renewal request on an existing certificate</td>
 <td>Certificate is provisioned with location(s) reported back to Venafi</td>
 </tr>
 <tr>
 <td>Certificate (mulitple targets)</td>
-<td>Provision a certificate to the target for use in multiple downstream locations</td>
+<td>Request a certificate from Venafi for use in multiple downstream locations</td>
 <td>Certificate is installed in multiple locations and ALL locations are reported back to Venafi</td>
 </tr>
 </tbody>
@@ -1450,13 +1450,18 @@ While you might be able to perform all functionality without even referencing th
 <tbody>
 <tr>
 <td>New Certificate <em>Association</em></td>
-<td>Provision a <em>new</em> certificate to the target and <strong>create a new</strong> associated configuration object to utilize the certificate (e.g. Security "Profile")</td>
+<td>Request a <em>new</em> certificate and <strong>create a new</strong> associated configuration object to utilize the certificate (e.g. Security "Profile")</td>
 <td>Certificate is provisioned with location(s) reported back to Venafi and configuration object is created automatically at the target</td>
 </tr>
 <tr>
 <td>Existing Certificate <em>Association</em></td>
-<td>Provision a <em>renewed</em> certificate to the target and <strong>update an existing</strong> associated configuration object</td>
+<td>Make a renewal request and <strong>update an existing</strong> associated configuration object</td>
 <td>Certificate is provisioned with location(s) reported back to Venafi and existing configuration object is validated (and updated if required)</td>
+</tr>
+<tr>
+<td>Automated Renewals</td>
+<td>Request a short-lived certificate from Venafi and let your product automate the renewal</td>
+<td>Renewal request is made to Venafi and renewed certificate is automatically attached to the associated configuration object (ideally with no <abbr title="A period of time where the workload is **unintentionally** inaccessible">downtime</abbr>)</td>
 </tr>
 </tbody>
 </table>
