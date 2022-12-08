@@ -233,10 +233,16 @@
         text-decoration: underline;
     }
 
-    a.outage:any-link {
+    a.red-highlight:any-link {
         color: red;
     }
 
-    .outage {
+    .red-highlight {
         color: red;
+    }
+
+    /* Venafi Orange */
+    .value-drivers {
+        color: #ff6333;
+        font-weight: bold;  
     }
