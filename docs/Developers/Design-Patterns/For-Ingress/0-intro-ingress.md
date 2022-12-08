@@ -1,3 +1,5 @@
+TODO fix up for venafi orange css class
+
 #  Ingress
 
 <!-- We can justify the inclusion of "ingress" because ingress is a known entity in JSS. -->
@@ -7,7 +9,7 @@
 
 ## Introduction
 
-Kubernetes is a [platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB) which helps companies **modernize with speed and agility**.
+Kubernetes is a [platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB) which helps companies <span class="value-drivers">modernize with speed and agility</span>.
 It has a reduced set of opinions about how business demands are fulfilled.
 This creates technological voids which the Kuberenetes community strives to fill.
 One such area is Ingress Controllers, for which the community has provided [many options](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/).
@@ -38,7 +40,7 @@ In addition to rules-based routing Ingress Controllers also provide enhanced sec
 The internet was originally envisioned as a medium for sharing information, however the modern world demands that information should be much better protected.
 To meet these demands we have seen the steady rise of HTTPS to the point where modern browsers baulk at the use of [plain old HTTP](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html) so Transport Layer Security (TLS), which powers HTTPS, is now a mandatory requirement.
 Henceforth you need to enforce the **security of your data in transit**.
-Doing so with an Ingress Controller moves TLS termination closer to your workloads thereby helping to **prevent misuse and compromise**.
+Doing so with an Ingress Controller moves TLS termination closer to your workloads thereby helping to <span class="value-drivers">prevent misuse and compromise</span>.
 
 Organizations use {{mids}} to provide end-to-end security of data sent between running processes with the TLS cryptographic protocol.
 The use of X.509 certificates and HTTPS are the most common manifestation of this.
@@ -63,13 +65,13 @@ Arguably, the total number of {{mids}} in any given cluster should equal the tot
 
 ## How it helps?
 
-You can **stop unnecessary outages** caused by expiring {{mids}} with the use of an **proxy** placed in front of your workload.
+You can <span class="value-drivers">stop outages</span> caused by expiring {{mids}} with the use of an **proxy** placed in front of your workload.
 This proxy should be configured to enforce TLS and act as the point of TLS termination.
 This means that traffic touching the internet can be HTTPS whilst traffic touching the workload can remain as plain old HTTP.
 The configuration of this proxy is determined by how your Ingress Controller interprets your Ingress resources.
 Your Ingress Controller should be able to **inject** your {{mid}} into this proxy at the point of creation.
 Perhaps more importantly, since {{mids}} are a **dynamic** dependency of your workload, your Ingress Controller should also be able to re-inject {{mids}}, whenever they are renewed.
-This approach adheres to the principle of **automating everywhere** and can permanently eliminate {{mid}} expiry as a outage risk.
+This approach adheres to the principle of <span class="value-drivers">automating everywhere</span> and can permanently eliminate {{mid}} expiry as a outage risk.
 
 Thankfully the [Ingress specification](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/) accomodates TLS protection as an explicit attribute.
 This is a clear indication that **all** Ingress Controller implementations are expected to provide proactive TLS support, relieving your workloads of that responsibility.
