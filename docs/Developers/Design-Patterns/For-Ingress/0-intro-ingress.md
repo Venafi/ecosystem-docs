@@ -51,6 +51,16 @@ This matters because when active {{mids}} expire or become unavailable, **outage
 
 {% include '.admonitions/outages-admonition.md' %}
 
+<!-- see note below -->
+There are further limitations that stem from the use of containers with pre-baked security measures but the example above represents one that can be effectively tackled through the use of an Ingress.
+<!-- The larger paragraph below is 100% valid, but is perhaps better suited to a discussion about service meshes or the cert-manager CSI-driver - ingress does not provide a solution to the problem described -->
+<!--
+When you look at the wider picture, you may also notice another concern related to the use of containers with pre-baked security measures.
+If your container is used in the context of a Kubernetes [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) resource then it may do so as a scaled-out fleet of workloads, each sharing the same {{mid}}.
+This outcome is contrary to the meaning of the word "identity" an should be avoided when possible.
+Arguably, the total number of {{mids}} in any given cluster should equal the total number of running workloads.
+-->
+
 ## How it helps?
 
 You can avoid outages caused by expiring {{mids}} with the use of an **proxy** placed in front of your workload.
@@ -59,7 +69,7 @@ This means that traffic touching the internet can be HTTPS whilst traffic touchi
 The configuration of this proxy is determined by how your Ingress Controller interprets your Ingress resources.
 Your Ingress Controller should be able to inject your {{mid}} into this proxy at the point of creation.
 Perhaps more importantly, since {{mids}} are a **dynamic** dependency of your workload which will eventually expire, your Ingress Controller should also be able to re-inject {{mids}}, whenever they are renewed.
-This approach can permanently eliminate {{mid}} expiry as a outage risk. 
+This approach can permanently eliminate {{mid}} expiry as a outage risk.
 
 Thankfully the [Ingress specification](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/) accomodates TLS protection as an explicit attribute.
 This is a clear indication that **all** Ingress Controller implementations are expected to provide reactive TLS support, relieving your workloads of that responsibility.
