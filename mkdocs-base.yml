@@ -116,6 +116,17 @@ plugins:
       exclude: 
     redirects:              # https://github.com/datarobot/mkdocs-redirects
       redirect_maps:
-      #DO NOT CHANGE ANY ENTRIES IN THE FIRST COLUMN!!!
+    glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+       auto_caption: false
+       caption_position: bottom
 
 
