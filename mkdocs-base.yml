@@ -22,10 +22,12 @@ theme:
   features:
     - navigation.instant    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
     - navigation.tabs       # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.top
     - search.highlight      # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-highlighting
     - search.suggest        # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
     - search.share          # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-sharing
     - content.tooltips
+    - toc.follow
   font:                     # Can use any google font.
     text: 'Mulish'
     code: 'Roboto Mono'
