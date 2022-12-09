@@ -17,7 +17,7 @@ Official certification is the first step to listing the solution on the [Venafi 
 
     Certification is the only way that an solution will be listed on the Venafi Marketplace as compatible with TLS Protect Cloud. 
 
-![Certify](../../../assets/images/Certification/certify-chart.png)
+![Certify](../../../assets/images/Certification/certify-chart.png){ .off-glb }
 
 The TLS Protect Cloud Certification Program is still evolving and so some specifics about the following requirements are subject to change.
 Ample notice will be given to any developers of an existing certified solution, ensuring plenty of time to make any necessary updates to maintain certification.

@@ -1,4 +1,4 @@
-# Functional Testing: Management Layer
+# Functional Testing
 
 During development of your solution, you should keep the following functional tests in mind for this design pattern.
 The test cases listed below are directly related to the [requirements and considerations](../1-overview-management-layer/#requirements-and-considerations) outlined for this use case.
