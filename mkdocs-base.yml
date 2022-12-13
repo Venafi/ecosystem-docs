@@ -83,7 +83,7 @@ markdown_extensions:
     toc:
       permalink: true       # Generate permanent links at the end of each header
       separator: "-"        # Replace any white space in generated IDs with a dash
-      toc_depth: 2          # Two levels on the "On this page" menu
+      toc_depth: 3          # Two levels on the "On this page" menu
       title: On this page   # Sets the title of the topic toc
     pymdownx.details: {}    # Enables expandable sections https://facelessuser.github.io/pymdown-extensions/extensions/details/
     pymdownx.tabbed:        # Enables tabs https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/

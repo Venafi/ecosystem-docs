@@ -38,6 +38,7 @@ extra:
   ven:        Venafi
   tlspc:      TLS Protect Cloud
   tlspd:      TLS Protect Datacenter
+  tlspk:      Jetstack Secure
   vsat:       VSatellite
   vsatw:      VSatellite Worker
   ztpki:      Venafi Zero Touch PKI
