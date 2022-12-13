@@ -1,8 +1,3 @@
----
-template: deep-toc.html
-toc_depth: 3
----
-
 # Additional Resources
 
 The information below may be used for reference purposes while building your solution.
