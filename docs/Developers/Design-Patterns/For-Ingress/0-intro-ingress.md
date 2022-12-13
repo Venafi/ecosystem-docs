@@ -1,9 +1,10 @@
 #  Ingress
 
-<!-- We can justify the inclusion of "ingress" because ingress is a known entity in JSS. -->
+**A native Kubernetes resource that manages external access to the services in a cluster.
+Ingress may provide load balancing, TLS termination and intelligent routing.**
 
-**A Kubernetes object that manages external access to the services in a cluster.**
-**Ingress may provide load balancing, TLS termination and intelligent routing.**
+cert-manager integrates with Ingress resources to fulfill their role in securing your Kubernetes clusters.
+{{tlspk}}, which provides first-class support for Ingress resources, includes an enterprise-hardened version of cert-manager and capabilities to support {{mids}} in the enterprise.
 
 ## Introduction
 
@@ -23,7 +24,7 @@ Before you begin, it's important to understand the "what", "why" and "how" of *I
 
 ## What is it?
 
-Ingress is a Kubernetes resource which represent lines of communication from **outside** a cluster (which could mean the internet) to workloads running **inside** this cluster.
+An Ingress is a Kubernetes resource which represents lines of communication from **outside** a cluster (which could mean the internet) to workloads running **inside** this cluster.
 Ingress resources bring network intelligence to load balancers in the form of rules-based routing.
 Without the ability to span this divide Kubernetes would be isolated from the outside world and limited to running non-interactive workloads such as batch jobs.
 
@@ -71,7 +72,7 @@ Your Ingress Controller should be able to **inject** your {{mid}} into this prox
 Perhaps more importantly, since {{mids}} are a **dynamic** dependency of your workload, your Ingress Controller should also be able to re-inject {{mids}}, whenever they are renewed.
 This approach adheres to the principle of <span class="value-drivers">automating everywhere</span> and can permanently eliminate {{mid}} expiry as a outage risk.
 
-Thankfully the [Ingress specification](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/) accomodates TLS protection as an explicit attribute.
+Thankfully, the [Ingress specification](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/) accommodates TLS protection as an explicit attribute.
 This is a clear indication that **all** Ingress Controller implementations are expected to provide proactive TLS support, relieving your workloads of that responsibility.
 
 <!-- ##### Questions to guide us:
