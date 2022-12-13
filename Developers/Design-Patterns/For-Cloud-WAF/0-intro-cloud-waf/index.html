@@ -5,7 +5,7 @@
 <head>
 <meta content="noindex,nofollow,noarchive" name="robots"/>
 <title>For Cloud WAF - Get involved with the Ecosystem</title>
-<link href="../../../../assets/stylesheets/main.7a952b86.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../../../../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Mulish:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -315,29 +315,41 @@
         Requirements and Considerations
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../For-Ingress/2-getting-started-ingress/">
-        Getting Started: Ingress
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../For-Ingress/3-functional-testing-ingress/">
-        Functional Testing: Ingress
-      </a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_3" id="__nav_3_2_3" type="checkbox"/>
 <div class="md-nav__link md-nav__link--index">
-<a href="../../For-Management-Layer/0-intro-management-layer/">For Management Layer</a>
+<a href="../../For-Issuer/0-intro-issuer/">For Issuer</a>
 <label for="__nav_3_2_3">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-label="For Management Layer" class="md-nav" data-md-level="3">
+<nav aria-label="For Issuer" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_2_3">
+<span class="md-nav__icon md-icon"></span>
+          For Issuer
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../For-Issuer/1-requirements-issuer/">
+        Requirements and Considerations
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_4" id="__nav_3_2_4" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../For-Management-Layer/0-intro-management-layer/">For Management Layer</a>
+<label for="__nav_3_2_4">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="For Management Layer" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_4">
 <span class="md-nav__icon md-icon"></span>
           For Management Layer
         </label>
@@ -573,6 +585,20 @@
 <a class="md-nav__link" href="#what-is-it">
     What is it?
   </a>
+<nav aria-label="What is it?" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#securing-traffic-to-the-admin-interface">
+    Securing Traffic to the Admin Interface
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#securing-traffic-to-applications">
+    Securing Traffic to Applications
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#why-is-machine-identity-automation-necessary">
@@ -605,13 +631,13 @@ WAFs use machine identities in one of two ways:</p>
 <li>Securing traffic to the admin interface of the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> itself</li>
 <li>Securing traffic to the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></li>
 </ul>
-<h3 id="use-case-1-securing-traffic-to-the-admin-interface-of-the-waf-itself">USE CASE 1: Securing traffic to the admin interface of the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> itself<a class="headerlink" href="#use-case-1-securing-traffic-to-the-admin-interface-of-the-waf-itself" title="Permanent link">¶</a></h3>
+<h3 id="securing-traffic-to-the-admin-interface">Securing Traffic to the Admin Interface<a class="headerlink" href="#securing-traffic-to-the-admin-interface" title="Permanent link">¶</a></h3>
 <p>While WAFs don't typically protect the traffic to their own administration interfaces in the same way they do for managed applications, ensuring that administrator traffic is encrypted with an enterprise-trusted <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is just as important.
 If that traffic is not secured, admin credentials are at risk of leaking.
 If operations involving the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> are not automated, admins can experience outages when logging in to make changes.
 This could potentially present a cascading effect if they are investigating an ongoing threat or mitigating an issue.</p>
-<h3 id="use-case-2-securing-traffic-to-the-applications-being-managed-by-the-waf">USE CASE 2: Securing traffic to the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr><a class="headerlink" href="#use-case-2-securing-traffic-to-the-applications-being-managed-by-the-waf" title="Permanent link">¶</a></h3>
-<p>Securing traffic to applications is slightly more complex since there can be multiple applications being managed by a <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>, and each application needs its own <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr>.
+<h3 id="securing-traffic-to-applications">Securing Traffic to Applications<a class="headerlink" href="#securing-traffic-to-applications" title="Permanent link">¶</a></h3>
+<p>Securing traffic to applications managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> is slightly more complex since there can be multiple applications being managed by a <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>, and each application needs its own <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr>.
 There are typically two options for <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation targeting application traffic.
 Which option you choose will depend on the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> product or service your solution is being built for.</p>
 <h4 id="the-waf-has-a-built-in-certificate-authority-ca">The <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> has a built-in Certificate Authority (CA)<a class="headerlink" href="#the-waf-has-a-built-in-certificate-authority-ca" title="Permanent link">¶</a></h4>
@@ -754,6 +780,6 @@ This introduces another failure point, and another potential <span class="red-hi
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "search.highlight", "search.suggest", "search.share", "content.tooltips", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
-<script src="../../../../assets/javascripts/bundle.37e9125f.min.js"></script>
+<script src="../../../../assets/javascripts/bundle.078830c0.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
