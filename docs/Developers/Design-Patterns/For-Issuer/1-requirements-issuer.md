@@ -25,8 +25,22 @@ To clarify, you will discover the additional security requirements mean it's muc
 
 ## Building a Better User Experience
 
-TODO
+The user experience should be as painless as possible and the expectation is that your target product should be:
+
+- Easy to install, preferably via [Helm](https://helm.sh/)
+- Able to deploy an MVP into your cluster with little or no configuration requirements
+- Provide comprehensive [logs](https://kubernetes.io/docs/concepts/cluster-administration/logging/) and metrics for diagnostic purposes
+- Provide complete/appropriate documentation online and via CRDs
+
+Conforming to the these requirements will **greatly** enhance the user experience, providing additional value to teams and organizations.
 
 ## Success Stories
 
-TODO
+Existing solutions that fit within this pattern:
+
+=== "Venafi"
+    - The [venafi-enhanced-issuer](https://platform.jetstack.io/documentation/reference/venafi-enhanced-issuer) is provided with {{tlspk}} to meet the needs of enterprise customer.
+
+=== "Elsewhere"
+    - The [cert-manager community](https://cert-manager.io/docs/configuration/external/) has a collection of open-source External Issuers to light the way for you.
+    - It may also enthuse you to know that [Boulder](https://github.com/letsencrypt/boulder), the [ACME](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) compliant software powering Let's Encrypt, is open source and freely available.
