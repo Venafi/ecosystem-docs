@@ -1,4 +1,4 @@
-# Solution Certification
+# Certification - TLS Protect Cloud
 
 This page is meant to be your home base throughout the certification process, so please feel free to jump around, read ahead, bookmark and come back to it as needed. 
 

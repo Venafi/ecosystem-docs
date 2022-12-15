@@ -1,7 +1,7 @@
 #  Ingress
 
-**A native Kubernetes resource that manages external access to the services in a cluster.
-Ingress may provide load balancing, TLS termination and intelligent routing.**
+**Ingress is the term used for a native Kubernetes resource that manages external access to the services in a cluster.
+Ingress may provide load balancing, TLS termination, intelligent routing and API Gateway functionality.**
 
 cert-manager integrates with Ingress resources to fulfill their role in securing your Kubernetes clusters.
 {{tlspk}}, which provides first-class support for Ingress resources, includes an enterprise-hardened version of cert-manager and capabilities to support {{mids}} in the enterprise.
@@ -25,7 +25,7 @@ Before you begin, it's important to understand the "what", "why" and "how" of *I
 ## What is it?
 
 An Ingress is a Kubernetes resource which represents lines of communication from **outside** a cluster (which could mean the internet) to workloads running **inside** this cluster.
-Ingress resources bring network intelligence to load balancers in the form of rules-based routing.
+Ingress resources bring network intelligence to multi-purpose [proxy servers](https://en.wikipedia.org/wiki/Proxy_server) in the form of rules-based routing.
 Without the ability to span this divide Kubernetes would be isolated from the outside world and limited to running non-interactive workloads such as batch jobs.
 
 Ingress resources are native to Kubernetes but Ingress Controllers are not.
@@ -74,14 +74,3 @@ This approach adheres to the principle of <span class="value-drivers">automating
 
 Thankfully, the [Ingress specification](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/) accommodates TLS protection as an explicit attribute.
 This is a clear indication that **all** Ingress Controller implementations are expected to provide proactive TLS support, relieving your workloads of that responsibility.
-
-<!-- ##### Questions to guide us:
-
-- What are the absolute **required capabilities**? (MVP)
-    1. Ability to use a {{mid}}, an X.509 Certificate in this case, to secure traffic
-    1. Ability to install/deploy/upload a {{mid}} to a 
-    1. Ability to **validate** that a specific {{mid}} is where we think it is (data either proactively requested by Venafi or periodically reported on by the target consumer of the {{mid}})
-
-- What sets the best solutions apart?
-    {% include 'best-solutions-common.md' %}
-    - Renewal of a {{mid}} should not cause downtime -->

@@ -1,6 +1,6 @@
 #  Issuer
 
-**A Custom Resource Definition (CRD) in Kubernetes that represents certificate authorities (CAs) able to generate signed certificates by honoring certificate signing requests.**
+**Issuer is the term used for a Custom Resource Definition (CRD) in Kubernetes that represents certificate authorities (CAs) able to generate signed certificates by honoring certificate signing requests.**
 
 The Issuer CRDs are core components of [cert-manager](https://cert-manager.io/), a critical component in the fight to secure your Kubernetes clusters, helping companies <span class="value-drivers">modernize with speed and agility</span>.
 {{tlspk}} includes an enterprise-hardened version of cert-manager and capabilities to support {{mids}} in the enterprise.
@@ -43,6 +43,6 @@ The following diagram is taken from the cert-manager documentation [homepage](ht
 
 ![cert-manager issuers](../../../assets/images/cert-manager-issuers.svg)
 
-This is great if your chosen entity appears on the above image but disconcerting otherwise.
+This is great if your chosen Issuer type appears on the above image but disconcerting otherwise.
 
-Thankfully, the loosely-coupled and extensible nature of Kubernetes enables a solution in the shape of [External Issuers](https://cert-manager.io/docs/configuration/external/) of which there are several already available in the public domain.
+Thankfully, the loosely-coupled and extensible nature of cert-manager and Kubernetes enables a solution in the shape of [External Issuers](https://cert-manager.io/docs/configuration/external/) of which there are several already available in the public domain.

@@ -36,9 +36,9 @@ extra:
   rolesSA:    System Administrator
   vcert:      VCert
   ven:        Venafi
-  tlspc:      TLS Protect Cloud
   tlspd:      TLS Protect Datacenter
-  tlspk:      Jetstack Secure
+  tlspc:      TLS Protect Cloud
+  tlspk:      TLS Protect For Kubernetes
   vsat:       VSatellite
   vsatw:      VSatellite Worker
   ztpki:      Venafi Zero Touch PKI
