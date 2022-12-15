@@ -32,6 +32,7 @@ The following additional requirements **greatly** enhance the user experience, p
 - Provide the ability to import existing {{mids}} in use by the WAF to Venafi for comprehensive visibility and rapid onboarding.
 
 ## Primers
+
 We think you'll find the following references helpful when developing your solution.
 
 If you've found other articles or tools that you think should be included here, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Cloud WAF Overview)!
