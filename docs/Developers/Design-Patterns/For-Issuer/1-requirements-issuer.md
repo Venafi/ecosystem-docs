@@ -43,4 +43,3 @@ Existing solutions that fit within this pattern:
 
 === "Elsewhere"
     - The [cert-manager community](https://cert-manager.io/docs/configuration/external/) has a collection of open-source External Issuers to light the way for you.
-    - It may also enthuse you to know that [Boulder](https://github.com/letsencrypt/boulder), the [ACME](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) compliant software powering Let's Encrypt, is open source and freely available.
