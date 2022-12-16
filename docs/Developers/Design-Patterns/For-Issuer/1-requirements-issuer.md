@@ -1,6 +1,6 @@
 # Requirements and Considerations
 
-When developing Ingress solutions for the {{midcp}}, you should always build with the goal of certification in mind.
+When developing **Ingress** solutions for the {{midcp}}, you should always build with the goal of certification in mind.
 
 {% include '.admonitions/tlspk_certification-admonition.md' %}
 

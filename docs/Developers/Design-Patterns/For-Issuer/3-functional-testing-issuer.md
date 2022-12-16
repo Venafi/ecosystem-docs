@@ -1,7 +1,7 @@
 # Functional Testing
 
-During development of your **Cloud WAF** solution, you should keep the following functional tests in mind for this design pattern.
-The test cases listed below are directly related to the [requirements and considerations](../1-requirements-cloud-waf) outlined for this use case.
+During development of your **Issuer** solution, you should keep the following functional tests in mind for this design pattern.
+The test cases listed below are directly related to the [requirements and considerations](../1-requirements-issuer) outlined for this use case.
 
 {% include '.admonitions/what-is-functional-testing-admonition.md' %}
 
@@ -9,7 +9,7 @@ The functional tests documented below are provided as examples.
 Depending on the supported functionality of the target platform/service you're building for and/or the complexity of your solution, some tests listed below may not be necessary.
 Similarly, it's possible that you've got such a new or unique solution, that we haven't identified recommended functional tests yet.
 
-If you've got suggestions and/or functional tests that helped during your development, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Cloud WAF Functional Testing)!
+If you've got suggestions and/or functional tests that helped during your development, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Ingress Functional Testing)!
 
 ??? tip "Reduce Confirmation Bias"
 
@@ -18,8 +18,8 @@ If you've got suggestions and/or functional tests that helped during your develo
 
 ## Basic Functionality Tests
 
-{% include 'testing/ft-consumers-basic.md' %}
+{% include 'testing/ft-issuers-basic.md' %}
 
 ## Advanced Functionality Tests
 
-{% include 'testing/ft-consumers-advanced.md' %}
+{% include 'testing/ft-issuers-advanced.md' %}
