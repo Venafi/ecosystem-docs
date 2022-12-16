@@ -20,7 +20,7 @@ We highly recommend using [Kubebuilder](https://github.com/kubernetes-sigs/kubeb
 ## Getting Help
 
 The cert-manager team have produced an article named [Implementing External Issuers](https://cert-manager.io/docs/contributing/external-issuers/) which is geared directly towards assisting developers like yourself.
-Pay special attention to the section named [Approval](https://cert-manager.io/docs/contributing/external-issuers/#approval).
+Pay special attention to the sections named [Approval](https://cert-manager.io/docs/contributing/external-issuers/#approval) and [Conditions](https://cert-manager.io/docs/contributing/external-issuers/#conditions).
 
 It may also enthuse you to know that [Boulder](https://github.com/letsencrypt/boulder), the [ACME](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) compliant software powering Let's Encrypt, is open source and freely available.
 
