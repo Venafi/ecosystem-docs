@@ -1,6 +1,6 @@
 # Getting Started
 
-If you've made it here, you should already have a general understanding about [management layers and how they use {{mids}}](0-intro-management-layer.md) and you're ready to get started developing your solution.
+If you've made it here, you should already have a general understanding about [management layers and how they use {{mids}}](0-intro-management-layer.md) and you're ready to get started developing your **Management Layer** solution.
 
 ## High-level Process
 

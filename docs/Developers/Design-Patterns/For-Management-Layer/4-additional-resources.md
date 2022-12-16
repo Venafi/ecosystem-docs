@@ -1,6 +1,6 @@
 # Additional Resources
 
-The information below may be used for reference purposes while building your solution.
+The information below may be used for reference purposes while building your **Management Layer** solution.
 
 !!! note "Use As Needed"
 

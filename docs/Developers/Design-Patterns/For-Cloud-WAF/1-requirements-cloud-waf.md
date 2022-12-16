@@ -1,6 +1,6 @@
 # Requirements and Considerations
 
-When developing solutions for the {{midcp}}, you should always build with the goal of certification in mind.
+When developing **Cloud WAF** solutions for the {{midcp}}, you should always build with the goal of certification in mind.
 
 {% include '.admonitions/tlspc_certification-admonition.md' %}
 
