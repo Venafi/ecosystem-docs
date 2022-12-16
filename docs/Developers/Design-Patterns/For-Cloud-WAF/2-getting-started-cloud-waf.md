@@ -1,4 +1,4 @@
-# Getting Started: Cloud WAF
+# Getting Started
 
 If you've made it here, you should already have a general understanding about [Cloud WAFs and how they use {{mids}}](1-overview-cloud-waf.md) and you're ready to get started developing your solution.
 
