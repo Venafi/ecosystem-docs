@@ -1,6 +1,6 @@
 #  Ingress
 
-**Ingress is the term used for a native Kubernetes resource that manages external access to the services in a cluster.
+**Ingress is the term used for a native Kubernetes resource that details the external routes into a cluster.
 Ingress may provide load balancing, TLS termination, intelligent routing and API Gateway functionality.**
 
 cert-manager integrates with Ingress resources to fulfill their role in securing your Kubernetes clusters.
