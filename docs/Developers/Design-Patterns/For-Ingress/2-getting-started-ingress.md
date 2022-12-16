@@ -4,17 +4,18 @@ If you've made it here, you should already have a general understanding about [I
 
 ## High-level Process
 
-1. Log In to {{tlspk}} **or**, if you don't already have one, head [here](https://platform.jetstack.io/){: target="_blank" }, select **ACCESS YOUR ACCOUNT**, select **Sign Up**, complete the Terms of Service  and follow the on screen prompts.
+1. Head over to [{{tlspk}}](https://platform.jetstack.io/){: target="_blank" } and select **ACCESS YOUR ACCOUNT**.
+1. Log In to your account **or**, if you don't already have one, select **Sign Up**, complete the Terms of Service  and follow the on screen prompts.
 **Note**: new users will be allocated a **organization name** made of two randomly selected words (e.g. foxtrot-charlie) which is your private workspace within the SaaS platform.
 1. From the {{tlspk}} console, select **Clusters** and **CONNECT NEW CLUSTER** to familiarize yourself with the steps required to introduce a Kubernetes cluster to your organization.
 Your choice of Kubernetes distribution is somewhat arbitrary, however you should consider the need to create them repeatedly to enable thorough testing.
 You should also consider that not all distributions provide native support for Kubernetes services of type LoadBalancer.
 1. Try out one or two of the [most popular Ingress Controllers](https://kubevious.io/blog/post/comparing-top-ingress-controllers-for-kubernetes) to familiarize yourself with their shared behavior and relative strengths.
 1. Head over to https://platform.jetstack.io/org/[ORG]/certinventory/cluster/[CLUSTER]/ingresses.
-This is where you will locate any active Ingress resources in your registered cluster(s).
+This is where you will locate any active Ingress objects in your registered cluster(s).
 1. Start building!
-We highly recommend using [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) framework to increase your velocity and reduce the complexity inherent in developing Kubernetes controllers.
-1. Perform [functional testing](3-functional-testing-ingress.md)
+We highly recommend using [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) framework to increase your velocity and reduce the complexity inherent in developing any Kubernetes controller.
+1. Perform [functional testing](3-functional-testing-ingress.md).
 1. Get [certified](../../Certification/TLS-Protect-For-Kubernetes/1-tlsp-certification-intro.md)!
 
 ## Getting Help
