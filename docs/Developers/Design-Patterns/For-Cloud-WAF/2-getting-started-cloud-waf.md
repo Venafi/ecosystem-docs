@@ -4,11 +4,11 @@ If you've made it here, you should already have a general understanding about [C
 
 ## High-level Process
 
-1. Create a [TLS Protect Cloud](https://vaas.venafi.com){: target="_blank" } account if you don't have one already.
-2. Decide on a programming language and understand what tooling, if any, your solution will use (If you aren't sure yet, [this](https://venafi-dev-onboarding.paperform.co/){: target="_blank" } might help 🙂).
-3. Start building!
-4. Perform [functional testing](3-functional-testing-cloud-waf.md).
-5. Get [certified](../../Certification/TLS-Protect-Cloud/1-tlsp-certification-intro.md)!
+1. Create a [{{tlspc}}](https://vaas.venafi.com){: target="_blank" } account if you don't have one already.
+1. Decide on a programming language and understand what tooling, if any, your solution will use (If you aren't sure yet, [this](https://venafi-dev-onboarding.paperform.co/){: target="_blank" } might help 🙂).
+1. Start building!
+1. Perform [functional testing](3-functional-testing-cloud-waf.md).
+1. Get [certified](../../Certification/TLS-Protect-Cloud/1-tlsp-certification-intro.md)!
 
 ## Getting Help
 
