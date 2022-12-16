@@ -1,4 +1,4 @@
-# Functional Testing: Cloud WAF
+# Functional Testing
 
 During development of your solution, you should keep the following functional tests in mind for this design pattern.
 The test cases listed below are directly related to the [requirements and considerations](../1-overview-cloud-waf/#requirements-and-considerations) outlined for this use case.
