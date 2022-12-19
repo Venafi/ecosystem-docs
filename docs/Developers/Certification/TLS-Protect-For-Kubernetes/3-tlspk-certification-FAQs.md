@@ -12,7 +12,7 @@ Below are some useful resources and frequently asked questions from previous dev
 
 ??? question "Will my solution be listed on the Venafi Marketplace if I don't pursue official certification?"
 
-    ANSWER: Your solution may still be listed if it works with {{tlspc}}, but it will not be listed as officially compatible with {{tlspk}} and will not have the official badge of certification.
+    ANSWER: Your solution may still be listed, but it will not be listed as officially compatible with {{tlspk}} and will not have the official badge of certification.
 
 ??? question "How long will the certification process take?"
 
