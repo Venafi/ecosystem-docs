@@ -285,12 +285,12 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../For-Cloud-WAF/2-getting-started-cloud-waf/">
-        Getting Started: Cloud WAF
+        Getting Started
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../For-Cloud-WAF/3-functional-testing-cloud-waf/">
-        Functional Testing: Cloud WAF
+        Functional Testing
       </a>
 </li>
 </ul>
@@ -315,6 +315,16 @@
         Requirements and Considerations
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../For-Ingress/2-getting-started-ingress/">
+        Getting Started
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../For-Ingress/3-functional-testing-ingress/">
+        Functional Testing
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -335,6 +345,16 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../1-requirements-issuer/">
         Requirements and Considerations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2-getting-started-issuer/">
+        Getting Started
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../3-functional-testing-issuer/">
+        Functional Testing
       </a>
 </li>
 </ul>
@@ -383,13 +403,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_3">
-          Solution Certification
+          Certification
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="Solution Certification" class="md-nav" data-md-level="2">
+<nav aria-label="Certification" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_3">
 <span class="md-nav__icon md-icon"></span>
-          Solution Certification
+          Certification
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
@@ -408,7 +428,7 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Certification/TLS-Protect-Cloud/2-tlsp-certification-reqs/">
-        Certification Requirements
+        Requirements
       </a>
 </li>
 <li class="md-nav__item">
@@ -418,6 +438,38 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../Certification/TLS-Protect-Cloud/4-tlsp-certification-submit/">
+        Submit Your Solution
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_2" id="__nav_3_3_2" type="checkbox"/>
+<div class="md-nav__link md-nav__link--index">
+<a href="../../../Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro/">TLS Protect For Kubernetes</a>
+<label for="__nav_3_3_2">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-label="TLS Protect For Kubernetes" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_3_2">
+<span class="md-nav__icon md-icon"></span>
+          TLS Protect For Kubernetes
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Certification/TLS-Protect-For-Kubernetes/2-tlspk-certification-reqs/">
+        Requirements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Certification/TLS-Protect-For-Kubernetes/3-tlspk-certification-FAQs/">
+        Resources &amp; FAQs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Certification/TLS-Protect-For-Kubernetes/4-tlspk-certification-submit/">
         Submit Your Solution
       </a>
 </li>
@@ -604,9 +656,9 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="issuer">Issuer<a class="headerlink" href="#issuer" title="Permanent link">¶</a></h1>
-<p><strong>A Custom Resource Definition (<abbr title="Custom Resource Definition: an extension of the Kubernetes API">CRD</abbr>) in Kubernetes that represents certificate authorities (CAs) able to generate signed certificates by honoring certificate signing requests.</strong></p>
+<p><strong>Issuer is the term used for a Custom Resource Definition (<abbr title="Custom Resource Definition: an extension of the Kubernetes API">CRD</abbr>) in Kubernetes that represents certificate authorities (CAs) able to generate signed certificates by honoring certificate signing requests.</strong></p>
 <p>The Issuer CRDs are core components of <a href="https://cert-manager.io/">cert-manager</a>, a critical component in the fight to secure your Kubernetes clusters, helping companies <span class="value-drivers">modernize with speed and agility</span>.
-Jetstack Secure includes an enterprise-hardened version of cert-manager and capabilities to support machine identities in the enterprise.</p>
+TLS Protect For Kubernetes includes an enterprise-hardened version of cert-manager and capabilities to support machine identities in the enterprise.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
 <p>The chapter on <a href="../../For-Ingress/0-intro-ingress">Ingress</a> explains how Kubernetes is broadly unopinionated about the tools you use to fulfill your business demands, such as how you ensure the security of your <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>.
 The CNCF's move to accept <a href="https://www.cncf.io/blog/2022/10/19/cert-manager-becomes-a-cncf-incubating-project/">cert-manager</a> as an incubating project solidifies its reputation as the de-facto Kubernetes solution for <span class="value-drivers">stopping outages</span> caused by TLS certificate expiry.</p>
@@ -632,8 +684,8 @@ Nonetheless, security is a fundamental requirement in both cases.</p>
 <p>cert-manager abstracts the different requirements and capabilities of these entities behind an assortment of available Issuer types, meaning the experience of using cert-manager is consistent regardless of your circumstances.</p>
 <p>The following diagram is taken from the cert-manager documentation <a href="https://cert-manager.io/docs/">homepage</a>.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../../assets/images/cert-manager-issuers.svg"><img alt="cert-manager issuers" src="../../../../assets/images/cert-manager-issuers.svg"/></a></p>
-<p>This is great if your chosen entity appears on the above image but disconcerting otherwise.</p>
-<p>Thankfully, the loosely-coupled and extensible nature of Kubernetes enables a solution in the shape of <a href="https://cert-manager.io/docs/configuration/external/">External Issuers</a> of which there are several already available in the public domain.</p>
+<p>This is great if your chosen Issuer type appears on the above image but disconcerting otherwise.</p>
+<p>Thankfully, the loosely-coupled and extensible nature of cert-manager and Kubernetes enables a solution in the shape of <a href="https://cert-manager.io/docs/configuration/external/">External Issuers</a> of which there are several already available in the public domain.</p>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 </article>
@@ -646,7 +698,7 @@ Nonetheless, security is a fundamental requirement in both cases.</p>
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Requirements and Considerations" class="md-footer__link md-footer__link--prev" href="../../For-Ingress/1-requirements-ingress/" rel="prev">
+<a aria-label="Previous: Functional Testing" class="md-footer__link md-footer__link--prev" href="../../For-Ingress/3-functional-testing-ingress/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -654,7 +706,7 @@ Nonetheless, security is a fundamental requirement in both cases.</p>
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                   Previous
-                </span> Requirements and Considerations
+                </span> Functional Testing
                 </div>
 </div>
 </a>
