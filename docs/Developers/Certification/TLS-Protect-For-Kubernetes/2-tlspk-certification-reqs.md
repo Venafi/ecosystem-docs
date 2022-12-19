@@ -38,7 +38,7 @@ More users generate more feedback and ideas, and the solution becomes more robus
     1. A 5-10 minute technical demonstration video covering any initial configuration and typical usage examples must be available online.
     2. When necessary, and if possible/feasible for the solution, a test instance or account will be provided to the Venafi Ecosystem team for internal testing and demonstration purposes.
     3. Automated testing must be put in place to test all documented functionality of your solution.
-    4. All REST endpoints and/or VCert functions used by the solution must be documented and provided to Venafi.
+    4. All REST endpoints and/or jsctl functions used by the solution must be documented and provided to Venafi.
     These will be used internally by Venafi to track which features & functions are being used most by developers and end users.
     They will not be shared publicly.
 
