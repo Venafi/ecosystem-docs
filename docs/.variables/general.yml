@@ -39,6 +39,7 @@ extra:
   tlspd:      TLS Protect Datacenter
   tlspc:      TLS Protect Cloud
   tlspk:      TLS Protect For Kubernetes
+  tlspk_url:  platform.jetstack.io
   vsat:       VSatellite
   vsatw:      VSatellite Worker
   ztpki:      Venafi Zero Touch PKI
