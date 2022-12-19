@@ -703,15 +703,17 @@ While you might be able to perform all functionality without even referencing th
 <td>The error will be encountered and a meaningful error message will be presented to the end user and, if applicable, back to Venafi</td>
 </tr>
 <tr>
-<td>TBD</td>
-<td></td>
-<td></td>
+<td>New TLS-enabled Ingress</td>
+<td>Provision an ingress with a working TLS-enabled public route</td>
+<td>Ingress is provisioned and available for inspection from within TLS Protect For Kubernetes. Meanwhile, browser can navigate to workload via HTTPS</td>
+</tr>
+<tr>
+<td>Certificate Renewed</td>
+<td>Renew certificate used as a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr></td>
+<td>Revised expiry date for Ingress <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is visible from within TLS Protect For Kubernetes. Ingress reconfiguration is automatically triggered</td>
 </tr>
 </tbody>
 </table>
-<!-- | New Certificate | Provision a new certificate for use as a machine identity | Certificate is provisioned and available for inspection from within TLS Protect For Kubernetes | 
-| Certificate Renewed | Renew certificate for use as a machine identity | Revised expiry date is visible from within TLS Protect For Kubernetes |
-| Approval Status | Without approval from the [approver-policy](https://platform.jetstack.io/documentation/installation/approver-policy) component of TLS Protect For Kubernetes Enterprise, no certificate should be issued | Denied certificates will not appear in TLS Protect For Kubernetes -->
 <h2 id="advanced-functionality-tests">Advanced Functionality Tests<a class="headerlink" href="#advanced-functionality-tests" title="Permanent link">¶</a></h2>
 <p>Depending on the exact functionality of the target solution, the following tests may or may not be applicable.</p>
 <table>
@@ -724,14 +726,12 @@ While you might be able to perform all functionality without even referencing th
 </thead>
 <tbody>
 <tr>
-<td>TBD</td>
-<td></td>
-<td></td>
+<td>OpenID Connect</td>
+<td>Integrate with OpenID Connect identity providers</td>
+<td>Alongside machine identities security, your solution should also be able to demonstrate support for Authentication and Authorization</td>
 </tr>
 </tbody>
 </table>
-<!-- | New Certificate *Association* | Provision a *new* certificate to the target and **create a new** associated configuration object to utilize the certificate (e.g. Security "Profile") | Certificate is provisioned with location(s) reported back to Venafi and configuration object is created automatically at the target |  -->
-<!-- | Existing Certificate *Association* | Provision a *renewed* certificate to the target and **update an existing** associated configuration object | Certificate is provisioned with location(s) reported back to Venafi and existing configuration object is validated (and updated if required) |  -->
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 </article>

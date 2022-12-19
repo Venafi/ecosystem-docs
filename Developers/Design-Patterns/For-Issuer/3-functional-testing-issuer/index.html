@@ -715,7 +715,12 @@ While you might be able to perform all functionality without even referencing th
 <tr>
 <td>Approval Status</td>
 <td>Without approval from the <a href="https://platform.jetstack.io/documentation/installation/approver-policy">approver-policy</a> component of TLS Protect For Kubernetes Enterprise, no certificate should be issued</td>
-<td>Unapproved certificates will not appear in TLS Protect For Kubernetes</td>
+<td>Unapproved certificates will be flagged as such in TLS Protect For Kubernetes</td>
+</tr>
+<tr>
+<td>Ingress Integration</td>
+<td>Provide seamless integration with <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr></td>
+<td>Ingresses enlisting the support of your Issuer solution will behave as per native Issuers with regard to machine identities</td>
 </tr>
 </tbody>
 </table>
@@ -731,14 +736,12 @@ While you might be able to perform all functionality without even referencing th
 </thead>
 <tbody>
 <tr>
-<td>TBD</td>
+<td>None</td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<!-- | New Certificate *Association* | Provision a *new* certificate to the target and **create a new** associated configuration object to utilize the certificate (e.g. Security "Profile") | Certificate is provisioned with location(s) reported back to Venafi and configuration object is created automatically at the target |  -->
-<!-- | Existing Certificate *Association* | Provision a *renewed* certificate to the target and **update an existing** associated configuration object | Certificate is provisioned with location(s) reported back to Venafi and existing configuration object is validated (and updated if required) |  -->
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 </article>
