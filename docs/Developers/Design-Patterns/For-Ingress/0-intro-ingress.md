@@ -3,8 +3,8 @@
 **Ingress is the term used for a native Kubernetes resource that details the external routes into a cluster.
 Ingress may provide load balancing, TLS termination, intelligent routing and API Gateway functionality.**
 
-cert-manager integrates with Ingress resources to fulfill their role in securing your Kubernetes clusters.
-{{tlspk}}, which provides first-class support for Ingress resources, includes an enterprise-hardened version of cert-manager and capabilities to support {{mids}} in the enterprise.
+cert-manager integrates with Ingress objects to fulfill their role in securing your Kubernetes clusters.
+{{tlspk}}, which provides first-class support for Ingress objects, includes an enterprise-hardened version of cert-manager and capabilities to support {{mids}} in the enterprise.
 
 ## Introduction
 
@@ -24,12 +24,13 @@ Before you begin, it's important to understand the "what", "why" and "how" of *I
 
 ## What is it?
 
-An Ingress is a Kubernetes resource which represents lines of communication from **outside** a cluster (which could mean the internet) to workloads running **inside** this cluster.
-Ingress resources bring network intelligence to multi-purpose [proxy servers](https://en.wikipedia.org/wiki/Proxy_server) in the form of rules-based routing.
+An Ingress is a Kubernetes resource.
+Objects of this type represent lines of communication from **outside** a cluster (which could mean the internet) to workloads running **inside** this cluster.
+Ingress objects bring network intelligence to multi-purpose [proxy servers](https://en.wikipedia.org/wiki/Proxy_server) in the form of rules-based routing.
 Without the ability to span this divide Kubernetes would be isolated from the outside world and limited to running non-interactive workloads such as batch jobs.
 
-Ingress resources are native to Kubernetes but Ingress Controllers are not.
-An Ingress resource can exist, but without an associated controller to respond, it will remain dormant - somewhat like a car without a driver.
+The Ingress resource is native to Kubernetes but Ingress Controller resources are not.
+An Ingress object can exist, but without an associated controller to respond, it will remain dormant - somewhat like a car without a driver.
 Selecting a suitable Ingress Controller is a choice each cluster intends for you to make.
 
 ## Why is it necessary?
@@ -67,7 +68,7 @@ Arguably, the total number of {{mids}} in any given cluster should equal the tot
 You can <span class="value-drivers">stop outages</span> caused by expiring {{mids}} with the use of an **proxy** placed in front of your workload.
 This proxy should be configured to enforce TLS and act as the point of TLS termination.
 This means that traffic touching the internet can be HTTPS whilst traffic touching the workload can remain as plain old HTTP.
-The configuration of this proxy is determined by how your Ingress Controller interprets your Ingress resources.
+The configuration of this proxy is determined by how your Ingress Controller interprets your Ingress objects.
 Your Ingress Controller should be able to **inject** your {{mid}} into this proxy at the point of creation.
 Perhaps more importantly, since {{mids}} are a **dynamic** dependency of your workload, your Ingress Controller should also be able to re-inject {{mids}}, whenever they are renewed.
 This approach adheres to the principle of <span class="value-drivers">automating everywhere</span> and can permanently eliminate {{mid}} expiry as a outage risk.

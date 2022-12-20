@@ -1,6 +1,6 @@
 # Getting Started
 
-If you've made it here, you should already have a general understanding about [Ingress objects and how they use {{mids}}](1-overview-ingress.md) and you're ready to get started developing your **Ingress** solution.
+If you've made it here, you should already have a general understanding about [how the Ingress resource relates to {{mids}}](1-overview-ingress.md) and you're ready to get started developing your **Ingress** solution.
 
 ## High-level Process
 

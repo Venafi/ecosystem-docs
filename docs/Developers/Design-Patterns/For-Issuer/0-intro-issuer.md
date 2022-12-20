@@ -19,8 +19,9 @@ Before you begin, it's important to understand the "what", "why" and "how" of *I
 
 ## What is it?
 
-An Issuer is a Kubernetes resource which represents an **entity** capable of storing, signing, and issuing {{mids}}.
-This is typically, but not restricted to, X.509 certificates.
+An Issuer CRD extends the Kubernetes API, abstracting away the complexity of Certificate Authorities (CAs) inside your clusters.
+Each Issuer object represents an **entity** capable of storing, signing, and issuing {{mids}}.
+These {{mids}} are typically, but not restricted to, X.509 certificates.
 This entity could be a digital security company you already know and trust, a non-profit organization or just some well-known device inside your data center.
 Each of these entities present their own strengths, with their use determined by organizational policies, individual choice and the task at hand.
 In a Kubernetes architecture which <span class="value-drivers">prevents misuse and compromise</span>, use of a cert-manager Issuer is a mandatory requirement.
