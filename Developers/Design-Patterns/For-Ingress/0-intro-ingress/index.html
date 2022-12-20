@@ -658,8 +658,8 @@
 <h1 id="ingress">Ingress<a class="headerlink" href="#ingress" title="Permanent link">¶</a></h1>
 <p><strong>Ingress is the term used for a native Kubernetes resource that details the external routes into a cluster.
 Ingress may provide load balancing, TLS termination, intelligent routing and API Gateway functionality.</strong></p>
-<p>cert-manager integrates with Ingress resources to fulfill their role in securing your Kubernetes clusters.
-TLS Protect For Kubernetes, which provides first-class support for Ingress resources, includes an enterprise-hardened version of cert-manager and capabilities to support machine identities in the enterprise.</p>
+<p>cert-manager integrates with Ingress objects to fulfill their role in securing your Kubernetes clusters.
+TLS Protect For Kubernetes, which provides first-class support for Ingress objects, includes an enterprise-hardened version of cert-manager and capabilities to support machine identities in the enterprise.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
 <p>Kubernetes is a <a href="https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB">platform for building platforms</a> which helps companies <span class="value-drivers">modernize with speed and agility</span>.
 It has a reduced set of opinions about how business demands are fulfilled.
@@ -673,11 +673,12 @@ It highlights the need for automation to ensure that once your solution is deplo
 </div>
 <p>Before you begin, it's important to understand the "what", "why" and "how" of <em>Ingress</em>. </p>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">¶</a></h2>
-<p>An Ingress is a Kubernetes resource which represents lines of communication from <strong>outside</strong> a cluster (which could mean the internet) to <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> running <strong>inside</strong> this cluster.
-Ingress resources bring network intelligence to multi-purpose <a href="https://en.wikipedia.org/wiki/Proxy_server">proxy servers</a> in the form of rules-based routing.
+<p>An Ingress is a Kubernetes resource.
+Objects of this type represent lines of communication from <strong>outside</strong> a cluster (which could mean the internet) to <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> running <strong>inside</strong> this cluster.
+Ingress objects bring network intelligence to multi-purpose <a href="https://en.wikipedia.org/wiki/Proxy_server">proxy servers</a> in the form of rules-based routing.
 Without the ability to span this divide Kubernetes would be isolated from the outside world and limited to running non-interactive <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> such as batch jobs.</p>
-<p>Ingress resources are native to Kubernetes but <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr> are not.
-An Ingress resource can exist, but without an associated controller to respond, it will remain dormant - somewhat like a car without a driver.
+<p>The Ingress resource is native to Kubernetes but <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> resources are not.
+An Ingress object can exist, but without an associated controller to respond, it will remain dormant - somewhat like a car without a driver.
 Selecting a suitable <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> is a choice each cluster intends for you to make.</p>
 <h2 id="why-is-it-necessary">Why is it necessary?<a class="headerlink" href="#why-is-it-necessary" title="Permanent link">¶</a></h2>
 <p>In addition to rules-based routing <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr> also provide enhanced security which, given the importance of machine identities, should be your primary concern.</p>
@@ -713,7 +714,7 @@ Arguably, the total number of machine identities in any given cluster should equ
 <p>You can <span class="value-drivers">stop outages</span> caused by expiring machine identities with the use of an <strong>proxy</strong> placed in front of your workload.
 This proxy should be configured to enforce TLS and act as the point of TLS termination.
 This means that traffic touching the internet can be HTTPS whilst traffic touching the workload can remain as plain old HTTP.
-The configuration of this proxy is determined by how your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> interprets your Ingress resources.
+The configuration of this proxy is determined by how your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> interprets your Ingress objects.
 Your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> should be able to <strong>inject</strong> your <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> into this proxy at the point of creation.
 Perhaps more importantly, since machine identities are a <strong>dynamic</strong> dependency of your workload, your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> should also be able to re-inject machine identities, whenever they are renewed.
 This approach adheres to the principle of <span class="value-drivers">automating everywhere</span> and can permanently eliminate <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> expiry as a outage risk.</p>

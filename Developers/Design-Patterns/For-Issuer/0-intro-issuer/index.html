@@ -669,8 +669,9 @@ It highlights the need to <span class="value-drivers">automate everywhere</span>
 </div>
 <p>Before you begin, it's important to understand the "what", "why" and "how" of <em>Issuers</em> in the context of Kubernetes. </p>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">¶</a></h2>
-<p>An Issuer is a Kubernetes resource which represents an <strong>entity</strong> capable of storing, signing, and issuing machine identities.
-This is typically, but not restricted to, X.509 certificates.
+<p>An Issuer <abbr title="Custom Resource Definition: an extension of the Kubernetes API">CRD</abbr> extends the Kubernetes API, abstracting away the complexity of Certificate Authorities (CAs) inside your clusters.
+Each Issuer object represents an <strong>entity</strong> capable of storing, signing, and issuing machine identities.
+These machine identities are typically, but not restricted to, X.509 certificates.
 This entity could be a digital security company you already know and trust, a non-profit organization or just some well-known device inside your data center.
 Each of these entities present their own strengths, with their use determined by organizational policies, individual choice and the task at hand.
 In a Kubernetes architecture which <span class="value-drivers">prevents misuse and compromise</span>, use of a cert-manager Issuer is a mandatory requirement.</p>
