@@ -1,7 +1,10 @@
 # Getting Started
 
+<!-- TODO Issuers produce - issue - machine identities -->
 If you've made it here, you should already have a general understanding about [Issuers and how they use {{mids}}](1-overview-issuers.md) and you're ready to get started developing your **Issuer** solution.
 
+<!-- TODO What the architecture process? What's the process for starting developing? What are considerations for authenticating? What about workflow? How does cert-manager differ from TLS Protect for Kubernetes? -->
+<!-- TODO From a getting started at the highest level this doesn't seem what I need to know. I need to know the architecture, the min/preferred design, authentication model, operations, errors/exception, and more. -->
 ## High-level Process
 
 1. Head over to [{{tlspk}}](https://platform.jetstack.io/){: target="_blank" } and select **ACCESS YOUR ACCOUNT**.
@@ -22,6 +25,8 @@ We highly recommend using [Kubebuilder](https://github.com/kubernetes-sigs/kubeb
 The cert-manager team have produced an article named [Implementing External Issuers](https://cert-manager.io/docs/contributing/external-issuers/) which is geared directly towards assisting developers like yourself.
 Pay special attention to the sections named [Approval](https://cert-manager.io/docs/contributing/external-issuers/#approval) and [Conditions](https://cert-manager.io/docs/contributing/external-issuers/#conditions).
 
+<!-- TODO What is enthuse mean? -->
+<!-- TODO Why mention Boulder? If I'm a CA or secret manager developer I'm likely competing against another CA. -->
 It may also enthuse you to know that [Boulder](https://github.com/letsencrypt/boulder), the [ACME](https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment) compliant software powering Let's Encrypt, is open source and freely available.
 
 If you aren't able to find what you're looking for, or have a specific question related to your use case, please [post a question](https://community.venafi.com/ask-the-community-23){: target="_blank" } to the Developer Forum section of Venafi's {{com}} or [email](mailto:support@venafi.com?subject=Developer Question: Issuer) Venafi Customer Support.
