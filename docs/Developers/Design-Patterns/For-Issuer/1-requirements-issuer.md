@@ -1,7 +1,6 @@
 # Requirements and Considerations
 
-<!-- TODO Issuer or Ingress? -->
-When developing **Ingress** solutions for the {{midcp}}, you should always build with the goal of certification in mind.
+When developing **Issuer** solutions for the {{midcp}}, you should always build with the goal of certification in mind.
 
 <!-- TODO How more adoption vs. just cert-manager? Possibly not here but will need to be answered. -->
 {% include '.admonitions/tlspk_certification-admonition.md' %}
@@ -9,8 +8,7 @@ When developing **Ingress** solutions for the {{midcp}}, you should always build
 ## Minimum Requirements 
 
 <!-- TODO What are the requirements of an Issuer? What are the minimal requirements and what are optional/preferred/preferential? What are performance, environment or other requirements? How should the Issuer be packaged? -->
-<!-- TODO Any' or just the type that the issuer supports? -->
-- The solution must automate the production of *any* {{mid}} required to enforce the security of workloads.
+- The solution must automate the production of {{mids}} from the associated provider to enforce the security of workloads.
 - The solution will expect cert-manager to hand CertificateRequest objects to it and be able to, directly or indirectly, produce a {{mid}}.
 
 <!-- TODO Is UX ever in consideration? Is it more maintenance? What UX or considerations are for TLS Protect for Kubernetes? -->
@@ -32,9 +30,8 @@ To clarify, you will discover the additional security requirements mean it's muc
 
 ## Building a Better User Experience
 
-The user experience should be as painless as possible and the expectation is that your target product should be:
+The user experience should be as painless as possible and the expectation is that your solution should be:
 
-<!-- TODO It's good to indicate with Helm. What's difference cert-manager vs. TLS Protect for Kubernetes. -->
 <!-- TODO Documentation is important and especially so for certification. What are the Requirements? -->
 - Easy to install, preferably via [Helm](https://helm.sh/)
 - Able to deploy an MVP into your cluster with little or no configuration requirements
@@ -47,10 +44,8 @@ Conforming to the these requirements will **greatly** enhance the user experienc
 
 Existing solutions that fit within this pattern:
 
-<!-- TODO Are the Google, AWS, Cloudflare issuers much better examples of other solutions that developers have built? -->
-=== "Venafi"
-    - The [venafi-enhanced-issuer](https://platform.jetstack.io/documentation/reference/venafi-enhanced-issuer) is provided with {{tlspk}} to meet the needs of enterprise customer.
+=== "Community"
+    - The [cert-manager community](https://cert-manager.io/docs/configuration/external/) provides a collection of open-source External Issuers enabling distribution of {{mids}} from providers including AWS, Google and Cloudflare.
 
-<!-- TODO What does light the way mean? Does light the way mean examples that I can build with? -->
-=== "Elsewhere"
-    - The [cert-manager community](https://cert-manager.io/docs/configuration/external/) has a collection of open-source External Issuers to light the way for you.
+=== "Proprietary"
+    - The [venafi-enhanced-issuer](https://platform.jetstack.io/documentation/reference/venafi-enhanced-issuer) is provided with {{tlspk}} to meet the needs of enterprise customer.

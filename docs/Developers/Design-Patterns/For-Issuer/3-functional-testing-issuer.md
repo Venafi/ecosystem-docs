@@ -19,12 +19,7 @@ If you've got suggestions and/or functional tests that helped during your develo
 
 ## Basic Functionality Tests
 
-<!-- TODO Will the error be logged at the CA or at cert-manager? What additional error handling should be expected for TLS Protect for Kubernetes? -->
-<!-- TODO What does 'inspection' mean? What's most important? Is the machine identity ready and in use by the application? -->
 <!-- TODO anything different cert-manager vs. TLS Protect for Kubernetes? -->
-<!-- TODO The certificate is delivered back to cert-manager. Anything more?  -->
-<!-- TODO Does this cover cert-manager too? What about approval and workflow that happen at Issuer?  -->
-<!-- TODO Does an issuer need to worry about Ingress? Why?  -->
 {% include 'testing/ft-issuers-basic.md' %}
 
 ## Advanced Functionality Tests
