@@ -17,16 +17,15 @@ The CNCF's move to accept [cert-manager](https://www.cncf.io/blog/2022/10/19/cer
 
     This design pattern focuses on the use case of creation and renewal of {{mids}} via Issuers.
     It highlights the need to <span class="value-drivers">automate everywhere</span> to ensure that once your solution is deployed it stays there, **proactively** securing workloads long into the future.
-    
-Before you begin, it's important to understand the "what", "why" and "how" of *Issuers* in the context of Kubernetes. 
+
+Before you begin, it's important to understand the "what" and "why" of *Issuers* in the context of Kubernetes. 
 
 ## What is it?
 
 The Issuer capability in cert-manager extends the Kubernetes API, abstracting away the complexity of {{mid}} providers inside your clusters.
-Each Issuer object represents an **entity** capable of storing, signing, and issuing {{mids}}.
-These {{mids}} are typically X.509 certificates.
-This entity could be a digital security company you already know and trust, a non-profit organization or just some well-known device inside your data center.
-Each of these entities present their own strengths, with their use determined by organizational policies, individual choice and the task at hand.
+Each Issuer object represents a provider capable of storing, signing, and issuing {{mids}}, typically in the form of X.509 certificates.
+These providers could be digital security companies you already know and trust, non-profit organizations or just some well-known devices inside your data center.
+Each provider brings its own strengths and consumer adoption is determined by various factor such as organizational policy, existing infrastructure, business relationships, individual choice and the task at hand.
 In a Kubernetes architecture which <span class="value-drivers">prevents misuse and compromise</span>, use of a cert-manager Issuer is a mandatory requirement.
 
 ## Why is it necessary?
@@ -35,5 +34,31 @@ The following diagram is taken from the cert-manager documentation [homepage](ht
 
 ![cert-manager issuers](../../../assets/images/cert-manager-issuers.svg)
 
-As you can see, native Issuer support is currently limited to the {{mid}} providers shown above.
+Native Issuer support in cert-manager is currently limited to the {{mid}} providers shown above.
 As a developer who needs to extend the reach of cert-manager to provide support for an alternate {{mid}} provider, this design pattern is for you.
+
+## FAQs
+
+Before you proceed there may be a few initial questions that need addressing, for example:
+
+**"What problem will you solve?"**
+
+> {{tlspk}} users need to provide their clusters with a **robust mechanism** for delivery of {{mids}} from your CA's {{mids}}.
+
+**"What will the outcome be?"**
+
+> Automated delivery of {{mids}} from your CA to your Kubernetes clusters and a reduction in **outages** due to certificate expiry.
+
+**"What will you need to deliver?"**
+
+> You solution will be in the form of Kubernetes **controllers and CRDs**. Your images will be sourced from a **public container registry** and installation will be achieved via a **Helm** chart.
+
+**"How will your solution be used?"**
+
+> Automation via your issuer will be initiated through the use of **declarative references** inside cert-manager objects.
+
+**"Why will you want to certify your solution?"**
+
+> Hop over to our [certification section](/Developers/Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro/) for {{tlspk}} to find out more
+
+If you aren't able to find what you're looking for, or have a specific question related to your use case, please [post a question](https://community.venafi.com/ask-the-community-23){: target="_blank" } to the Developer Forum section of Venafi's {{com}} or [email](mailto:support@venafi.com?subject=Developer Question: Issuer) Venafi Customer Support.
