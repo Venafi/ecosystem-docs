@@ -8,7 +8,7 @@ When developing **Issuer** solutions for the {{midcp}}, you should always build 
 ## Minimum Requirements 
 
 <!-- TODO What are the requirements of an Issuer? What are the minimal requirements and what are optional/preferred/preferential? What are performance, environment or other requirements? How should the Issuer be packaged? -->
-- The solution must automate the production of {{mids}} from the associated provider to enforce the security of workloads.
+- The solution must automate the production of {{mids}} from the underlying provider to enforce the security of traffic between workloads.
 - The solution will expect cert-manager to hand CertificateRequest objects to it and be able to, directly or indirectly, produce a {{mid}}.
 
 <!-- TODO Is UX ever in consideration? Is it more maintenance? What UX or considerations are for TLS Protect for Kubernetes? -->
