@@ -7,14 +7,9 @@ When developing **Issuer** solutions for the {{midcp}}, you should always build 
 
 ## Minimum Requirements 
 
-<!-- TODO What are the requirements of an Issuer? What are the minimal requirements and what are optional/preferred/preferential? What are performance, environment or other requirements? How should the Issuer be packaged? -->
+- The solution must be open source and its container images published to publicly available image registries.
 - The solution must automate the production of {{mids}} from the underlying provider to enforce the security of traffic between workloads.
 - The solution will expect cert-manager to hand CertificateRequest objects to it and be able to, directly or indirectly, produce a {{mid}}.
-
-<!-- TODO Is UX ever in consideration? Is it more maintenance? What UX or considerations are for TLS Protect for Kubernetes? -->
-!!! tip "Focus on UX"
-
-    **The best solutions will require little, if any, human interaction after initial configuration.**
 
 ## Security Considerations
 
@@ -25,8 +20,7 @@ As the developer of an Issuer solution, you will need to determine if your under
 Internal traffic could be deemed to be secure when plain-text communication is eliminated, which is easier to ensure.
 The requirements for securing internet traffic are likely higher, since your responsibility now extends to cover concerns such as identity and attestation (e.g. "is this domain owner really who they say they are?")
 
-<!-- TODO This is confusing. What addition security requirements and if I'm a developer it's unlikely I'm building new for Let's Encrypt. -->
-To clarify, you will discover the additional security requirements mean it's much easier to build a self-signed Issuer than an Issuer for something like [Let's Encrypt](https://letsencrypt.org/).
+To clarify, you would find it much easier to build a self-signed Issuer than an Issuer for something like a Certificate Authority where security concerns such as authentication would need to be addressed.
 
 ## Building a Better User Experience
 
@@ -38,7 +32,7 @@ The user experience should be as painless as possible and the expectation is tha
 - Provide comprehensive [logs](https://kubernetes.io/docs/concepts/cluster-administration/logging/) and metrics for diagnostic purposes
 - Provide complete/appropriate documentation online and via CRDs
 
-Conforming to the these requirements will **greatly** enhance the user experience, providing additional value to teams and organizations.
+Conforming to the these requirements will **greatly** enhance the user experience, providing additional value to teams and organizations whilst paving the way to [certification](../../../Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro/) of your solution.
 
 ## Success Stories
 
