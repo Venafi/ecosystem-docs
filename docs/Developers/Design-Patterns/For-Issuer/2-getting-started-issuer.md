@@ -3,9 +3,7 @@
 If you've made it here, you should already have a general understanding about [Issuers and {{mids}}](1-overview-issuers.md).
 Now you're ready to get started developing your **Issuer** solution.
 
-<!-- TODO What the architecture process? What's the process for starting developing? What are considerations for authenticating? What about workflow? How does cert-manager differ from TLS Protect for Kubernetes? -->
-<!-- TODO From a getting started at the highest level this doesn't seem what I need to know. I need to know the architecture, the min/preferred design, authentication model, operations, errors/exception, and more. -->
-## High-level Process
+## Steps
 
 1. Head over to [{{tlspk}}](https://platform.jetstack.io/){: target="_blank" } and select **ACCESS YOUR ACCOUNT**.
 1. Log In to your account **or**, if you don't already have one, select **Sign Up**, complete the Terms of Service  and follow the on screen prompts.
@@ -16,7 +14,9 @@ Your choice of Kubernetes distribution is somewhat arbitrary, however you should
 This is where you will locate any active Issuer objects in your registered cluster(s).
 1. From the {{tlspk}} console, select **ADD AN ISSUER** to familiarize yourself with the steps required to introduce new Issuer objects (both native and [**external**](https://cert-manager.io/docs/configuration/external/#known-external-issuers)) to your cluster.
 1. Start building!
-We highly recommend using [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) framework to increase your velocity and reduce the complexity inherent in developing any Kubernetes controller.
+Use a public GitHub repository with [Commit Signature Veficiation](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification) enabled.
+Use a CI/CD platform, such as [Github Actions](https://github.com/features/actions).
+Use [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) framework to increase your velocity and reduce the complexity inherent in developing any Kubernetes controller.
 1. Perform [functional testing](3-functional-testing-issuers.md).
 1. Get [certified](../../Certification/TLS-Protect-For-Kubernetes/1-tlsp-certification-intro.md)!
 
