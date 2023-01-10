@@ -669,6 +669,7 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="functional-testing">Functional Testing<a class="headerlink" href="#functional-testing" title="Permanent link">¶</a></h1>
+<!-- TODO How does functional testing confirm the problem that was intended to be solved? How will functional test results be reported? Are there any performance considerations? What about certification and documentation? -->
 <p>During development of your <strong>Issuer</strong> solution, you should keep the following functional tests in mind for this design pattern.
 The test cases listed below are directly related to the <a href="../1-requirements-issuer">requirements and considerations</a> outlined for this use case.</p>
 <details class="question">
@@ -687,6 +688,7 @@ Similarly, it's possible that you've got such a new or unique solution, that we 
 While you might be able to perform all functionality without even referencing the docs, it's possible that a fresh set of eyes will uncover typos or minor omissions that someone directly involved in development might miss.</p>
 </details>
 <h2 id="basic-functionality-tests">Basic Functionality Tests<a class="headerlink" href="#basic-functionality-tests" title="Permanent link">¶</a></h2>
+<!-- TODO anything different cert-manager vs. TLS Protect for Kubernetes? -->
 <p>The following functionality tests should be applicable to every solution targeting this use case.</p>
 <table>
 <thead>
@@ -698,28 +700,33 @@ While you might be able to perform all functionality without even referencing th
 </thead>
 <tbody>
 <tr>
-<td>Error Handling</td>
-<td>Perform an operation which you expect to fail (unsupported key size, missing/incomplete data, etc.)</td>
-<td>The error will be encountered and a meaningful error message will be presented to the end user and, if applicable, back to Venafi</td>
+<td>ISS-01</td>
+<td><strong>Documentation</strong>: Solution should be fully documented</td>
+<td>Both online and embedded <abbr title="Custom Resource Definition: an extension of the Kubernetes API">CRD</abbr> documentation is provided</td>
 </tr>
 <tr>
-<td>New Certificate</td>
-<td>Provision a new certificate for use as a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr></td>
-<td>Certificate is provisioned and available for inspection from within TLS Protect For Kubernetes</td>
+<td>ISS-02</td>
+<td><strong>Error Handling</strong>: Perform an operation which you expect to fail (unsupported key size, missing/incomplete data, provider-centric policy violation, etc.)</td>
+<td>A meaningful error message will be recorded in the cert-manager logs and will propagate to the TLS Protect For Kubernetes front-end</td>
 </tr>
 <tr>
-<td>Certificate Renewed</td>
-<td>Renew certificate for use as a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr></td>
-<td>Revised expiry date is visible from within TLS Protect For Kubernetes</td>
+<td>ISS-03</td>
+<td><strong>New Certificate</strong>: Provision a new certificate for use as a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr></td>
+<td>Certificate is delivered back to cert-manager and observably ready for use from within TLS Protect For Kubernetes</td>
 </tr>
 <tr>
-<td>Approval Status</td>
-<td>Without approval from the <a href="https://platform.jetstack.io/documentation/installation/approver-policy">approver-policy</a> component of TLS Protect For Kubernetes Enterprise, no certificate should be issued</td>
+<td>ISS-04</td>
+<td><strong>Certificate Renewed</strong>: Renew certificate for use as a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr></td>
+<td>Certificate is delivered back to cert-manager and revised expiry date is visible from within TLS Protect For Kubernetes</td>
+</tr>
+<tr>
+<td>ISS-05</td>
+<td><strong>Approval Status</strong>: Without approval from the <a href="https://platform.jetstack.io/documentation/installation/approver-policy">approver-policy</a> component of TLS Protect For Kubernetes Enterprise, no certificate should be issued</td>
 <td>Unapproved certificates will be flagged as such in TLS Protect For Kubernetes</td>
 </tr>
 <tr>
-<td>Ingress Integration</td>
-<td>Provide seamless integration with <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr></td>
+<td>ISS-06</td>
+<td><strong>Ingress Integration</strong>: Provide seamless integration with <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr></td>
 <td>Ingresses enlisting the support of your Issuer solution will behave as per native Issuers with regard to machine identities</td>
 </tr>
 </tbody>

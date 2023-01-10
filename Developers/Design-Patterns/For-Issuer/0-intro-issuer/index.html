@@ -644,8 +644,8 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#how-it-helps">
-    How it helps?
+<a class="md-nav__link" href="#faqs">
+    FAQs
   </a>
 </li>
 </ul>
@@ -655,38 +655,56 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
+<!-- TODO Should the introduction include: Problem you will solve, What you will build, What the outcome will be, How will it be used. Should this also establish an introduction to the benefits of building for TLS Protect for Kubernetes not just cert-manager, and why you'll want to certify? -->
 <h1 id="issuer">Issuer<a class="headerlink" href="#issuer" title="Permanent link">¶</a></h1>
-<p><strong>Issuer is the term used for a Custom Resource Definition (<abbr title="Custom Resource Definition: an extension of the Kubernetes API">CRD</abbr>) in Kubernetes that represents certificate authorities (CAs) able to generate signed certificates by honoring certificate signing requests.</strong></p>
-<p>The Issuer CRDs are core components of <a href="https://cert-manager.io/">cert-manager</a>, a critical component in the fight to secure your Kubernetes clusters, helping companies <span class="value-drivers">modernize with speed and agility</span>.
-TLS Protect For Kubernetes includes an enterprise-hardened version of cert-manager and capabilities to support machine identities in the enterprise.</p>
+<p><strong>Issuer is a capability of <a href="https://cert-manager.io/">cert-manager</a> enabling integration with <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> providers. These providers are typically Certificate Authorities which publish digital certificates to secure communication between <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>.</strong></p>
+<!-- TODO TLS Protect for Kubernetes is introduced here along with cert-manager. There's no context on the purpose of either. -->
+<p>cert-manager is a critical component in the fight to secure your Kubernetes clusters, helping companies <span class="value-drivers">modernize with speed and agility</span>.
+TLS Protect For Kubernetes includes an enterprise-hardened version of cert-manager alongside extensions to support and manage machine identities in the enterprise.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
 <p>The chapter on <a href="../../For-Ingress/0-intro-ingress">Ingress</a> explains how Kubernetes is broadly unopinionated about the tools you use to fulfill your business demands, such as how you ensure the security of your <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>.
 The CNCF's move to accept <a href="https://www.cncf.io/blog/2022/10/19/cert-manager-becomes-a-cncf-incubating-project/">cert-manager</a> as an incubating project solidifies its reputation as the de-facto Kubernetes solution for <span class="value-drivers">stopping outages</span> caused by TLS certificate expiry.</p>
+<!-- TODO Who is the 'you[r]'? The developer [who] is building a CA or other machine identity provider. -->
 <div class="admonition abstract">
 <p class="admonition-title">Design Pattern: Issuer</p>
 <p>This design pattern focuses on the use case of creation and renewal of machine identities via Issuers.
 It highlights the need to <span class="value-drivers">automate everywhere</span> to ensure that once your solution is deployed it stays there, <strong>proactively</strong> securing <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> long into the future.</p>
 </div>
-<p>Before you begin, it's important to understand the "what", "why" and "how" of <em>Issuers</em> in the context of Kubernetes. </p>
+<p>Before you begin, it's important to understand the "what" and "why" of <em>Issuers</em> in the context of Kubernetes. </p>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">¶</a></h2>
-<p>An Issuer <abbr title="Custom Resource Definition: an extension of the Kubernetes API">CRD</abbr> extends the Kubernetes API, abstracting away the complexity of Certificate Authorities (CAs) inside your clusters.
-Each Issuer object represents an <strong>entity</strong> capable of storing, signing, and issuing machine identities.
-These machine identities are typically, but not restricted to, X.509 certificates.
-This entity could be a digital security company you already know and trust, a non-profit organization or just some well-known device inside your data center.
-Each of these entities present their own strengths, with their use determined by organizational policies, individual choice and the task at hand.
+<p>The Issuer capability in cert-manager extends the Kubernetes API, abstracting away the complexity of <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> providers inside your clusters.
+Each Issuer object represents a provider capable of storing, signing, and issuing machine identities, typically in the form of X.509 certificates.
+These providers could be digital security companies you already know and trust, non-profit organizations or just some well-known devices inside your data center.
+Each provider brings its own strengths and consumer adoption is determined by various factor such as organizational policy, existing infrastructure, business relationships, individual choice and the task at hand.
 In a Kubernetes architecture which <span class="value-drivers">prevents misuse and compromise</span>, use of a cert-manager Issuer is a mandatory requirement.</p>
 <h2 id="why-is-it-necessary">Why is it necessary?<a class="headerlink" href="#why-is-it-necessary" title="Permanent link">¶</a></h2>
-<!-- maybe some history of CAs -->
-<!-- keyword: lifecycle automation, attestation -->
-<p>A range of Issuers are necessary because there is no one-size solution for issuance of machine identities.
-For example, the fortification of Ingress traffic is typically of greater concern than that of your internal microservices.
-Nonetheless, security is a fundamental requirement in both cases.</p>
-<h2 id="how-it-helps">How it helps?<a class="headerlink" href="#how-it-helps" title="Permanent link">¶</a></h2>
-<p>cert-manager abstracts the different requirements and capabilities of these entities behind an assortment of available Issuer types, meaning the experience of using cert-manager is consistent regardless of your circumstances.</p>
 <p>The following diagram is taken from the cert-manager documentation <a href="https://cert-manager.io/docs/">homepage</a>.</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../../assets/images/cert-manager-issuers.svg"><img alt="cert-manager issuers" src="../../../../assets/images/cert-manager-issuers.svg"/></a></p>
-<p>This is great if your chosen Issuer type appears on the above image but disconcerting otherwise.</p>
-<p>Thankfully, the loosely-coupled and extensible nature of cert-manager and Kubernetes enables a solution in the shape of <a href="https://cert-manager.io/docs/configuration/external/">External Issuers</a> of which there are several already available in the public domain.</p>
+<p>Native Issuer support in cert-manager is currently limited to the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> providers shown above.
+As a developer who needs to extend the reach of cert-manager to provide support for an alternate <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> provider, this design pattern is for you.</p>
+<h2 id="faqs">FAQs<a class="headerlink" href="#faqs" title="Permanent link">¶</a></h2>
+<p>Before you proceed there may be a few initial questions that need addressing, for example:</p>
+<p><strong>"What problem will you solve?"</strong></p>
+<blockquote>
+<p>TLS Protect For Kubernetes users need to provide their clusters with a <strong>robust mechanism</strong> for delivery of machine identities from your CA's machine identities.</p>
+</blockquote>
+<p><strong>"What will the outcome be?"</strong></p>
+<blockquote>
+<p>Automated delivery of machine identities from your CA to your Kubernetes clusters and a reduction in <strong>outages</strong> due to certificate expiry.</p>
+</blockquote>
+<p><strong>"What will you need to deliver?"</strong></p>
+<blockquote>
+<p>You solution will be in the form of Kubernetes <strong>controllers and CRDs</strong>. Your images will be sourced from a <strong>public container registry</strong> and installation will be achieved via a <strong>Helm</strong> chart.</p>
+</blockquote>
+<p><strong>"How will your solution be used?"</strong></p>
+<blockquote>
+<p>Automation via your issuer will be initiated through the use of <strong>declarative references</strong> inside cert-manager objects.</p>
+</blockquote>
+<p><strong>"Why will you want to certify your solution?"</strong></p>
+<blockquote>
+<p>Hop over to our <a href="/Developers/Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro/">certification section</a> for TLS Protect For Kubernetes to find out more</p>
+</blockquote>
+<p>If you aren't able to find what you're looking for, or have a specific question related to your use case, please <a href="https://community.venafi.com/ask-the-community-23" target="_blank">post a question</a> to the Developer Forum section of Venafi's Warrior Community or <a href="mailto:support@venafi.com?subject=Developer Question: Issuer">email</a> Venafi Customer Support.</p>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 </article>
