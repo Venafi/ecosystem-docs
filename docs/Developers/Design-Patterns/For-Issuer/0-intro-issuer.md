@@ -15,15 +15,16 @@ The CNCF's move to accept [cert-manager](https://www.cncf.io/blog/2022/10/19/cer
 <!-- TODO Who is the 'you[r]'? The developer [who] is building a CA or other machine identity provider. -->
 !!! abstract "Design Pattern: Issuer"
 
-    This design pattern focuses on the use case of creation and renewal of {{mids}} via Issuers.
-    It highlights the need to <span class="value-drivers">automate everywhere</span> to ensure that once your solution is deployed it stays there, **proactively** securing workloads long into the future.
+    This design pattern focuses on the development of an Issuer for cert-manager.
+    The principal concern of any Issuer is to supervise the creation and renewal of {{mids}}.
+    This pattern highlights the need to <span class="value-drivers">automate everywhere</span>, ensuring that once your solution is deployed it remains in place, **proactively** securing workloads long into the future.
 
 Before you begin, it's important to understand the "what" and "why" of *Issuers* in the context of Kubernetes. 
 
 ## What is it?
 
 The Issuer capability in cert-manager extends the Kubernetes API, abstracting away the complexity of {{mid}} providers inside your clusters.
-Each Issuer object represents a provider capable of storing, signing, and issuing {{mids}}, typically in the form of X.509 certificates.
+Each Issuer object represents a provider capable of signing and issuing {{mids}}, typically in the form of X.509 certificates.
 These providers could be digital security companies you already know and trust, non-profit organizations or just some well-known devices inside your data center.
 Each provider brings its own strengths and consumer adoption is determined by various factor such as organizational policy, existing infrastructure, business relationships, individual choice and the task at hand.
 In a Kubernetes architecture which <span class="value-drivers">prevents misuse and compromise</span>, use of a cert-manager Issuer is a mandatory requirement.
