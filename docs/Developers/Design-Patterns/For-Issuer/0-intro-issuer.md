@@ -15,7 +15,7 @@ The CNCF's move to accept [cert-manager](https://www.cncf.io/blog/2022/10/19/cer
 <!-- TODO Who is the 'you[r]'? The developer [who] is building a CA or other machine identity provider. -->
 !!! abstract "Design Pattern: Issuer"
 
-    This design pattern focuses on the development of an Issuer for cert-manager.
+    This design pattern focuses on the development of bespoke Issuers for cert-manager.
     The principal concern of any Issuer is to supervise the creation and renewal of {{mids}}.
     This pattern highlights the need to <span class="value-drivers">automate everywhere</span>, ensuring that once your solution is deployed it remains in place, **proactively** securing workloads long into the future.
 
