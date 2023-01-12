@@ -667,13 +667,14 @@ The CNCF's move to accept <a href="https://www.cncf.io/blog/2022/10/19/cert-mana
 <!-- TODO Who is the 'you[r]'? The developer [who] is building a CA or other machine identity provider. -->
 <div class="admonition abstract">
 <p class="admonition-title">Design Pattern: Issuer</p>
-<p>This design pattern focuses on the use case of creation and renewal of machine identities via Issuers.
-It highlights the need to <span class="value-drivers">automate everywhere</span> to ensure that once your solution is deployed it stays there, <strong>proactively</strong> securing <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> long into the future.</p>
+<p>This design pattern focuses on the development of bespoke Issuers for cert-manager.
+The principal concern of any Issuer is to supervise the creation and renewal of machine identities.
+This pattern highlights the need to <span class="value-drivers">automate everywhere</span>, ensuring that once your solution is deployed it remains in place, <strong>proactively</strong> securing <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> long into the future.</p>
 </div>
 <p>Before you begin, it's important to understand the "what" and "why" of <em>Issuers</em> in the context of Kubernetes. </p>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">¶</a></h2>
 <p>The Issuer capability in cert-manager extends the Kubernetes API, abstracting away the complexity of <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> providers inside your clusters.
-Each Issuer object represents a provider capable of storing, signing, and issuing machine identities, typically in the form of X.509 certificates.
+Each Issuer object represents a provider capable of signing and issuing machine identities, typically in the form of X.509 certificates.
 These providers could be digital security companies you already know and trust, non-profit organizations or just some well-known devices inside your data center.
 Each provider brings its own strengths and consumer adoption is determined by various factor such as organizational policy, existing infrastructure, business relationships, individual choice and the task at hand.
 In a Kubernetes architecture which <span class="value-drivers">prevents misuse and compromise</span>, use of a cert-manager Issuer is a mandatory requirement.</p>
