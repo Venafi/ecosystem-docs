@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ecosystem.venafi.com/Developers/devs-glossary/</loc>
+         <lastmod>2023-01-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ecosystem.venafi.com/Developers/devs-welcome/</loc>
          <lastmod>2023-01-12</lastmod>
          <changefreq>daily</changefreq>
