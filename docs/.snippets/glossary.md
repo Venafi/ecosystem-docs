@@ -1,6 +1,6 @@
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 
-*[certificate authority]: An entity that stores, signs, and issues digital certificates
+*[certificate authority]: An entity that signs, and issues digital certificates
 *[downtime]: A period of time where the workload is **unintentionally** inaccessible
 *[machine identity]: X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code & organizations
 *[Machine Identity Management Control Plane]: The holistic platform/service, along with the cultivation & curation of the vast marketplace of solutions, tools & frameworks offered by Venafi and the ecosystem
