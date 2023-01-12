@@ -1,3 +1,4 @@
 - [Welcome](devs-welcome.md)
+- [Glossary](devs-glossary.md)
 - [Design Patterns](Design-Patterns/)
 - [Certification](Certification/)
