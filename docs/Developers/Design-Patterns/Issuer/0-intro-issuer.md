@@ -61,7 +61,8 @@ Before you proceed there may be a few initial questions that need addressing, fo
 **"What about authentication and authorization?"**
 
 > From the perspective of cert-manager there will be zero authentication and authorization requirements, but it will likely be a different story from the perspective of your {{mid}} provider.
-  Your solution will need to handle these concerns sensitively and with the agreement of your {{mid}} provider.
+  Your solution will need to handle these concerns sensitively.
+  You may also choose to consult with your {{mid}} provider regarding their own best practices.
 
 **"Why will you want to certify your solution?"**
 
