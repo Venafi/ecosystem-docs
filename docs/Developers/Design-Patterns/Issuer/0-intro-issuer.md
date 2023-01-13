@@ -58,6 +58,11 @@ Before you proceed there may be a few initial questions that need addressing, fo
 
 > Automation via your issuer will be initiated through the use of **declarative references** inside cert-manager objects.
 
+**"What about authentication and authorization?"**
+
+> From the perspective of cert-manager there will be zero authentication and authorization requirements, but it will likely be a different story from the perspective of your {{mid}} provider.
+  Your solution will need to handle these concerns sensitively and with the agreement of your {{mid}} provider.
+
 **"Why will you want to certify your solution?"**
 
 > Hop over to our [certification section](/Developers/Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro/) for {{tlspk}} to find out more
