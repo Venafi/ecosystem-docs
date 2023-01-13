@@ -706,6 +706,11 @@ As a developer who needs to extend the reach of cert-manager to provide support 
 <blockquote>
 <p>Automation via your issuer will be initiated through the use of <strong>declarative references</strong> inside cert-manager objects.</p>
 </blockquote>
+<p><strong>"What about authentication and authorization?"</strong></p>
+<blockquote>
+<p>From the perspective of cert-manager there will be zero authentication and authorization requirements, but it will likely be a different story from the perspective of your <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> provider.
+  Your solution will need to handle these concerns sensitively and with the agreement of your <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> provider.</p>
+</blockquote>
 <p><strong>"Why will you want to certify your solution?"</strong></p>
 <blockquote>
 <p>Hop over to our <a href="/Developers/Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro/">certification section</a> for TLS Protect For Kubernetes to find out more</p>
