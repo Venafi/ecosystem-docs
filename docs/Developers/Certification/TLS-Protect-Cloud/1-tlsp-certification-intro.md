@@ -17,7 +17,7 @@ Official certification is the first step to listing the solution on the [Venafi 
 
     Certification is the only way that an solution will be listed on the Venafi Marketplace as compatible with {{tlspc}}. 
 
-![Certify](../../../assets/images/certification/certify-chart.png){ .off-glb }
+![Certify](../../../assets/images/Certification/certify-chart.png){ .off-glb }
 
 The {{tlspc}} Certification Program is still evolving and so some specifics about the following requirements are subject to change.
 Ample notice will be given to any developers of an existing certified solution, ensuring plenty of time to make any necessary updates to maintain certification.
@@ -41,7 +41,7 @@ The final step of the {{tlspc}} certification process will be ***Packaging*** - 
 In order for end users to discover the solution and establish a strong user base, the packaging of the solution should be polished and easy to understand.
 Use of company logos, iconography, product names, marketing copy, etc. will all help users quickly identify your solution in the growing [Venafi Marketplace](https://marketplace.venafi.com). 
 
-![Package](../../../assets/images/certification/package-chart.png){ .off-glb }
+![Package](../../../assets/images/Certification/package-chart.png){ .off-glb }
 
 ### Marketing
 

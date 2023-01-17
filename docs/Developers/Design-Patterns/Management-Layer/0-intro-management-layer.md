@@ -9,7 +9,7 @@
 Organizations use {{mids}} to secure traffic to and from their workloads using Transport Layer Security (TLS) with HTTPS being the most common use case.
 
 Sometimes those {{mids}} are installed at the application endpoint, itself (i.e. source code). 
-Other times, they may be installed on a load balancer, [cloud WAF](../For-Cloud-WAF/0-intro-cloud-waf.md) or, in this case, used by the management layer. 
+Other times, they may be installed on a load balancer, [cloud WAF](../Cloud-WAF/0-intro-cloud-waf.md) or, in this case, used by the management layer. 
 
 !!! abstract "Design Pattern: Management Layer"
 

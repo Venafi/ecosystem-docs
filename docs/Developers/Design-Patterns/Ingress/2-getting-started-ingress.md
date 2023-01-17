@@ -1,6 +1,6 @@
 # Getting Started
 
-If you've made it here, you should already have a general understanding about [how the Ingress resource relates to {{mids}}](1-overview-ingress.md) and you're ready to get started developing your **Ingress** solution.
+If you've made it here, you should already have a general understanding about [how the Ingress resource relates to {{mids}}](0-intro-ingress.md) and you're ready to get started developing your **Ingress** solution.
 
 ## High-level Process
 
@@ -16,7 +16,7 @@ This is where you will locate any active Ingress objects in your registered clus
 1. Start building!
 We highly recommend using [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) framework to increase your velocity and reduce the complexity inherent in developing any Kubernetes controller.
 1. Perform [functional testing](3-functional-testing-ingress.md).
-1. Get [certified](../../Certification/TLS-Protect-For-Kubernetes/1-tlsp-certification-intro.md)!
+1. Get [certified](../../Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro.md)!
 
 ## Getting Help
 

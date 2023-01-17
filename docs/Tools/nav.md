@@ -4,8 +4,3 @@
     - [Adaptable Framework](Adaptable-Framework/overview-adaptable-framework.md)
         - [Writing Adaptable Drivers](Adaptable-Framework/writing-adaptable-drivers.md)
         - [Submitting/Updating Adaptable Drivers](Adaptable-Framework/submitting-your-adaptable-driver.md)
-- For Technology Partnerships
-    - [Go to Market](#)
-    - [Marketplace Listing](#)
-    - [Venafi Brand Assets](#)
-    - [Looking for Channel?](#)
