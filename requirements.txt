@@ -30,3 +30,4 @@ termcolor==2.0.1
 urllib3==1.26.12
 watchdog==2.1.9
 pyembed-markdown==1.1.0
+certifi>=2022.12.07
