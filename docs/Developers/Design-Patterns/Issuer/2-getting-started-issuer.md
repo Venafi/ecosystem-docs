@@ -1,6 +1,6 @@
 # Getting Started
 
-If you've made it here, you should already have a general understanding about [Issuers and {{mids}}](1-overview-issuers.md).
+If you've made it here, you should already have a general understanding about [Issuers and {{mids}}](0-intro-issuer.md).
 Now you're ready to get started developing your **Issuer** solution.
 
 ## Steps
@@ -17,8 +17,8 @@ This is where you will locate any active Issuer objects in your registered clust
 Use a public GitHub repository with [Commit Signature Veficiation](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification) enabled.
 Use a CI/CD platform, such as [Github Actions](https://github.com/features/actions).
 Use [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder) framework to increase your velocity and reduce the complexity inherent in developing any Kubernetes controller.
-1. Perform [functional testing](3-functional-testing-issuers.md).
-1. Get [certified](../../Certification/TLS-Protect-For-Kubernetes/1-tlsp-certification-intro.md)!
+1. Perform [functional testing](3-functional-testing-issuer.md).
+1. Get [certified](../../Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro.md)!
 
 ## Getting Help
 

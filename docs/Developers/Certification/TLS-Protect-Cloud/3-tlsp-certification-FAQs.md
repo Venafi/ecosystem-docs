@@ -5,7 +5,7 @@ Below are some useful resources and frequently asked questions from previous dev
 ## Resources
 
 - [Example Solution Repo](https://coolsolutions.venafi.com/ecosystem/example-integration-repo) - This provides a thorough example of how the README.md file should be created to be most impactful for Venafi users. Rather than creating Word documents or PDFs, all documentation should start in Markdown, which provides better version control and can then be easily translated to other formats as needed.
-- [{{tlspc}} API Documentation](https://docs.venafi.cloud/api/c-cloud-api/)
+- [{{tlspc}} API Documentation](https://developer.venafi.com/tlsprotectcloud/reference/overview)
 - [Venafi Marketplace](https://marketplace.venafi.com) - Explore the Marketplace to get an idea about some of the existing solutions to Venafi. 
 
 ## FAQs
