@@ -22,10 +22,12 @@ theme:
   features:
     - navigation.instant    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
     - navigation.tabs       # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.top
     - search.highlight      # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-highlighting
     - search.suggest        # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
     - search.share          # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-sharing
     - content.tooltips
+    - toc.follow
   font:                     # Can use any google font.
     text: 'Mulish'
     code: 'Roboto Mono'
@@ -81,7 +83,7 @@ markdown_extensions:
     toc:
       permalink: true       # Generate permanent links at the end of each header
       separator: "-"        # Replace any white space in generated IDs with a dash
-      toc_depth: 2          # Two levels on the "On this page" menu
+      toc_depth: 3          # Two levels on the "On this page" menu
       title: On this page   # Sets the title of the topic toc
     pymdownx.details: {}    # Enables expandable sections https://facelessuser.github.io/pymdown-extensions/extensions/details/
     pymdownx.tabbed:        # Enables tabs https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
@@ -116,6 +118,17 @@ plugins:
       exclude: 
     redirects:              # https://github.com/datarobot/mkdocs-redirects
       redirect_maps:
-      #DO NOT CHANGE ANY ENTRIES IN THE FIRST COLUMN!!!
+    glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+       auto_caption: false
+       caption_position: bottom
 
 
