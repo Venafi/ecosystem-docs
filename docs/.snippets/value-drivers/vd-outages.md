@@ -1,4 +1,4 @@
-They are **stopping unnecessary outages**
+They are <span class="value-drivers">stopping unnecessary outages</span>
 
 - by identifying, understanding and correcting situations and processes that could lead to an outage.
 - by understanding that proper {{mim}} is a shared responsibility between multiple teams, and working together increases the security posture of the organization. Developers like you help enable those teams to work together seamlessly.

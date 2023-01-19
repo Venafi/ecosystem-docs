@@ -25,16 +25,16 @@ WAFs use {{mids}} in one of two ways:
 - Securing traffic to the admin interface of the WAF itself
 - Securing traffic to the applications being managed by the WAF
 
-### USE CASE 1: Securing traffic to the admin interface of the WAF itself
+### Securing Traffic to the Admin Interface
 
 While WAFs don't typically protect the traffic to their own administration interfaces in the same way they do for managed applications, ensuring that administrator traffic is encrypted with an enterprise-trusted {{mid}} is just as important.
 If that traffic is not secured, admin credentials are at risk of leaking.
 If operations involving the {{mid}} are not automated, admins can experience outages when logging in to make changes.
 This could potentially present a cascading effect if they are investigating an ongoing threat or mitigating an issue.
 
-### USE CASE 2: Securing traffic to the applications being managed by the WAF
+### Securing Traffic to Applications
 
-Securing traffic to applications is slightly more complex since there can be multiple applications being managed by a WAF, and each application needs its own {{mid}}.
+Securing traffic to applications managed by the WAF is slightly more complex since there can be multiple applications being managed by a WAF, and each application needs its own {{mid}}.
 There are typically two options for {{mid}} automation targeting application traffic.
 Which option you choose will depend on the WAF product or service your solution is being built for.
 
@@ -59,7 +59,7 @@ When active {{mids}} expire or become unavailable, outages happen.
 These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general **lack of automation**.
 
 In addition to {{mids}} for each application, the solution must be capable of storing and using any additional configuration information and metadata required by the WAF to use the {{mid}} once it is provisioned.
-This introduces another failure point, and another potential <span class="outage">**outage**</span>.
+This introduces another failure point, and another potential <span class="red-highlight">**outage**</span> to be aware of.
 
 {% include 'value-drivers/vd-intro.md' %}
 

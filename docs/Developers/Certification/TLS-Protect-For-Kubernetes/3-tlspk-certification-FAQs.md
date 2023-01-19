@@ -5,14 +5,14 @@ Below are some useful resources and frequently asked questions from previous dev
 ## Resources
 
 - [Example Solution Repo](https://coolsolutions.venafi.com/ecosystem/example-integration-repo) - This provides a thorough example of how the README.md file should be created to be most impactful for Venafi users. Rather than creating Word documents or PDFs, all documentation should start in Markdown, which provides better version control and can then be easily translated to other formats as needed.
-- [{{tlspc}} API Documentation](https://developer.venafi.com/tlsprotectcloud/reference/overview)
+- [{{tlspk}} API Documentation](https://{{tlspk_url}}/openapi/index.html)
 - [Venafi Marketplace](https://marketplace.venafi.com) - Explore the Marketplace to get an idea about some of the existing solutions to Venafi. 
 
 ## FAQs
 
 ??? question "Will my solution be listed on the Venafi Marketplace if I don't pursue official certification?"
 
-    ANSWER: Your solution may still be listed if it works with {{tlspd}}, but it will not be listed as officially compatible with {{tlspc}} and will not have the official badge of certification.
+    ANSWER: Your solution may still be listed, but it will not be listed as officially compatible with {{tlspk}} and will not have the official badge of certification.
 
 ??? question "How long will the certification process take?"
 

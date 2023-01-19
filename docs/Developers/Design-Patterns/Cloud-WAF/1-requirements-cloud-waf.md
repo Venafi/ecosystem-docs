@@ -1,6 +1,6 @@
 # Requirements and Considerations
 
-When developing solutions for the {{midcp}}, you should always build with the goal of certification in mind.
+When developing **Cloud WAF** solutions for the {{midcp}}, you should always build with the goal of certification in mind.
 
 {% include '.admonitions/tlspc_certification-admonition.md' %}
 
@@ -8,8 +8,8 @@ When developing solutions for the {{midcp}}, you should always build with the go
 
 - The solution must automate the delivery of *any* necessary certificate(s) required for the security of applications managed by the WAF.
 - The solution must perform any necessary updates to any bindings/configurations/associations attached to the {{mid}}.
-- The solution must report all installed location(s) of the {{mids}} involved in the automation.
-- The {{midcp}} must be able to continuously validate any {{mid}} is installed at any previously known location(s).
+- The solution must report back to the {{midcp}} all installed location(s) of the {{mids}} involved in the automation.
+- If possible, the {{midcp}} must be able to continuously validate any {{mid}} is installed at any known location(s).
 
 !!! tip "Focus on UX"
 
@@ -22,13 +22,6 @@ When developing solutions for the {{midcp}}, you should always build with the go
 - Effective data validation should be implemented to catch errors.
     - Values should be checked before being passed to functions in code.
     - Values should be checked before being passed to Venafi or target product/platform/service.
-
-
-## Considerations Regarding Automation Tooling
-
-(Ansible, Terraform, Chef, Puppet, etc.)
-
-If automation tooling is involved, the tool itself is typically the entity initiating any process and Venafi is responsible for responding to requests and sometimes performing further operations as requested by the workflow. In these cases it's important to consider the needs of every team involved, from the application owners to the security administrators.
     
 ## Building a Better User Experience
 
@@ -39,9 +32,10 @@ The following additional requirements **greatly** enhance the user experience, p
 - Provide the ability to import existing {{mids}} in use by the WAF to Venafi for comprehensive visibility and rapid onboarding.
 
 ## Primers
+
 We think you'll find the following references helpful when developing your solution.
 
-If you've found other articles or tools that you think should be included here, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com Feedback - Cloud WAF: Overview)!
+If you've found other articles or tools that you think should be included here, [please let us know](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Cloud WAF Overview)!
 
 - [WAF](https://en.wikipedia.org/wiki/Web_application_firewall) - Wikipedia
 - [What is WAF](https://www.youtube.com/watch?v=p8CQcF_9280) - YouTube

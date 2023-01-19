@@ -1,4 +1,4 @@
-# Certification - {{tlspc}}
+# Certification - {{tlspk}}
 
 This page is meant to be your home base throughout the certification process, so please feel free to jump around, read ahead, bookmark and come back to it as needed. 
 
@@ -8,21 +8,21 @@ This page is meant to be your home base throughout the certification process, so
 
 ## Introduction
 
-As a **{{tlspc}} Certified** solution, Venafi users have an extra level of confidence that your solution was designed with their best interests at the forefront.
+As a **{{tlspk}} Certified** solution, Venafi users have an extra level of confidence that your solution was designed with their best interests at the forefront.
 For that reason, certified solutions see more adoption from our mutual users.
-When building an solution to {{tlspc}}, one desired outcome should be official certification.
+When building a solution to {{tlspk}}, one desired outcome should be official certification.
 Official certification is the first step to listing the solution on the [Venafi Marketplace](https://marketplace.venafi.com), which is the #1 way end users discover and deploy solutions.  
 
 !!! success ""
 
-    Certification is the only way that an solution will be listed on the Venafi Marketplace as compatible with {{tlspc}}. 
+    Certification is the only way that an solution will be listed on the Venafi Marketplace as compatible with {{tlspk}}.
 
 ![Certify](../../../assets/images/Certification/certify-chart.png){ .off-glb }
 
-The {{tlspc}} Certification Program is still evolving and so some specifics about the following requirements are subject to change.
+The {{tlspk}} Certification Program is still evolving and so some specifics about the following requirements are subject to change.
 Ample notice will be given to any developers of an existing certified solution, ensuring plenty of time to make any necessary updates to maintain certification.
 
-The following requirements are applicable to every {{tlspc}} solution, however there may be additional, unlisted requirements depending on the specific use case of the solution.
+The following requirements are applicable to every {{tlspk}} solution, however there may be additional, unlisted requirements depending on the specific use case of the solution.
 There will be solutions and use cases that come forward that are totally new and unique from every solution that has gone through the certification process - and that's GREAT!
 It means {{mim}} is continuing to evolve and see continued adoption.
 
@@ -37,7 +37,7 @@ The best way to think about it would be "Packaging" vs. "Marketing".
 
 ### Packaging
 
-The final step of the {{tlspc}} certification process will be ***Packaging*** - deciding how end users will deploy and interact with your solution.
+The final step of the {{tlspk}} certification process will be ***Packaging*** - deciding how end users will deploy and interact with your solution.
 In order for end users to discover the solution and establish a strong user base, the packaging of the solution should be polished and easy to understand.
 Use of company logos, iconography, product names, marketing copy, etc. will all help users quickly identify your solution in the growing [Venafi Marketplace](https://marketplace.venafi.com). 
 
