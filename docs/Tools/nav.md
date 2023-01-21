@@ -1,6 +1,4 @@
 - For Developers
     - [VCert](VCert/overview-vcert.md)
     - [APIs](API/overview-api.md)
-    - [Adaptable Framework](Adaptable-Framework/overview-adaptable-framework.md)
-        - [Writing Adaptable Drivers](Adaptable-Framework/writing-adaptable-drivers.md)
-        - [Submitting/Updating Adaptable Drivers](Adaptable-Framework/submitting-your-adaptable-driver.md)
+    - [Adaptable Framework](Adaptable-Framework/)
