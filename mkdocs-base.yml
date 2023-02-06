@@ -97,6 +97,9 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
     pymdownx.magiclink: {}      # Automatically links websites and email addresses https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
+    pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: false
     pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -105,6 +108,7 @@ markdown_extensions:
     
 plugins:
     search: {}
+    encryptcontent: {}
     autolinks: {}
     # include-markdown: {}
     section-index: {}
@@ -114,8 +118,8 @@ plugins:
       include_dir: docs/.snippets
     literate-nav:           # https://github.com/oprypin/mkdocs-literate-nav
       nav_file: nav.md
-    exclude-search:         # https://github.com/chrieke/mkdocs-exclude-search
-      exclude: 
+    # exclude-search:         # https://github.com/chrieke/mkdocs-exclude-search
+    #   exclude: 
     redirects:              # https://github.com/datarobot/mkdocs-redirects
       redirect_maps:
     glightbox:
