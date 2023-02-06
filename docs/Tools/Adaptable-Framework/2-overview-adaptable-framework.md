@@ -89,5 +89,5 @@ Adaptable drivers treat exceptions thrown by a PowerShell function as a fatal er
     Thrown exceptions are handled as unexpected. If there is an error, we recommended you use `Result="Failure"` and pass the error description in the `Error=""` parameter.
     
     Please write effective error messages that tell users what went wrong and how to fix the issue.
-    
-    
+
+

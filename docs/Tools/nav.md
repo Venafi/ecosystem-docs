@@ -2,3 +2,4 @@
     - [VCert](VCert/overview-vcert.md)
     - [APIs](API/overview-api.md)
     - [Adaptable Framework](Adaptable-Framework/)
+    - [HSM Validation Utility](HSM-Utility/)
