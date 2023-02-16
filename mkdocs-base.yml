@@ -28,6 +28,7 @@ theme:
     - search.share          # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-sharing
     - content.tooltips
     - toc.follow
+    - content.code.copy
   font:                     # Can use any google font.
     text: 'Mulish'
     code: 'Roboto Mono'
@@ -103,6 +104,9 @@ markdown_extensions:
     pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+    pymdownx.highlight:
+      anchor_linenums: true
+    pymdownx.inlinehilite:
     md_in_html: {}          # Allows markdown to be within html elements https://github.com/Python-Markdown/markdown/blob/master/docs/extensions/md_in_html.md
     pyembed.markdown: {}
     
