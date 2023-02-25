@@ -24,93 +24,31 @@ It will generate three files:
     The assumption is this is a test environment and it does not matter.
     If this is a concern, the password should be scrubbed post run and the `.json` file should be deleted.
 
-## Required Arguments
+## Arguments
 
-### -dll:<fullpath>
-
-The path and filename of the cryptoki/pkcs11 dll to use
-
-## Optional Arguments
-
-### -label:<label>
-
-The label to use for the test
-
-### -serial:<serial>
-
-The serial to use for the test
-
-### -pin:<pin>
-
-The pin to use for token authentication
-
-### -type:<id>
-
-The account type to use for session creation (0 = officer, 1 = user)
-
-### -testall
-
-Performs all available tests
-
-### -testsym
-
-Performs 'SecretStore (symmetric encryption)' tests
-
-### -testasym
-
-Performs 'key generation and use on the token' tests
-
-### -testexport
-
-Performs 'key generation and export to TPP' tests
-
-### -testderivation
-
-Performs 'key derivation' tests
-
-### -testreconnect
-
-Perform 'connection lost' tests
-
-### -testperformance
-
-Performs 'load/performance' tests
-
-### -testrng
-
-Performs 'random number generator' tests
-
-### -dumpinfo
-
-Dumps the slot information
-
-### -trace:<fullpath>
-
-Enables integrated PKCS#11 API tracing to file <fullpath>
-
-### -reconnectwait:<x>
-
-Waits x seconds after disconnect before re-enabling interface
-
-### -name:<text>
-
-The name of the token being tested
-
-### -interface:<ifname>
-
-The name of the network interface to shut down for reconnect tests
-
-### -description:<text>
-
-A description for the token being tested
-
-### -outdir:<dir>
-
-The directory to store log file
-
-### -config:<fullpath>
-
-If provided, configuration is loaded from the specified json file
+| Arguments/Options | Description | Required |
+| --- | --- | --- |
+| -dll:`<fullpath>` | The path and filename of the cryptoki/pkcs11 dll to use | ✔️️ |
+| -label:`<label>` | The label to use for the test | |
+| -serial:`<serial>` | The serial to use for the test | |
+| -pin:`<pin>` | The pin to use for token authentication | |
+| -type:`<id>` | The account type to use for session creation (0 = officer, 1 = user) | |
+| -testall | Performs all available tests | |
+| -testsym | Performs 'SecretStore (symmetric encryption)' tests | |
+| -testasym | Performs 'key generation and use on the token' tests | |
+| -testexport | Performs 'key generation and export to TPP' tests | |
+| -testderivation | Performs 'key derivation' tests | |
+| -testreconnect | Perform 'connection lost' tests | |
+| -testperformance | Performs 'load/performance' tests | |
+| -testrng | Performs 'random number generator' tests | |
+| -dumpinfo | Dumps the slot information | |
+| -trace:`<fullpath>` | Enables integrated PKCS#11 API tracing to file `<fullpath>` | |
+| -reconnectwait:`<x>` | Waits `<x>` seconds after disconnect before re-enabling interface | |
+| -name:`<text>` | The name of the token being tested | |
+| -interface:`<ifname>` | The name of the network interface to shut down for reconnect tests | |
+| -description:`<text>` | A description for the token being tested | |
+| -outdir:`<dir>` | The directory to store log file | |
+| -config:`<fullpath>` | If provided, configuration is loaded from the specified json file | |
 
 ## Example Runs
 
@@ -122,8 +60,6 @@ The following test is only necessary if you want to test performance and reconne
 
 ``` doscon title="Comprehensive Run"
 PKCS11ValidationTool.exe -dll:c:\GemaltoHSM\cryptoki.dll -pin:newPassw0rd! -label:HSMLABEL -testall -interface:Ethernet -trace:c:\temp\p11.log
-Test line 2
-Test line 3
 ```
 
 !!! warning "Be sure to identify the correct network interface for reconnect tests"

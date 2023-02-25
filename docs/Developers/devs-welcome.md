@@ -1,4 +1,4 @@
-# Welcome Developers!
+# Welcome Developers
 
 This is where you'll find everything you need to develop new and exciting solutions focused on machine identity management.
 There are design patterns for getting started on your use case as quickly as possible, code examples, doc examples, Venafi libraries in the language of your choice, and more.

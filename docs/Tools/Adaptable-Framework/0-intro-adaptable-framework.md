@@ -1,4 +1,4 @@
-#  Adaptable Framework
+# Adaptable Framework
 
 Venafi Adaptable Drivers provide a way quick, easy framework to build solutions, primarily with target **application platforms** (web servers, network devices, application firewalls, etc.) and **CAs** (certificate authorities), but also to support flexible workflow and logging needs for unique environments or use cases.
 
@@ -13,10 +13,10 @@ This data can be referenced/retrieved from Venafi by using hash tables included 
 
 Some Adaptable Drivers also let you define additional text fields, yes/no (boolean) fields, and an additional password credential field, which you can then use to elicit different behaviors or to pass additional data to the system or service to which you are building a solution.
 Each type of Adaptable Driver will have slightly different options for customization.
-These will be described in more detail in the complete documentation after you've selected which type of Adaptable Driver you will be writing. 
+These will be described in more detail in the complete documentation after you've selected which type of Adaptable Driver you will be writing.
 
 Adaptable drivers depend on a Microsoft PowerShell script hosted on each Venafi server to execute functions corresponding to standard certificate lifecycle stages or {{tlspd}} events.
 
-!!! note 
+!!! note
 
     To work effectively with any Venafi Adaptable solution, you must have some working knowledge of PowerShell scripting, or you must have equivalent experience with a scripting language similar to PowerShell.

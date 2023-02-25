@@ -1,6 +1,6 @@
 #  Management Layer
 
-**In the context of enterprise software applications, "management layer" is a higher-level component that provides centralized control and coordination of the various *other,* lower-level components under its management. It can also be referred to as the orchestration layer, or the management/control plane.**
+**In the context of enterprise security, "management layer" is a higher-level component that provides centralized control and coordination of the various *other,* lower-level components under its management. It can also be referred to as the orchestration layer, or the management/control plane.**
 
 ---
 
