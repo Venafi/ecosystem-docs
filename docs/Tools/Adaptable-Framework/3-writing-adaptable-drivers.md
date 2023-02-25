@@ -15,6 +15,11 @@ Venafi Adaptable Drivers provide a way quick, easy framework to build solutions,
 3. Build & test your driver using the tools provided in the DevKit
 4. Test your driver against TLS Protect Datacenter
 5. [Submit your driver to Cool Solutions](https://coolsolutions.venafi.com){: target="_blank" } (Venafi's managed GitLab instance)
+
+    !!! note 
+
+        You will need a [Venafi user account](https://success.venafi.com){: target="_blank" } in order to access.. 
+
 6. Complete the Marketplace Listing Questionnaire
 
 ## Adaptable Driver Types
@@ -38,4 +43,11 @@ Venafi Adaptable Drivers provide a way quick, easy framework to build solutions,
     Choose this if you are building a solution with the goal of further customizing Venafi's native approval workflows.
 
     [Adaptable Workflow Full Documentation](https://docs.venafi.com/Docs/current/TopNav/Content/Workflow/c-workflow-adaptable-workfow-overview.php)
+
+=== "Adaptable Bulk Provisioning"
+    This use case is similar to the "Adaptable App."
+    The main difference is "Bulk Provisioning" was designed to provision *many* machine identities to a target using as few API calls as possible.
+    Choose this if you are building an solution between Venafi and a Machine Identity ***Consumer***, like a NGFW, traffic inspection device, or something else that needs many certificates with few connections to the target device.
+
+    [Adaptable Bulk Provisioning Full Documentation](https://docs.venafi.com/Docs/current/TopNav/Content/Provision/c-Provision-BulkProvisioning-about.php)
 
