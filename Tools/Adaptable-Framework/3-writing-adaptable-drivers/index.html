@@ -578,6 +578,11 @@
         Submitting/Updating
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../5-managing-your-repo/">
+        Managing Your Repo
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -688,11 +693,19 @@
 <li>Decide which DevKit you'll need below <img alt="👇" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f447.svg" title=":point_down:"/></li>
 <li>Build &amp; test your driver using the tools provided in the DevKit</li>
 <li>Test your driver against <abbr title="Venafi's Datacenter offering (formerly known as Trust Protection Platform)">TLS Protect Datacenter</abbr></li>
-<li><a href="https://coolsolutions.venafi.com" target="_blank">Submit your driver to Cool Solutions</a> (Venafi's managed GitLab instance)</li>
-<li>Complete the Marketplace Listing Questionnaire</li>
+<li>
+<p><a href="https://coolsolutions.venafi.com" target="_blank">Submit your driver to Cool Solutions</a> (Venafi's managed GitLab instance)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will need a <a href="https://success.venafi.com" target="_blank">Venafi user account</a> in order to access.. </p>
+</div>
+</li>
+<li>
+<p>Complete the Marketplace Listing Questionnaire</p>
+</li>
 </ol>
 <h2 id="adaptable-driver-types">Adaptable Driver Types<a class="headerlink" href="#adaptable-driver-types" title="Permanent link">¶</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Adaptable CA</label><label for="__tabbed_1_2">Adaptable App</label><label for="__tabbed_1_3">Adaptable Log</label><label for="__tabbed_1_4">Adaptable Workflow</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><input id="__tabbed_1_5" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Adaptable CA</label><label for="__tabbed_1_2">Adaptable App</label><label for="__tabbed_1_3">Adaptable Log</label><label for="__tabbed_1_4">Adaptable Workflow</label><label for="__tabbed_1_5">Adaptable Bulk Provisioning</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Choose this if you are building an solution between Venafi and a Machine Identity <strong><em>Producer</em></strong>, like a Certificate Authority or Managed PKI.</p>
@@ -710,8 +723,14 @@
 <p>Choose this if you are building a solution with the goal of further customizing Venafi's native approval workflows.</p>
 <p><a href="https://docs.venafi.com/Docs/current/TopNav/Content/Workflow/c-workflow-adaptable-workfow-overview.php">Adaptable Workflow Full Documentation</a></p>
 </div>
+<div class="tabbed-block">
+<p>This use case is similar to the "Adaptable App."
+The main difference is "Bulk Provisioning" was designed to provision <em>many</em> machine identities to a target using as few API calls as possible.
+Choose this if you are building an solution between Venafi and a Machine Identity <strong><em>Consumer</em></strong>, like a NGFW, traffic inspection device, or something else that needs many certificates with few connections to the target device.</p>
+<p><a href="https://docs.venafi.com/Docs/current/TopNav/Content/Provision/c-Provision-BulkProvisioning-about.php">Adaptable Bulk Provisioning Full Documentation</a></p>
 </div>
-</input></input></input></input></div>
+</div>
+</input></input></input></input></input></div>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 </article>
