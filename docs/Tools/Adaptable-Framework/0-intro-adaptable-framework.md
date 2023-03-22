@@ -1,6 +1,6 @@
 # Adaptable Framework
 
-Venafi Adaptable Drivers provide a way quick, easy framework to build solutions, primarily with target **application platforms** (web servers, network devices, application firewalls, etc.) and **CAs** (certificate authorities), but also to support flexible workflow and logging needs for unique environments or use cases.
+Venafi Adaptable Drivers provide a quick, easy framework to build solutions, primarily with target **application platforms** (web servers, network devices, application firewalls, etc.) and **CAs** (certificate authorities), but also to support flexible workflow and logging needs for unique environments or use cases.
 
 It will likely become clear over the next few pages which specific Adaptable Framework type is applicable to your use case.
 
