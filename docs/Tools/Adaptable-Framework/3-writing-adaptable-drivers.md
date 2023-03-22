@@ -25,12 +25,12 @@ Venafi Adaptable Drivers provide a way quick, easy framework to build solutions,
 ## Adaptable Driver Types
 
 === "Adaptable CA"
-    Choose this if you are building an solution between Venafi and a Machine Identity ***Producer***, like a Certificate Authority or Managed PKI.
+    Choose this if you are building a solution between Venafi and a Machine Identity ***Producer***, like a Certificate Authority or Managed PKI.
 
     [Adaptable CA Full Documentation](https://docs.venafi.com/Docs/current/TopNav/Content/Drivers/cco-drivers-AdaptableCA-Overview.php)
 
 === "Adaptable App"
-    Choose this if you are building an solution between Venafi and a Machine Identity ***Consumer***, like an application server, network device, WAF, etc.
+    Choose this if you are building a solution between Venafi and a Machine Identity ***Consumer***, like an application server, network device, WAF, etc.
 
     [Adaptable Application Full Documentation](https://docs.venafi.com/Docs/current/TopNav/Content/Drivers/cco-drivers-AdaptableApp-Overview.php)
 
@@ -47,7 +47,7 @@ Venafi Adaptable Drivers provide a way quick, easy framework to build solutions,
 === "Adaptable Bulk Provisioning"
     This use case is similar to the "Adaptable App."
     The main difference is "Bulk Provisioning" was designed to provision *many* machine identities to a target using as few API calls as possible.
-    Choose this if you are building an solution between Venafi and a Machine Identity ***Consumer***, like a NGFW, traffic inspection device, or something else that needs many certificates with few connections to the target device.
+    Choose this if you are building a solution between Venafi and a Machine Identity ***Consumer***, like a NGFW, traffic inspection device, or something else that needs many certificates with few connections to the target device.
 
     [Adaptable Bulk Provisioning Full Documentation](https://docs.venafi.com/Docs/current/TopNav/Content/Provision/c-Provision-BulkProvisioning-about.php)
 
