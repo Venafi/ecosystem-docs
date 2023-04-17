@@ -269,37 +269,11 @@
           Design Patterns
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" id="__nav_3_3_1" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index md-nav__link--active">
-<a href="./">Cloud WAF</a>
-<label for="__nav_3_3_1">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Cloud WAF" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_3_1">
-<span class="md-nav__icon md-icon"></span>
-          Cloud WAF
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../1-requirements-cloud-waf/">
-        Requirements and Considerations
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Cloud WAF
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../2-getting-started-cloud-waf/">
-        Getting Started
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../3-functional-testing-cloud-waf/">
-        Functional Testing
-      </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_2" id="__nav_3_3_2" type="checkbox"/>
@@ -365,42 +339,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" id="__nav_3_3_4" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../Management-Layer/0-intro-management-layer/">Management Layer</a>
-<label for="__nav_3_3_4">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Management Layer" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_3_4">
-<span class="md-nav__icon md-icon"></span>
-          Management Layer
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Management-Layer/1-requirements-management-layer/">
-        Requirements and Considerations
+<a class="md-nav__link" href="../../Management-Layer/0-intro-management-layer/">
+        Management Layer
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Management-Layer/2-getting-started-management-layer/">
-        Getting Started
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Management-Layer/3-functional-testing-management-layer/">
-        Functional Testing
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Management-Layer/4-additional-resources/">
-        Additional Resources
-      </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -635,41 +577,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="On this page" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#introduction">
-    Introduction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-is-it">
-    What is it?
-  </a>
-<nav aria-label="What is it?" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#securing-traffic-to-the-admin-interface">
-    Securing Traffic to the Admin Interface
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#securing-traffic-to-applications">
-    Securing Traffic to Applications
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#why-is-machine-identity-automation-necessary">
-    Why is machine identity automation necessary?
-  </a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -677,79 +584,11 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="cloud-waf">Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr><a class="headerlink" href="#cloud-waf" title="Permanent link">¶</a></h1>
-<p><strong>Web Application Firewalls (WAFs) help protect web applications by monitoring and filtering traffic between the app and the internet.</strong></p>
-<hr/>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
-<p>Organizations use machine identities to secure traffic to and from their <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> using Transport Layer Security (TLS) with HTTPS being the most common use case.</p>
-<p>Sometimes those machine identities are installed at the application endpoint, itself (i.e. source code). 
-Other times, they may be installed on a load balancer, proxy or, in this case, a Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.</p>
-<div class="admonition abstract">
-<p class="admonition-title">Design Pattern: Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></p>
-<p>This design pattern focuses on the use case of orchestrating the delivery of machine identities to the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>, as well as automating any configuration necessary to <em>activate</em> or <em>associate</em> those machine identities to target applications being secured by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.</p>
+<div class="admonition info">
+<p class="admonition-title">This page has moved!</p>
+<p>Design patterns for TLS Protect have been moved to Venafi Dev Central.</p>
+<p>Please visit the <a href="https://developer.venafi.com/tlsprotectcloud/docs/ecosystem-design-patterns-cloud-waf">Cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></a> page on Dev Central for the latest information.</p>
 </div>
-<p>Before you begin, it's important to understand the "whats" and "whys" of <em>Cloud WAFs</em>. </p>
-<h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">¶</a></h2>
-<p>A <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> is a type of reverse proxy which protects the application itself from vulnerabilities caused by malicious activity.
-WAFs use machine identities in one of two ways:</p>
-<ul>
-<li>Securing traffic to the admin interface of the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> itself</li>
-<li>Securing traffic to the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></li>
-</ul>
-<h3 id="securing-traffic-to-the-admin-interface">Securing Traffic to the Admin Interface<a class="headerlink" href="#securing-traffic-to-the-admin-interface" title="Permanent link">¶</a></h3>
-<p>While WAFs don't typically protect the traffic to their own administration interfaces in the same way they do for managed applications, ensuring that administrator traffic is encrypted with an enterprise-trusted <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is just as important.
-If that traffic is not secured, admin credentials are at risk of leaking.
-If operations involving the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> are not automated, admins can experience outages when logging in to make changes.
-This could potentially present a cascading effect if they are investigating an ongoing threat or mitigating an issue.</p>
-<h3 id="securing-traffic-to-applications">Securing Traffic to Applications<a class="headerlink" href="#securing-traffic-to-applications" title="Permanent link">¶</a></h3>
-<p>Securing traffic to applications managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> is slightly more complex since there can be multiple applications being managed by a <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>, and each application needs its own <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr>.
-There are typically two options for <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation targeting application traffic.
-Which option you choose will depend on the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> product or service your solution is being built for.</p>
-<h4 id="the-waf-has-a-built-in-certificate-authority-ca">The <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> has a built-in Certificate Authority (CA)<a class="headerlink" href="#the-waf-has-a-built-in-certificate-authority-ca" title="Permanent link">¶</a></h4>
-<p>In this scenario, the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> terminates the original TLS connection, and uses its built-in CA to issue new machine identities for traffic between the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> and the application.
-Some next-gen WAFs can generate machine identities at <a href="https://www.ssh.com/academy/iam/just-in-time-access" target="_blank">just-in-time</a> speed.
-It's critical that every <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is trusted by the organization, and every issuance is known and traceable by the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr>. </p>
-<h4 id="the-waf-stores-a-copy-of-the-machine-identity-including-the-private-key-for-each-app">The <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> stores a copy of the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> (including the private key) for each app<a class="headerlink" href="#the-waf-stores-a-copy-of-the-machine-identity-including-the-private-key-for-each-app" title="Permanent link">¶</a></h4>
-<p>In this scenario, the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> maintains a copy of the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> for each application under management.
-When a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is renewed, both the application and the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> will need the new version.</p>
-<h2 id="why-is-machine-identity-automation-necessary">Why is <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation necessary?<a class="headerlink" href="#why-is-machine-identity-automation-necessary" title="Permanent link">¶</a></h2>
-<p>Proper management of these machine identities is critical to the availability and security of the applications being managed by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr>.
-When active machine identities expire or become unavailable, outages happen.</p>
-<details class="danger">
-<summary>Outages</summary>
-<p>Workloads can become unavailable for many reasons and any such event can be described as an <strong>outage</strong>.</p>
-<p>When you choose to secure your <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>, you introduce an additional failure point, specifically the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> itself.
-This is because machine identities are designed to expire after some predefined duration.
-When machine identities expire they stop working and the <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> they protect become unavailable.
-A likely outcome of failing to mitigate against outages is negative impact to brand reputation and lost revenue.</p>
-<p>Automation using the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> is a key defense against outages. </p>
-</details>
-<p>These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general <strong>lack of automation</strong>.</p>
-<p>In addition to machine identities for each application, the solution must be capable of storing and using any additional configuration information and metadata required by the <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr> to use the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> once it is provisioned.
-This introduces another failure point, and another potential <span class="red-highlight"><strong>outage</strong></span> to be aware of.</p>
-<p>Users of the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> benefit from key outcomes solving common problems.</p>
-<p>They are <strong>automating everywhere</strong></p>
-<ul>
-<li>by removing manual steps from the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> management process, enabling teams to scale quickly, while still maintaining compliance and control.</li>
-<li>by enabling teams to use whatever tools they know and prefer, and not forcing them to wait for unnecessary approval step bottlenecks.</li>
-</ul>
-<p>They are <strong>preventing misuse and compromise</strong> of machine identities in their organization</p>
-<ul>
-<li>by providing complete visibility and flexible policy to security teams, while maintaining that automation-enabled efficiency from above. If an application team doesn't have to wait for days for a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr>, they are less likely to take matters into their own hands and utilize an unknown issuer.</li>
-<li>by being able to respond quickly to attacks and security events automatically.</li>
-</ul>
-<p>They are <strong>modernizing with speed and agility</strong></p>
-<ul>
-<li>by centralizing and embracing a comprehensive <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> that provides a flexible, enterprise-wide security strategy.</li>
-<li>by automating processes, creating audit trails and removing unnecessary risk which leads to better audits.</li>
-<li>by including security into the application development process early, enabling teams to collaborate vs. hinder or slow down.</li>
-</ul>
-<p>They are <span class="value-drivers">stopping unnecessary outages</span></p>
-<ul>
-<li>by identifying, understanding and correcting situations and processes that could lead to an outage.</li>
-<li>by understanding that proper <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> management is a shared responsibility between multiple teams, and working together increases the security posture of the organization. Developers like you help enable those teams to work together seamlessly.</li>
-<li>by being proactive instead of reactive.</li>
-<li>by doing <strong><em>all of the above</em></strong>. </li>
-</ul>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 </article>
@@ -774,12 +613,12 @@ This introduces another failure point, and another potential <span class="red-hi
                 </div>
 </div>
 </a>
-<a aria-label="Next: Requirements and Considerations" class="md-footer__link md-footer__link--next" href="../1-requirements-cloud-waf/" rel="next">
+<a aria-label="Next: Ingress" class="md-footer__link md-footer__link--next" href="../../Ingress/0-intro-ingress/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                   Next
-                </span> Requirements and Considerations
+                </span> Ingress
                 </div>
 </div>
 <div class="md-footer__button md-icon">

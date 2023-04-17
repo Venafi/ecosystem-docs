@@ -269,37 +269,10 @@
           Design Patterns
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" id="__nav_3_3_1" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index">
-<a href="../../Cloud-WAF/0-intro-cloud-waf/">Cloud WAF</a>
-<label for="__nav_3_3_1">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Cloud WAF" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_3_1">
-<span class="md-nav__icon md-icon"></span>
-          Cloud WAF
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Cloud-WAF/1-requirements-cloud-waf/">
-        Requirements and Considerations
+<a class="md-nav__link" href="../../Cloud-WAF/0-intro-cloud-waf/">
+        Cloud WAF
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Cloud-WAF/2-getting-started-cloud-waf/">
-        Getting Started
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Cloud-WAF/3-functional-testing-cloud-waf/">
-        Functional Testing
-      </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_2" id="__nav_3_3_2" type="checkbox"/>
@@ -365,42 +338,11 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_4" id="__nav_3_3_4" type="checkbox"/>
-<div class="md-nav__link md-nav__link--index md-nav__link--active">
-<a href="./">Management Layer</a>
-<label for="__nav_3_3_4">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-label="Management Layer" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_3_4">
-<span class="md-nav__icon md-icon"></span>
-          Management Layer
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../1-requirements-management-layer/">
-        Requirements and Considerations
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Management Layer
       </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../2-getting-started-management-layer/">
-        Getting Started
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../3-functional-testing-management-layer/">
-        Functional Testing
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../4-additional-resources/">
-        Additional Resources
-      </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -635,27 +577,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="On this page" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#introduction">
-    Introduction
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#what-is-it">
-    What is it?
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#why-is-machine-identity-automation-necessary">
-    Why is machine identity automation necessary?
-  </a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -663,66 +584,11 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="management-layer">Management Layer<a class="headerlink" href="#management-layer" title="Permanent link">¶</a></h1>
-<p><strong>In the context of enterprise security, "management layer" is a higher-level component that provides centralized control and coordination of the various <em>other,</em> lower-level components under its management. It can also be referred to as the orchestration layer, or the management/control plane.</strong></p>
-<hr/>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
-<p>Organizations use machine identities to secure traffic to and from their <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> using Transport Layer Security (TLS) with HTTPS being the most common use case.</p>
-<p>Sometimes those machine identities are installed at the application endpoint, itself (i.e. source code). 
-Other times, they may be installed on a load balancer, <a href="../../Cloud-WAF/0-intro-cloud-waf/">cloud <abbr title="Web Application Firewall: used to protect web apps from malicious traffic">WAF</abbr></a> or, in this case, used by the management layer. </p>
-<div class="admonition abstract">
-<p class="admonition-title">Design Pattern: Management Layer</p>
-<p>This design pattern focuses on the use case of adding and/or enhancing functionality of the management layer to be Venafi-aware.
-In this design pattern, <strong>the management layer is responsible for automation of machine identities</strong> and Venafi is responsible for validating and responding to requests initiated by the management layer.</p>
+<div class="admonition info">
+<p class="admonition-title">This page has moved!</p>
+<p>Design patterns for TLS Protect have been moved to Venafi Dev Central.</p>
+<p>Please visit the <a href="https://developer.venafi.com/tlsprotectcloud/docs/ecosystem-design-patterns-management-layer">Management Layer</a> page on Dev Central for the latest information.</p>
 </div>
-<p>Before you begin, it's important to understand the "whats," "whys" and "hows" of various <em>management layer</em> solutions. </p>
-<h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">¶</a></h2>
-<p>The term "management layer" is somewhat generic, and can also be referred to by a few other terms such as "orchestration layer," "management/control plane," "central manager," etc.
-Different software products may have their own "productized" name as well.</p>
-<p>Generally speaking, the primary use case for this "management layer" component is to provide a higher-level, more centralized view of all the devices, <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>, configurations, policies, etc. of the lower-level components in the infrastructure.</p>
-<div class="admonition example">
-<p class="admonition-title">EXAMPLE</p>
-<p>Consider <a href="https://www.citrix.com/products/citrix-application-delivery-management/">Citrix Application Delivery Management (ADM)</a>.
-ADM is a product from Citrix that provides centralized management and orchestration for Citrix's Application Delivery Controller (ADC) product line.
-It allows administrators to manage, configure, and deploy ADC apps and services from a single, centralized platform.
-This can help improve efficiency and reduce the time and effort needed to manage complex environments.
-ADM also provides additional features for monitoring and managing the performance and availability of ADC devices.</p>
-</div>
-<p>Because security is just one piece of the configuration the management layer is responsible for, it makes sense that any configuration updates are initiated there.
-Multiple sources of truth can lead to collisions and synchronization issues since one source may not be aware of recent changes made by the other.</p>
-<p>For our purposes, the management layer should be considered the source of truth for ALL configuration information, including, but not limited to machine identities, used by the objects (devices/applications/services) under its management.</p>
-<h2 id="why-is-machine-identity-automation-necessary">Why is <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> automation necessary?<a class="headerlink" href="#why-is-machine-identity-automation-necessary" title="Permanent link">¶</a></h2>
-<p>Proper management of these machine identities is critical to the availability and security of the applications/devices/services under the purview of the management layer.
-When active machine identities expire or become unavailable, outages happen.</p>
-<details class="danger">
-<summary>Outages</summary>
-<p>Workloads can become unavailable for many reasons and any such event can be described as an <strong>outage</strong>.</p>
-<p>When you choose to secure your <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>, you introduce an additional failure point, specifically the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> itself.
-This is because machine identities are designed to expire after some predefined duration.
-When machine identities expire they stop working and the <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> they protect become unavailable.
-A likely outcome of failing to mitigate against outages is negative impact to brand reputation and lost revenue.</p>
-<p>Automation using the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> is a key defense against outages. </p>
-</details>
-<p>These types of outages can occur for a variety of reasons, including human error or oversight, unnecessary bottlenecks during approval workflows or a general <strong>lack of automation</strong>.</p>
-<p>The management layer <em>must</em> be aware of any and all information associated with a given <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> and any <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> consuming it, so that it can proactively renew and re-provision on a schedule or ad-hoc, at the time of need.</p>
-<div class="admonition example">
-<p class="admonition-title">EXAMPLE</p>
-<p>A good example is the expiry date of a certificate.
-The management layer should recognize the expiry date is upcoming and, if desired by the user, proactively renew the certificate.
-Additionally, the management layer is responsible for providing relevant information back to the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> in order for the InfoSec or PKI team to maintain complete visibility into all machine identities in use throughout the organization.</p>
-</div>
-<p>Users of the <abbr title="The holistic platform/service, along with the cultivation &amp; curation of the vast marketplace of solutions, tools &amp; frameworks offered by Venafi and the ecosystem">Machine Identity Management Control Plane</abbr> benefit from key outcomes solving common problems.</p>
-<p>They are <strong>automating everywhere</strong></p>
-<ul>
-<li>by removing manual steps from the <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> management process, enabling teams to scale quickly, while still maintaining compliance and control.</li>
-<li>by enabling teams to use whatever tools they know and prefer, and not forcing them to wait for unnecessary approval step bottlenecks.</li>
-</ul>
-<p>They are <span class="value-drivers">stopping unnecessary outages</span></p>
-<ul>
-<li>by identifying, understanding and correcting situations and processes that could lead to an outage.</li>
-<li>by understanding that proper <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> management is a shared responsibility between multiple teams, and working together increases the security posture of the organization. Developers like you help enable those teams to work together seamlessly.</li>
-<li>by being proactive instead of reactive.</li>
-<li>by doing <strong><em>all of the above</em></strong>. </li>
-</ul>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 </article>
@@ -747,12 +613,12 @@ Additionally, the management layer is responsible for providing relevant informa
                 </div>
 </div>
 </a>
-<a aria-label="Next: Requirements and Considerations" class="md-footer__link md-footer__link--next" href="../1-requirements-management-layer/" rel="next">
+<a aria-label="Next: TLS Protect Cloud" class="md-footer__link md-footer__link--next" href="../../../Certification/TLS-Protect-Cloud/1-tlsp-certification-intro/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                   Next
-                </span> Requirements and Considerations
+                </span> TLS Protect Cloud
                 </div>
 </div>
 <div class="md-footer__button md-icon">
