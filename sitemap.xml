@@ -2,257 +2,257 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://ecosystem.venafi.com/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/devs-glossary/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/devs-welcome/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Certification/TLS-Protect-Cloud/1-tlsp-certification-intro/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Certification/TLS-Protect-Cloud/2-tlsp-certification-reqs/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Certification/TLS-Protect-Cloud/3-tlsp-certification-FAQs/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Certification/TLS-Protect-Cloud/4-tlsp-certification-submit/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Certification/TLS-Protect-For-Kubernetes/2-tlspk-certification-reqs/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Certification/TLS-Protect-For-Kubernetes/3-tlspk-certification-FAQs/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Certification/TLS-Protect-For-Kubernetes/4-tlspk-certification-submit/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/general-guidelines/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Cloud-WAF/0-intro-cloud-waf/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Ingress/0-intro-ingress/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Ingress/1-requirements-ingress/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Ingress/2-getting-started-ingress/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Ingress/3-functional-testing-ingress/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Issuer/0-intro-issuer/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Issuer/1-requirements-issuer/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Issuer/2-getting-started-issuer/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Issuer/3-functional-testing-issuer/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Developers/Design-Patterns/Management-Layer/0-intro-management-layer/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Getting-Started/1-how-to-engage/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Getting-Started/customers/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Getting-Started/funded-developers/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Getting-Started/general-inquiry/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Getting-Started/prospective-developers/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Manifesto/operating-principles/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Manifesto/statements/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Programs/devfund/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Testing-Ground/testing-diagrams/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Testing-Ground/testing-fullpage-embeds/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Testing-Ground/testing-inline-embeds/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/API/overview-api/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/API/Cloud/0-intro-cloud-api/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/API/Datacenter/0-intro-datacenter-api/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/Adaptable-Framework/0-intro-adaptable-framework/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/Adaptable-Framework/1-prereqs-adaptable-framework/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/Adaptable-Framework/2-overview-adaptable-framework/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/Adaptable-Framework/3-writing-adaptable-drivers/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/Adaptable-Framework/4-submitting-your-adaptable-driver/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/Adaptable-Framework/5-managing-your-repo/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/HSM-Utility/0-intro-hsm-utility/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/HSM-Utility/1-usage-hsm-utility/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/HSM-Utility/2-Cryptoki-Use/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://ecosystem.venafi.com/Tools/VCert/overview-vcert/</loc>
-         <lastmod>2023-06-02</lastmod>
+         <lastmod>2023-07-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

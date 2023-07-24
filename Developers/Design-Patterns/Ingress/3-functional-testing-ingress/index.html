@@ -543,12 +543,12 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../Tools/HSM-Utility/1-usage-hsm-utility/">
-        [Protected] Using the HSM Validation Utility
+        Using the HSM Validation Utility
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../Tools/HSM-Utility/2-Cryptoki-Use/">
-        [Protected] HSM Wrapper / Cryptoki Use
+        HSM Wrapper / Cryptoki Use
       </a>
 </li>
 </ul>
@@ -623,7 +623,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="functional-testing">Functional Testing<a class="headerlink" href="#functional-testing" title="Permanent link">¶</a></h1>
 <p>During development of your <strong>Ingress</strong> solution, you should keep the following functional tests in mind for this design pattern.
-The test cases listed below are directly related to the <a href="../1-requirements-ingress">requirements and considerations</a> outlined for this use case.</p>
+The test cases listed below are directly related to the <a href="../1-requirements-ingress" target="_blank">requirements and considerations</a> outlined for this use case.</p>
 <details class="question">
 <summary>What is functional testing?</summary>
 <p><strong>To summarize <a href="https://en.wikipedia.org/wiki/Functional_testing" target="_blank">Wikipedia</a>:</strong></p>
@@ -651,18 +651,28 @@ While you might be able to perform all functionality without even referencing th
 </thead>
 <tbody>
 <tr>
-<td>Error Handling</td>
-<td>Perform an operation which you expect to fail (unsupported key size, missing/incomplete data, etc.)</td>
+<td>ING-01</td>
+<td><strong>Documentation</strong>: Solution should be fully documented</td>
+<td>Both online and embedded <abbr title="Custom Resource Definition: an extension of the Kubernetes API">CRD</abbr> documentation (when applicable) is provided</td>
+</tr>
+<tr>
+<td>ING-02</td>
+<td><strong>Error Handling</strong>: Perform an operation which you expect to fail (unsupported key size, missing/incomplete data, etc.)</td>
 <td>The error will be encountered and a meaningful error message will be presented to the end user and, if applicable, back to Venafi</td>
 </tr>
 <tr>
-<td>New TLS-enabled Ingress</td>
-<td>Provision an ingress with a working TLS-enabled public route</td>
-<td>Ingress is provisioned and available for inspection from within TLS Protect For Kubernetes. Meanwhile, browser can navigate to workload via HTTPS</td>
+<td>ING-03</td>
+<td><strong>CRUD Lifecycle</strong>: Standard logic around creation, modification and deletion</td>
+<td>Ingress and its standard behavioral effects should be observable from within TLS Protect For Kubernetes. Ingress is observed as both updated and subsequently deleted. Exceptions to these outcomes must be justified and documented</td>
 </tr>
 <tr>
-<td>Certificate Renewed</td>
-<td>Renew certificate used as a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr></td>
+<td>ING-04</td>
+<td><strong>TLS</strong>: Support TLS-enabled public routes</td>
+<td>TLS-enabled Ingress routes are provisioned and observable from within TLS Protect For Kubernetes. Meanwhile, browser can navigate to workload via HTTPS without security warnings</td>
+</tr>
+<tr>
+<td>ING-05</td>
+<td><strong>Certificate Renewed</strong>: Renew certificate used as a <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr></td>
 <td>Revised expiry date for Ingress <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> is visible from within TLS Protect For Kubernetes. Ingress reconfiguration is automatically triggered</td>
 </tr>
 </tbody>
@@ -679,8 +689,8 @@ While you might be able to perform all functionality without even referencing th
 </thead>
 <tbody>
 <tr>
-<td>OpenID Connect</td>
-<td>Integrate with OpenID Connect identity providers</td>
+<td>ING-101</td>
+<td><strong>OpenID Connect</strong>: Integrate with OpenID Connect identity providers</td>
 <td>Alongside machine identities security, your solution should also be able to demonstrate support for Authentication and Authorization</td>
 </tr>
 </tbody>

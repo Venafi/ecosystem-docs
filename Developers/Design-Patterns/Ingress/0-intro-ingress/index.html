@@ -520,12 +520,12 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../Tools/HSM-Utility/1-usage-hsm-utility/">
-        [Protected] Using the HSM Validation Utility
+        Using the HSM Validation Utility
       </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../../Tools/HSM-Utility/2-Cryptoki-Use/">
-        [Protected] HSM Wrapper / Cryptoki Use
+        HSM Wrapper / Cryptoki Use
       </a>
 </li>
 </ul>
@@ -597,8 +597,8 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#how-it-helps">
-    How it helps?
+<a class="md-nav__link" href="#faqs">
+    FAQs
   </a>
 </li>
 </ul>
@@ -614,35 +614,36 @@ Ingress may provide load balancing, TLS termination, intelligent routing and API
 <p>cert-manager integrates with Ingress objects to fulfill their role in securing your Kubernetes clusters.
 TLS Protect For Kubernetes, which provides first-class support for Ingress objects, includes an enterprise-hardened version of cert-manager and capabilities to support machine identities in the enterprise.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
-<p>Kubernetes is a <a href="https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB">platform for building platforms</a> which helps companies <span class="value-drivers">modernize with speed and agility</span>.
+<p>Kubernetes is a <a href="https://twitter.com/kelseyhightower/status/935252923721793536?lang=en-GB" target="_blank">platform for building platforms</a> which helps companies <span class="value-drivers">modernize with speed and agility</span>.
 It has a reduced set of opinions about how business demands are fulfilled.
 This creates technological voids which the Kuberenetes community strives to fill.
-One such area is <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr>, for which the community has provided <a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/">many options</a>.</p>
+One such area is <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr>, for which the community has provided <a href="https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/" target="_blank">many options</a>.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Design Pattern: Ingress</p>
-<p>This design pattern focuses on the use case of leveraging machine identities via ingress controllers.
+<p>The principal concern of any ingress controller is to accept traffic from outside a given network space and intelligently pass that traffic on to an internally defined resource.
+This design pattern focuses on the use case of securely leveraging machine identities for use via ingress controllers.
 It highlights the need for automation to ensure that once your solution is deployed it stays there, <strong>proactively</strong> securing <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> long into the future.</p>
 <!-- The CRD for "Ingress" has a well defined specification, so each and every controller implementation is duty-bound to present a familiar face to the world. -->
 </div>
-<p>Before you begin, it's important to understand the "what", "why" and "how" of <em>Ingress</em>. </p>
+<p>Before you begin, it's important to understand the "what" and "why" of <em>Ingress</em>. </p>
 <h2 id="what-is-it">What is it?<a class="headerlink" href="#what-is-it" title="Permanent link">¶</a></h2>
-<p>An Ingress is a Kubernetes resource.
+<p>Ingress is a native Kubernetes construct.
 Objects of this type represent lines of communication from <strong>outside</strong> a cluster (which could mean the internet) to <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> running <strong>inside</strong> this cluster.
-Ingress objects bring network intelligence to multi-purpose <a href="https://en.wikipedia.org/wiki/Proxy_server">proxy servers</a> in the form of rules-based routing.
+Ingress objects bring network intelligence to multi-purpose <a href="https://en.wikipedia.org/wiki/Proxy_server" target="_blank">proxy servers</a> in the form of routing rules.
 Without the ability to span this divide Kubernetes would be isolated from the outside world and limited to running non-interactive <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> such as batch jobs.</p>
-<p>The Ingress resource is native to Kubernetes but <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> resources are not.
+<p>Whilst Ingress is native to Kubernetes, <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr> are not.
 An Ingress object can exist, but without an associated controller to respond, it will remain dormant - somewhat like a car without a driver.
 Selecting a suitable <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> is a choice each cluster intends for you to make.</p>
 <h2 id="why-is-it-necessary">Why is it necessary?<a class="headerlink" href="#why-is-it-necessary" title="Permanent link">¶</a></h2>
-<p>In addition to rules-based routing <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr> also provide enhanced security which, given the importance of machine identities, should be your primary concern.</p>
+<p>In addition to routing rules, <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controllers</abbr> also provide enhanced security which, given the importance of machine identities, should be your primary concern.</p>
 <p>The internet was originally envisioned as a medium for sharing information, however the modern world demands that information should be much better protected.
-To meet these demands we have seen the steady rise of HTTPS to the point where modern browsers baulk at the use of <a href="https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html">plain old HTTP</a> so Transport Layer Security (TLS), which powers HTTPS, is now a mandatory requirement.
+To meet these demands we have seen the steady rise of HTTPS to the point where modern browsers baulk at the use of <a href="https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html" target="_blank">plain old HTTP</a> so Transport Layer Security (TLS), which enables HTTPS, is now a mandatory requirement.
 Henceforth you need to enforce the <strong>security of your data in transit</strong>.
-Doing so with an <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> moves TLS termination closer to your <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> thereby helping to <span class="value-drivers">prevent misuse and compromise</span>.</p>
+Doing so with an <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> moves <a href="https://en.wikipedia.org/wiki/TLS_termination_proxy" target="_blank">TLS termination</a> closer to your <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> thereby helping to <span class="value-drivers">prevent misuse and compromise</span>.</p>
 <p>Organizations use machine identities to provide end-to-end security of data sent between running processes with the TLS cryptographic protocol.
 The use of X.509 certificates and HTTPS are the most common manifestation of this.</p>
 <p>Those machine identities are sometimes installed at the application endpoint - as a layer of configuration inside your container images.
-Cloud native principles such as <a href="https://12factor.net/dependencies">12 factor dependencies</a> may convince you this is the right choice.
+Cloud native principles such as <a href="https://12factor.net/dependencies" target="_blank">12 factor dependencies</a> may convince you this is the right choice.
 It's certainly convenient but this approach has a major flaw in that machine identities eventually expire so they must <em>not</em> be treated as <strong>static</strong> dependencies of your <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr>.</p>
 <p>This matters because when active machine identities expire or become unavailable, <strong>outages</strong> happen.</p>
 <details class="danger">
@@ -660,19 +661,51 @@ A likely outcome of failing to mitigate against outages is negative impact to br
 <!--
 When you look at the wider picture, you may also notice another concern related to the use of containers with pre-baked security measures.
 If your container is used in the context of a Kubernetes [deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) resource then it may do so as a scaled-out fleet of workloads, each sharing the same machine identity.
-This outcome is contrary to the meaning of the word "identity" an should be avoided when possible.
+This outcome is contrary to the meaning of the word "identity" and should be avoided when possible.
 Arguably, the total number of machine identities in any given cluster should equal the total number of running workloads.
 -->
-<h2 id="how-it-helps">How it helps?<a class="headerlink" href="#how-it-helps" title="Permanent link">¶</a></h2>
-<p>You can <span class="value-drivers">stop outages</span> caused by expiring machine identities with the use of an <strong>proxy</strong> placed in front of your workload.
-This proxy should be configured to enforce TLS and act as the point of TLS termination.
+<!-- ## How it helps?
+
+You can <span class="value-drivers">stop outages</span> caused by expiring machine identities with the use of an **proxy** placed in front of your workload.
+This proxy should be configured to strictly enforce TLS and act as the point of TLS termination.
 This means that traffic touching the internet can be HTTPS whilst traffic touching the workload can remain as plain old HTTP.
-The configuration of this proxy is determined by how your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> interprets your Ingress objects.
-Your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> should be able to <strong>inject</strong> your <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> into this proxy at the point of creation.
-Perhaps more importantly, since machine identities are a <strong>dynamic</strong> dependency of your workload, your <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> should also be able to re-inject machine identities, whenever they are renewed.
-This approach adheres to the principle of <span class="value-drivers">automating everywhere</span> and can permanently eliminate <abbr title="X.509 certificates, SSH keys, code signing certificates, etc., used to secure applications, traffic, code &amp; organizations">machine identity</abbr> expiry as a outage risk.</p>
-<p>Thankfully, the <a href="https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/">Ingress specification</a> accommodates TLS protection as an explicit attribute.
-This is a clear indication that <strong>all</strong> <abbr title="Specialized load balancers for Kubernetes and other containerized environments">Ingress Controller</abbr> implementations are expected to provide proactive TLS support, relieving your <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> of that responsibility.</p>
+The configuration of this proxy is determined by how your Ingress Controller interprets your Ingress objects.
+Your Ingress Controller should be able to **inject** your machine identity into this proxy at the point of creation.
+Perhaps more importantly, since machine identities are a **dynamic** dependency of your workload, your Ingress Controller should also be able to re-inject machine identities, whenever they are renewed.
+This approach adheres to the principle of <span class="value-drivers">automating everywhere</span> and can permanently eliminate machine identity expiry as a outage risk.
+
+Thankfully, the [Ingress specification](https://kubernetes.io/docs/reference/kubernetes-api/service-resources/ingress-v1/){: target="_blank" } now accommodates TLS protection as an explicit attribute named `ingressClassName`.
+This is a clear indication that **all** Ingress Controller implementations are expected to provide proactive TLS support, relieving your workloads of that responsibility. -->
+<h2 id="faqs">FAQs<a class="headerlink" href="#faqs" title="Permanent link">¶</a></h2>
+<p>Before you proceed there may be a few initial questions that need addressing, for example:</p>
+<p><strong>"What problem will you solve?"</strong></p>
+<blockquote>
+<p>TLS Protect For Kubernetes users need machine identities that are trusted not just between <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> located on a single cluster using mTLS but also between public-facing <abbr title="A process or any location where compute resources are consumed. Workloads in Kubernetes are pods.">workloads</abbr> and other external clients such as end-user browsers.</p>
+</blockquote>
+<p><strong>"What will the outcome be?"</strong></p>
+<blockquote>
+<p>Users of your public-facing solution can <span class="value-drivers">stop outages</span> caused by expiring machine identities. This builds customer trust and loyalty.</p>
+</blockquote>
+<p><strong>"What will you need to deliver?"</strong></p>
+<blockquote>
+<p>You solution will be in the form of Kubernetes <strong>controllers and CRDs</strong>.
+  Your images will be sourced from a <strong>public container registry</strong> and installation will be achieved via a <strong>Helm</strong> chart.</p>
+</blockquote>
+<p><strong>"How will your solution be used?"</strong></p>
+<blockquote>
+<p>Automation via your Ingress controller will be initiated through the use of routes encoded within native Kubernetes Ingress objects.
+  There may be a requirement for supplementary CRDs to configure your controller.</p>
+</blockquote>
+<p><strong>"What about authentication and authorization?"</strong></p>
+<blockquote>
+<p>Whilst it is not a requirement for your solution to handle authentication and authorization, there are Ingress controllers out there which do.
+  If you choose this to provide this, we recommend you integrate with existing OpenID Connect (OIDC) identity providers such as <a href="https://www.okta.com/openid-connect/" target="_blank">Okta</a> and <a href="https://www.pingidentity.com/en/resources/identity-fundamentals/authentication-authorization-standards/openid-connect.html" target="_blank">Ping Identity</a>.</p>
+</blockquote>
+<p><strong>"Why will you want to certify your solution?"</strong></p>
+<blockquote>
+<p>Hop over to our <a href="/Developers/Certification/TLS-Protect-For-Kubernetes/1-tlspk-certification-intro/">certification section</a> for TLS Protect For Kubernetes to find out more</p>
+</blockquote>
+<p>If you aren't able to find what you're looking for, or have a specific question related to your use case, please <a href="https://community.venafi.com/ask-the-community-23" target="_blank">post a question</a> to the Developer Forum section of Venafi's Warrior Community or <a href="mailto:support@venafi.com?subject=Developer Question: Ingress">email</a> Venafi Customer Support.</p>
 <!-- Keep as succinct as possible. Avoid complete sentences. These render as tooltips.-->
 <!-- *[Ingress]: An API object that manages external access to the services in a cluster, typically HTTP -->
 </article>
