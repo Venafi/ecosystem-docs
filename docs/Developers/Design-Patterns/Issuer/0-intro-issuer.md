@@ -44,7 +44,7 @@ Before you proceed there may be a few initial questions that need addressing, fo
 
 **"What problem will you solve?"**
 
-> {{tlspk}} users need to provide their clusters with a **robust mechanism** for delivery of {{mids}} from your CA's {{mids}}.
+> {{tlspk}} users need to provide their clusters with a **robust mechanism** for delivery of {{mids}} from your CA's.
 
 **"What will the outcome be?"**
 
