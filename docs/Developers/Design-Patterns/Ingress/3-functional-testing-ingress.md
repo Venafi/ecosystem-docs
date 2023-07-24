@@ -1,7 +1,7 @@
 # Functional Testing
 
 During development of your **Ingress** solution, you should keep the following functional tests in mind for this design pattern.
-The test cases listed below are directly related to the [requirements and considerations](../1-requirements-ingress) outlined for this use case.
+The test cases listed below are directly related to the [requirements and considerations](../1-requirements-ingress){: target="_blank" } outlined for this use case.
 
 {% include '.admonitions/what-is-functional-testing-admonition.md' %}
 
