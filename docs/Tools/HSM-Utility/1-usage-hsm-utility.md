@@ -7,10 +7,12 @@ use_secret: 'PAULS_PASS'
 !!! warning "Q3 2023 Update!"
 
     Venafi has changed the behavior of the 'Key Export' functionality.
+
     - Prior to v23.3 Venafi used RSA as the key transport mechanism for the AES Wrapping Key 
     - We have now added support for ECDH as an option to create the AES Wrapping Key
 
     **Our preferred order of support is:**
+    
     - ECDH using ANSI X9.63
     - RSA using OEAP
 
