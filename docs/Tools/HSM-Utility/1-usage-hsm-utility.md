@@ -18,6 +18,8 @@ use_secret: 'PAULS_PASS'
 
 ## Requirements and Utility Output
 
+[Download the Validation Utility](https://ven-eco.s3.amazonaws.com/downloads/hsm-validation-utility/Pkcs11ValidationTool_20230713.zip){ .md-button }
+
 This tool has two dependencies:
 
 1. Working PKCS11 client provided by the Vendor
