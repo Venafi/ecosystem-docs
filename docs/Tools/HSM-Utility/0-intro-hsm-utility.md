@@ -1,6 +1,6 @@
 #  HSM Validation Utility
 
-Venafi Trust Protection Platform supports integrations with Hardware Security Modules (HSMs) to encrypt private keys, credentials, and other secrets stored in the database.
+Venafi TLS Protect Datacenter (formerly known as Trust Protection Platform)supports integrations with Hardware Security Modules (HSMs) to encrypt private keys, credentials, and other secrets stored in the database.
 Users can also use the HSM integration for the central generation of private keys.
 
 To be listed in the Venafi documentation as a compatible HSM provider, it's important to test and validate each use case that your HSM supports:
