@@ -26,44 +26,48 @@ This tool has two dependencies:
 2. .Net 4.8 on the Windows workstation where it is being run.
 
 This utility has the code logic we use within TPP embedded into it.
-It will generate the following files:
+It will generate three files:
 
 - `Pkcs11Validation.log` – A running log that captures the output you see on screen
 - `Pkcs11 Validation Summary {Date}.txt` – Provides a summary of the tests run and the results
 - `(Optional) PKCS11 Trace File` - Will capture PKCS11 calls between Venafi and the HSM client
-- `Pkcs11Validation.json` – Will capture the parameters of the last run. If PKCSValidationTool.exe is run without any parameters, it will load this file if it exists and load what it needs to run
 
 !!! danger "Saved Password"
 
-    The HSM password will be recorded in the above files.
+    The HSM pin will be recorded in the above files (base64 encoded).
     The assumption is this is a test environment and it does not matter.
-    If this is a concern, the password should be scrubbed post run and the `.json` file should be deleted.
+    If this is a concern, the password should be scrubbed post run.
 
 ## Arguments
 
 | Arguments/Options | Description | Required |
 | --- | --- | --- |
-| -dll:`<fullpath>` | The path and filename of the cryptoki/pkcs11 dll to use | ✔️️ |
-| -label:`<label>` | The label to use for the test | |
-| -serial:`<serial>` | The serial to use for the test | |
-| -pin:`<pin>` | The pin to use for token authentication | |
-| -type:`<id>` | The account type to use for session creation (0 = officer, 1 = user) | |
-| -testall | Performs all available tests | |
-| -testsym | Performs 'SecretStore (symmetric encryption)' tests | |
-| -testasym | Performs 'key generation and use on the token' tests | |
-| -testexport | Performs 'key generation and export to TPP' tests | |
-| -testderivation | Performs 'key derivation' tests | |
-| -testreconnect | Perform 'connection lost' tests | |
-| -testperformance | Performs 'load/performance' tests | |
-| -testrng | Performs 'random number generator' tests | |
-| -dumpinfo | Dumps the slot information | |
-| -trace:`<fullpath>` | Enables integrated PKCS#11 API tracing to file `<fullpath>` | |
-| -reconnectwait:`<x>` | Waits `<x>` seconds after disconnect before re-enabling interface | |
-| -name:`<text>` | The name of the token being tested | |
-| -interface:`<ifname>` | The name of the network interface to shut down for reconnect tests | |
-| -description:`<text>` | A description for the token being tested | |
-| -outdir:`<dir>` | The directory to store log file | |
-| -config:`<fullpath>` | If provided, configuration is loaded from the specified json file | |
+| -dl[l]=`<path>` | Path to the cryptoki DLL to use | ✔️ |
+| -l[abel]=`<label>` | The label of the partition to test | |
+| -se[rial]=`<serial>` | The serial no. of the partition to test | |
+| -pi[n]=`<pin>` | The pin to use for authentication | |
+| -ty[pe]=`<type>` | The account type to use for authentication (SO, CO, 0 or 1) | |
+| -inf[o] | Only print information about the HSM and exit | |
+| -des[cription]=`<text>` | Test detail to include in result | |
+| -v[ersion] | Print the version of Pkcs11ValidationTool | |
+| -n[ame]=`<title>` | Name of the tested device | |
+| -k[ey]=`<label>` | Existing AES key to use for tests. If not provided, a new key will be created | |
+| -int[erface]=`<name>` | Name of the network interface used to connect to HSM. Used for disconnect test | |
+| -q[uiet] | Log only to file, not to screen | |
+| -ini[t] | Perform Cryptoki init/finalize/thread protection tests. Must be run separately from all other tests | |
+| -as[ym] | Perform asymmetric key usage tests. This tests if the Advanced Key Protect Key Storage feature can be used | |
+| -sy[m] | Perform symmetric key usage tests. This tests if the HSM can be used to protect sensitive data in the database | |
+| -e[xport] | Test key export. This tests if the Advanced Key Protect Key Generation feature can be used | |
+| -der[ive] | Test if the HSM can be used with the Venafi KSP for Microsoft ECDH key derivation | |
+| -rn[g] | Test random number generation for use by TPP | |
+| -re[connect] | Test reconnecting after network failure. This test will disconnect and reconnect the interface specfied with the 'interface' option while performing crypto operations | |
+| -pe[rformance] | Measure number of possible symmetric and asymmetric operations in a given timeframe | |
+| -ti[me]=`<seconds>` | Number of seconds to run the performance test. Requires 'performance' option | |
+| -th[reads]=`<count>` | Number of threads to use for the performance test. Requires 'performance' option | |
+| -w[ait]=`<seconds>` | Number of seconds to wait during reconnect test before re-enabling the network interface | |
+| -tr[ace]=`<path>` | Path and filename to use for logging PKCS#11 traffic | |
+| -al[l] | Perform all tests | |
+| -o[utdir]=`<path>` | The directory to use for writing log and summary files | |
 
 ## Example Runs
 
