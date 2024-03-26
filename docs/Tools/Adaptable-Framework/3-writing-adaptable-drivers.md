@@ -2,11 +2,9 @@
 
 Venafi Adaptable Drivers provide a way quick, easy framework to build solutions, primarily with target **application platforms** (web servers, network devices, application firewalls, etc.) and **CAs** (certificate authorities), but also to support flexible workflow and logging needs for unique environments.
 
-!!! note 
+!!! note
 
-    Venafi Adaptable Drivers support Venafi TLS Protect Datacenter only. Venafi Product Management is working on a similar framework for TLS Protect Cloud use cases. 
-
-    Please **[sign up here](https://venafi-connector-framework-confirm-interest.paperform.co)** to be notified when developer tools are available for TLS Protect Cloud.
+    Venafi Adaptable Drivers support Venafi TLS Protect Datacenter only. For information about building an integration with Venafi TLS Protect Cloud, please see the Connector Framework documentation on [Venafi Dev Central](https://developer.venafi.com/tlsprotectcloud) for [Machine Connectors](https://developer.venafi.com/tlsprotectcloud/docs/libraries-and-sdks-connector-framework) and [CA Connectors](https://developer.venafi.com/tlsprotectcloud/docs/libraries-and-sdks-ca-connector-framework). 
 
 ## Getting Started
 
@@ -16,7 +14,7 @@ Venafi Adaptable Drivers provide a way quick, easy framework to build solutions,
 4. Test your driver against TLS Protect Datacenter
 5. [Submit your driver to Cool Solutions](https://coolsolutions.venafi.com){: target="_blank" } (Venafi's managed GitLab instance)
 
-    !!! note 
+    !!! note
 
         You will need a [Venafi user account](https://success.venafi.com){: target="_blank" } in order to access.. 
 
@@ -50,4 +48,3 @@ Venafi Adaptable Drivers provide a way quick, easy framework to build solutions,
     Choose this if you are building a solution between Venafi and a Machine Identity ***Consumer***, like a NGFW, traffic inspection device, or something else that needs many certificates with few connections to the target device.
 
     [Adaptable Bulk Provisioning Full Documentation](https://docs.venafi.com/Docs/current/TopNav/Content/Provision/c-Provision-BulkProvisioning-about.php)
-
