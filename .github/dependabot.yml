@@ -7,3 +7,7 @@ updates:
       time: "09:00"
       day: "monday"
       timezone: "America/Inuvik"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
