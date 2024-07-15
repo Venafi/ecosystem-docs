@@ -2,7 +2,7 @@
 
 Venafi provides access to our managed GitLab instance to streamline code and script submissions for ecosystem solutions. GitLab provides better visibility and version control and more consistent documentation.
 
-## Automations
+<!-- ## Automations
 
 A number of default automations are enabled by default to enhance the user experience for both you as a developer, as well as end users of the solution.
 Please feel free to adapt to fit your needs.
@@ -13,7 +13,7 @@ Please feel free to adapt to fit your needs.
 | --- | --- | --- |
 | prepare_description.yml | Reads a `version.txt` file in the root of the repo and stores it as `$version` in `description.env` for future use in the pipeline | **prepare** |
 | build_pdf.yml | Generates a PDF file from the README.md | **build** |
-| release.yml | Creates a release using the `$version` from the `prepare` stage and publishes the PDF version of the README | **release** |
+| release.yml | Creates a release using the `$version` from the `prepare` stage and publishes the PDF version of the README | **release** | -->
 
 ## Documentation
 
