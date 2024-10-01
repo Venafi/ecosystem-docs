@@ -17,7 +17,7 @@ copyright: Copyright &copy; 2024 Venafi
 theme:
   name: material
   custom_dir: docs/overrides  #https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme
-  logo: assets/images/logos/Venafi_CYBR_logo_1200x377.png
+  logo: assets/images/logos/Venafi_CYBR_logo_1200x377_rev.png
   favicon: assets/images/Venafi_Favicon_Orange.png
   features:
     - navigation.instant    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
