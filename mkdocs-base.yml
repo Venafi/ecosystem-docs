@@ -11,13 +11,13 @@ site_description: Building solutions to protect more machine identities
 site_url: https://ecosystem.venafi.com
 
 #Copyright
-copyright: Copyright &copy; 2022 Venafi
+copyright: Copyright &copy; 2024 Venafi
 
 # Theme
 theme:
   name: material
   custom_dir: docs/overrides  #https://squidfunk.github.io/mkdocs-material/customization/#extending-the-theme
-  logo: assets/images/logos/Venafi_LOGO_OrangeWhite_rgb_f.svg
+  logo: assets/images/logos/Venafi_CYBR_logo_1200x377.png
   favicon: assets/images/Venafi_Favicon_Orange.png
   features:
     - navigation.instant    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
