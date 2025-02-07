@@ -1,5 +1,5 @@
 ---
-use_secret: 'PAULS_PASS'
+password_inventory: !ENV PAULS_PASS
 ---
 
 # HSM Wrapper / Cryptoki Use
