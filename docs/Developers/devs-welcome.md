@@ -14,7 +14,7 @@ These individuals or teams could be tasked with integrating a Certificate Author
 
 ## Getting Started
 
-If you've already got an idea about what you'd like to build in mind, but aren't sure where to start, [please click here](https://venafi-dev-onboarding.paperform.co/) to answer a few questions that will help.
+If you've already got an idea about what you'd like to build in mind, but aren't sure where to start, [check out Venafi Dev Central](https://developer.venafi.com/tlsprotectcloud/docs/ecosystem-design-patterns) to look at some existing design patterns.
 
 If you already know the path your development will take, or you've been here before, the links are to the left.
 
