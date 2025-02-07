@@ -52,7 +52,7 @@ extra_css:                  # Additional styelsheets to use on every page
   - assets/css/dark-mode.css
   - assets/css/mini-card.css
 
-extra_javascript:           # Additional js files to use on every page
+# extra_javascript:           # Additional js files to use on every page
   # - https://kit.fontawesome.com/ea1de3d082.js  No longer needed since we pulled the fontawesome icons off the landing page. Will reenable if needed down the road.
 
 extra:
