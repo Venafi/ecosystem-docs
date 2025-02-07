@@ -4,9 +4,7 @@ Before you begin writing an Adaptable Driver, there are a few important things t
 
 !!! note 
 
-    Venafi Adaptable Drivers support Venafi TLS Protect Datacenter only. Venafi Product Management is working on a similar framework for TLS Protect Cloud use cases. 
-
-    Please **[sign up here](https://venafi-connector-framework-confirm-interest.paperform.co)** to be notified when developer tools are available for TLS Protect Cloud.
+    Venafi Adaptable Drivers support Venafi TLS Protect Datacenter only. If you are looking to integrate with TLS Protect Cloud, please visit [Venafi Dev Central](https://developer.venafi.com/tlsprotectcloud/docs/libraries-and-sdks). 
 
 ## Environment Dependencies
 

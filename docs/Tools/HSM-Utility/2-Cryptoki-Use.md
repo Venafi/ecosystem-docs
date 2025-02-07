@@ -1,5 +1,5 @@
 ---
-password_inventory: !ENV PAULS_PASS
+level: secret
 ---
 
 # HSM Wrapper / Cryptoki Use
