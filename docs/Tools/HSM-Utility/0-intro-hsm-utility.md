@@ -13,4 +13,4 @@ To be listed in the Venafi documentation as a compatible HSM provider, it's impo
 !!! success "Certify Your HSM Solution!"
 
     Venafi makes it fast and easy to certify your HSM solution for use with Venafi.
-    If you are interested in getting access to the HSM Validation Utility, please [click here](https://venafi-hsm-validation-request.paperform.co/){: target="_blank" }.
+    If you are interested in getting access to the HSM Validation Utility, **Please [email the Ecosystem team](mailto:ecosystem@venafi.com?subject=HSM Validation Utility Request).**.

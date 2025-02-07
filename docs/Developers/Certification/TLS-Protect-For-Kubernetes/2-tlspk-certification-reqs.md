@@ -29,7 +29,7 @@ More users generate more feedback and ideas, and the solution becomes more robus
     4. The solution uses generally available interfaces to interact with {{tlspk}} (jsctl, REST API, etc.).
     5. Accompanying documentation must be packaged with the solution and should include any necessary configuration instructions as well as clear usage examples. [Templates are provided](https://coolsolutions.venafi.com/ecosystem/example-solution-repo) for this purpose.
     6. The support model is clearly defined for all user types.
-    7. A demonstration of all documented functionality must be [scheduled](https://venafi-service-certification.paperform.co) & completed with the Venafi Ecosystem team.
+    7. A demonstration of all documented functionality must be scheduled & completed with the Venafi Ecosystem team. **Please [email the Ecosystem team](mailto:ecosystem@venafi.com?subject=Recertification Request) to submit a new Certification Request.**
 
 === "Advanced"
 

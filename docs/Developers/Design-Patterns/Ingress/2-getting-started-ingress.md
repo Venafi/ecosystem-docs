@@ -28,12 +28,3 @@ We think you'll find the following references helpful when developing your solut
 - [Writing a Kubernetes Operator from Scratch Using Kubebuilder](https://www.youtube.com/watch?v=LLVoyXjYlYM){: target="_blank" }
 
 If you are not able to find what you're looking for or you've found other articles/tools that deserve to be included here please [post a question](https://community.venafi.com/ask-the-community-23){: target="_blank" } to the Developer Forum section of Venafi's {{com}} or [email](mailto:ecosystem@venafi.com?subject=ecosystem.venafi.com feedback - Ingress design pattern) the Ecosystem team. 
-
-<!-- 1. Create a [TLS Protect Cloud](https://vaas.venafi.com){: target="_blank" } account if you don't have one already.
-2. Decide on a programming language and understand what tooling, if any, your solution will use (If you aren't sure yet, [this](https://venafi-dev-onboarding.paperform.co/){: target="_blank" } might help 🙂).
-3. Start building!
-4. Perform [functional testing](3-functional-testing-cloud-waf.md).
-5. Get [certified](../../Certification/TLS-Protect-Cloud/1-tlsp-certification-intro.md)! -->
-
-
-<!-- Need to say more about JSS -->

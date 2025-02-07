@@ -28,6 +28,4 @@ Below are some useful resources and frequently asked questions from previous dev
 
     ANSWER: For now, we'd like you to re-certify for any Major release or feature addition/enhancement.
     Minor releases don't require re-certification.
-    If you've just released a new Major version or added a new feature, please submit a new certification request.
-    
-    [Submit Certification Request](https://venafi-service-certification-request.paperform.co){ .md-button} 
+    If you've just released a new Major version or added a new feature, please submit a new certification request by [emailing the Ecosystem team](mailto:ecosystem@venafi.com?subject=Certification Request) to submit a new Certification Request.**
