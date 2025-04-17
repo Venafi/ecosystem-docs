@@ -72,7 +72,7 @@ It will generate three files:
 ## Example Runs
 
 ``` doscon title="Simple Run"
-PKCSValidationTool.exe -dll:c:\GemaltoHSM\cryptoki.dll -pin:REMOVED -label:HSMLABEL
+PKCSValidationTool.exe -dll:c:\GemaltoHSM\cryptoki.dll -pin:Ex@mple3Passw0rd! -label:HSMLABEL
 ```
 
 The following test is only necessary if you want to test performance and reconnect logic.
