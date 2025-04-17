@@ -78,7 +78,7 @@ PKCSValidationTool.exe -dll:c:\GemaltoHSM\cryptoki.dll -pin:Ex@mple3Passw0rd! -l
 The following test is only necessary if you want to test performance and reconnect logic.
 
 ``` doscon title="Comprehensive Run"
-PKCS11ValidationTool.exe -dll:c:\GemaltoHSM\cryptoki.dll -pin:REMOVED -label:HSMLABEL -testall -interface:Ethernet -trace:c:\temp\p11.log
+PKCS11ValidationTool.exe -dll:c:\GemaltoHSM\cryptoki.dll -pin:Ex@mple3Passw0rd! -label:HSMLABEL -testall -interface:Ethernet -trace:c:\temp\p11.log
 ```
 
 !!! warning "Be sure to identify the correct network interface for reconnect tests"
